@@ -20,3 +20,8 @@
 <img width="730" alt="image" src="https://user-images.githubusercontent.com/75510135/123890485-e832a900-d974-11eb-9f73-d49869356522.png">
 
 
+## DevOps Docker Env
+- https://stackoverflow.com/questions/59932994/how-to-set-environment-variables-in-dockerfile-via-azure-devops
+- https://docs.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux#configure-environment-variables
+- https://stackoverflow.com/questions/63278658/build-and-push-a-docker-image-with-build-arguments-from-devops-to-acr
+- https://codefresh.io/docs/docs/yaml-examples/examples/build-an-image-with-build-arguments/
