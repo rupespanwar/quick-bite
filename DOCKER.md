@@ -10,4 +10,13 @@
 # Run basic Docker cmds
 <img width="894" alt="image" src="https://user-images.githubusercontent.com/75510135/123889301-db14ba80-d972-11eb-8209-717ca09fb407.png">
 
+# Docker => Setting up Env Variable
+<img width="925" alt="image" src="https://user-images.githubusercontent.com/75510135/123890076-427f3a00-d974-11eb-8e11-24e76bdb6d2b.png">
+
+
+<img width="661" alt="image" src="https://user-images.githubusercontent.com/75510135/123890296-9ab63c00-d974-11eb-8676-1711bb87ce5a.png">
+
+
+<img width="730" alt="image" src="https://user-images.githubusercontent.com/75510135/123890485-e832a900-d974-11eb-9f73-d49869356522.png">
+
 
