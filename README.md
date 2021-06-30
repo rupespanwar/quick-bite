@@ -7,5 +7,7 @@
 # NGINX config
 <img width="652" alt="image" src="https://user-images.githubusercontent.com/75510135/123889026-47db8500-d972-11eb-9ff1-e201197dfea9.png">
 
+# Run basic Docker cmds
+<img width="894" alt="image" src="https://user-images.githubusercontent.com/75510135/123889301-db14ba80-d972-11eb-8209-717ca09fb407.png">
 
 
