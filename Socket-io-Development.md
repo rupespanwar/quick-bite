@@ -60,7 +60,7 @@
 
 
 
-
+```
 # Create a new Namespace / admin
 ![image](https://user-images.githubusercontent.com/75510135/124463234-351ce200-ddb0-11eb-975d-9f967a815b69.png)
 
