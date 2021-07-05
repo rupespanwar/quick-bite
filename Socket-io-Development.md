@@ -7,8 +7,13 @@
 # Basic Chat Server & chat Client setup
 <img width="1303" alt="image" src="https://user-images.githubusercontent.com/75510135/124419736-bc039780-dd7b-11eb-8be7-8cabe1f4b68f.png">
 
+
 # Update DOM with latest Message 
 ![image](https://user-images.githubusercontent.com/75510135/124456664-9a6cd500-dda8-11eb-8278-d4eae7188eb1.png)
+
+# Basic chat form
+![image](https://user-images.githubusercontent.com/75510135/124456970-ef105000-dda8-11eb-863c-e96c206a5796.png)
+
 
 ## Chat form
 ```
