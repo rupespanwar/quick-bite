@@ -56,11 +56,20 @@
     </div>
 </div>
 
+
+
+
+
+
 # Create a new Namespace / admin
 ![image](https://user-images.githubusercontent.com/75510135/124463234-351ce200-ddb0-11eb-975d-9f967a815b69.png)
 
+
+
+
+
 ```
-        Namespace/Group Cheatsheet
+        # Namespace/Group Cheatsheet
         ALL these are server only
 
         Send an event from the server to this socket only:
