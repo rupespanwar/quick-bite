@@ -60,39 +60,39 @@
 ![image](https://user-images.githubusercontent.com/75510135/124463234-351ce200-ddb0-11eb-975d-9f967a815b69.png)
 
 ```
-Namespace/Group Cheatsheet
-ALL these are server only
+        Namespace/Group Cheatsheet
+        ALL these are server only
 
-Send an event from the server to this socket only:
+        Send an event from the server to this socket only:
 
-socket.emit()
-socket.send()
-
-
-Send an event from a socket to a room:
-
-NOTE: remember, this will not go to the sending socket
-
-socket.to(roomName).emit()
-socket.in(roomName).emit()
+        socket.emit()
+        socket.send()
 
 
-Because each socket has it's own room, named by it's socket.id, a socket can send a message to another socket:
+        Send an event from a socket to a room:
 
-socket.to(anotherSocketId).emit('hey');
-socket.in(anotherSocketId).emit('hey');
+        NOTE: remember, this will not go to the sending socket
 
-
-A namespace can send a message to any room:
-
-io.of(aNamespace).to(roomName).emit()
-io.of(aNamespace).in(roomName).emit()
+        socket.to(roomName).emit()
+        socket.in(roomName).emit()
 
 
-A namespace can send a message to the entire namespace
+        Because each socket has it's own room, named by it's socket.id, a socket can send a message to another socket:
 
-io.emit()
-io.of('/').emit()
-io.of('/admin').emit()
-Fullscreen
+        socket.to(anotherSocketId).emit('hey');
+        socket.in(anotherSocketId).emit('hey');
+
+
+        A namespace can send a message to any room:
+
+        io.of(aNamespace).to(roomName).emit()
+        io.of(aNamespace).in(roomName).emit()
+
+
+        A namespace can send a message to the entire namespace
+
+        io.emit()
+        io.of('/').emit()
+        io.of('/admin').emit()
+        Fullscreen
 
