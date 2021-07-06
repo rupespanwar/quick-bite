@@ -112,4 +112,9 @@
 
 
 
+# 1st part of the communication process
+<img width="852" alt="image" src="https://user-images.githubusercontent.com/75510135/124530189-a9479c00-de29-11eb-9b50-73d4a72a3c3c.png">
+
+<img width="1355" alt="image" src="https://user-images.githubusercontent.com/75510135/124530252-c9775b00-de29-11eb-80ab-be2c88f375be.png">
+
 
