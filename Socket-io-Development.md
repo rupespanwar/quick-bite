@@ -121,4 +121,13 @@
 <img width="1359" alt="image" src="https://user-images.githubusercontent.com/75510135/124530322-ef9cfb00-de29-11eb-983e-99936238bd68.png">
 
 
+# 2nd part of the communication process, 
+    - updating 2nd NS main information, 
+    - send Room information , 
+    - update DOM with Room information
+    
+ ![image](https://user-images.githubusercontent.com/75510135/124552410-220e1e80-de51-11eb-89bf-c04ca5ac9917.png)
+
+
+
 
