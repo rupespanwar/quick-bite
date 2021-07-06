@@ -105,3 +105,11 @@
         io.of('/admin').emit()
         Fullscreen
 
+
+```
+# Initiate NS and Room
+<img width="1339" alt="image" src="https://user-images.githubusercontent.com/75510135/124527064-2707a980-de22-11eb-8991-b52139ca93ff.png">
+
+
+
+
