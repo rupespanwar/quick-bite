@@ -46,4 +46,8 @@
 <img width="864" alt="image" src="https://user-images.githubusercontent.com/75510135/124756826-882a9c80-df4a-11eb-9cec-c525cb0f37ea.png">
 
 
+  - Data Query Service - to hold data from Post n Comments
+
+<img width="869" alt="image" src="https://user-images.githubusercontent.com/75510135/124768680-7d760480-df56-11eb-8083-2e5fd5c51600.png">
+
 
