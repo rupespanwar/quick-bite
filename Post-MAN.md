@@ -6,8 +6,13 @@
 
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/124684192-394e1a00-deec-11eb-9d07-53ce769e2ce2.png">
 
-  - ID based API , localhost:4001/posts/:id/comments
+  - ID based API call , localhost:4001/posts/:id/comments
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/124699172-e1bda780-df07-11eb-98b4-c836bc3111a1.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/124699325-36612280-df08-11eb-8af6-b13ee688d90d.png">
+
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/124699403-5a246880-df08-11eb-8de4-abf5d718e2b6.png">
 
 
 
