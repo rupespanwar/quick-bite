@@ -7,5 +7,7 @@ https://azuredevopsdemogenerator.azurewebsites.net/
 - install n configure Postgress SQL
 - install n configure SonarQube Scanner
 
+![image](https://user-images.githubusercontent.com/75510135/124920438-f045b500-e014-11eb-8e11-cb57f1a4b15a.png)
+
 
 
