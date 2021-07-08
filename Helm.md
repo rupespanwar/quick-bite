@@ -58,11 +58,12 @@ cmd> helm create challenge # to create the chart
     
    
 # CHART-DEEP DIVE
-    - To Deploy into Production , refer Production.yaml as Values
+ - To Deploy into Production , refer Production.yaml as Values
+    
     ![image](https://user-images.githubusercontent.com/75510135/124876249-6af7db80-dfe7-11eb-910f-6eb8a988da49.png)
     
-    - Labels
-      ![image](https://user-images.githubusercontent.com/75510135/124879056-71d41d80-dfea-11eb-8bf0-8a4f080ceaa9.png)
+ - Labels
+   ![image](https://user-images.githubusercontent.com/75510135/124879056-71d41d80-dfea-11eb-8bf0-8a4f080ceaa9.png)
 
     - using the labels
       ![image](https://user-images.githubusercontent.com/75510135/124878936-4a7d5080-dfea-11eb-82dd-7037344e9485.png)
