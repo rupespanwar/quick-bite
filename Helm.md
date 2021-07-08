@@ -50,3 +50,10 @@ cmd> helm create challenge # to create the chart
    - values.yml
    ![image](https://user-images.githubusercontent.com/75510135/124871362-9677c780-dfe1-11eb-9bdf-cba31810bc83.png)
     
+# Troubleshooting
+    - helm lint # highlight format errors
+    - helm template . # swiss army knife , value replacement
+    - heml template . > templated.yaml # dryn-run to identify run time issue
+    - helm template . | kubectl create -f - # simulate deployment
+    
+   
