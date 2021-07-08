@@ -57,3 +57,29 @@ cmd> helm create challenge # to create the chart
     - helm template . | kubectl create -f - # simulate deployment
     
    
+# CHART-DEEP DIVE
+    - To Deploy into Production , refer Production.yaml as Values
+    ![image](https://user-images.githubusercontent.com/75510135/124876249-6af7db80-dfe7-11eb-910f-6eb8a988da49.png)
+    
+    - Labels
+      ![image](https://user-images.githubusercontent.com/75510135/124879056-71d41d80-dfea-11eb-8bf0-8a4f080ceaa9.png)
+
+    - using the labels
+      ![image](https://user-images.githubusercontent.com/75510135/124878936-4a7d5080-dfea-11eb-82dd-7037344e9485.png)
+ 
+    - using Template
+    ![image](https://user-images.githubusercontent.com/75510135/124880948-71d51d00-dfec-11eb-9f50-c38653906081.png)
+    
+    set variable values to check
+    ![image](https://user-images.githubusercontent.com/75510135/124881490-0475bc00-dfed-11eb-94b5-95febb60e23a.png)
+
+    replacing the proxy template 
+    ![image](https://user-images.githubusercontent.com/75510135/124881850-6df5ca80-dfed-11eb-8799-80b5d9c4cc67.png)
+
+    cmd > helm template . -f values.yaml
+    
+   # REFERENCES
+    - More information on flow control with Helm: https://helm.sh/docs/chart_template_guide/control_structures/
+
+    - Operators you can use with Helm: https://helm.sh/docs/chart_template_guide/functions_and_pipelines/#operators-are-functions
+
