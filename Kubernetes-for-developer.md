@@ -8,4 +8,7 @@
 <img width="961" alt="image" src="https://user-images.githubusercontent.com/75510135/124962887-c6a08400-e03c-11eb-8bee-790e7bf4ff4b.png">
 
 # Docker file for MVC App
-<img width="593" alt="image" src="https://user-images.githubusercontent.com/75510135/124965495-d4a3d400-e03f-11eb-93c4-d20fe16b35e7.png">
+<img width="675" alt="image" src="https://user-images.githubusercontent.com/75510135/124965755-1a609c80-e040-11eb-9d21-fc42a373c55e.png">
+
+<img width="749" alt="image" src="https://user-images.githubusercontent.com/75510135/124965953-4ed45880-e040-11eb-8386-fece48db9e0d.png">
+
