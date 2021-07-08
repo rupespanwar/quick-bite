@@ -65,10 +65,10 @@ cmd> helm create challenge # to create the chart
  - Labels
    ![image](https://user-images.githubusercontent.com/75510135/124879056-71d41d80-dfea-11eb-8bf0-8a4f080ceaa9.png)
 
-    - using the labels
+ - using the labels
       ![image](https://user-images.githubusercontent.com/75510135/124878936-4a7d5080-dfea-11eb-82dd-7037344e9485.png)
  
-    - using Template
+  - using Template
     ![image](https://user-images.githubusercontent.com/75510135/124880948-71d51d00-dfec-11eb-9f50-c38653906081.png)
     
     set variable values to check
@@ -80,7 +80,38 @@ cmd> helm create challenge # to create the chart
     cmd > helm template . -f values.yaml
     
    # REFERENCES
-    - More information on flow control with Helm: https://helm.sh/docs/chart_template_guide/control_structures/
+    - More information on flow control with Helm:
+    - https://helm.sh/docs/chart_template_guide/control_structures/
 
-    - Operators you can use with Helm: https://helm.sh/docs/chart_template_guide/functions_and_pipelines/#operators-are-functions
+    - Operators you can use with Helm: 
+    - https://helm.sh/docs/chart_template_guide/functions_and_pipelines/#operators-are-functions
 
+# Challenge 2
+![image](https://user-images.githubusercontent.com/75510135/124884296-c332db80-dfef-11eb-9bdf-d48c8a533114.png)
+
+![image](https://user-images.githubusercontent.com/75510135/124885771-3b4dd100-dff1-11eb-8c57-ff4071141ef6.png)
+
+![image](https://user-images.githubusercontent.com/75510135/124886670-17d75600-dff2-11eb-929e-9d90e6334545.png)
+
+
+![image](https://user-images.githubusercontent.com/75510135/124886569-fecea500-dff1-11eb-8f54-5061d4601c80.png)
+
+# CHart Museum
+> helm repo update
+> helm pull chatmuseum/name
+Where to get Chart Museum:
+- https://github.com/helm/chartmuseum
+
+If you have issues with the above link; please try the following:
+ - https://github.com/helm/chartmuseum#helm-chart
+
+More details on Chart Museum, useful for when deploying to different cloud platforms:
+ - https://github.com/helm/charts/tree/master/stable/chartmuseum
+```
+cmd > helm repo add cmuseum urlofApp
+cmd ? helm repo list
+cmd > helm repo update
+cmd > helm package . 
+
+API Commands Available: 
+- https://github.com/helm/chartmuseum
