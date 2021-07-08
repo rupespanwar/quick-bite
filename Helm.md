@@ -35,14 +35,17 @@ cmd > kubctl get deployments/deploy
 
 cmd> helm create challenge # to create the chart
    Note # template folder > keep service.yml n deployment.yml file
-   -  deployment.yml > change the label to app:apache
+   > helm install helmname .
+   > helm list
+   > minikube ip
+   > ip:portNumber # for testing
+   > helm uninstall helmname # to teardown the helm chart
+   - deployment.yml > change the label to app:apache
     ![image](https://user-images.githubusercontent.com/75510135/124870652-afcc4400-dfe0-11eb-85e8-3668b6d156d0.png)
 
-   -  service.yml
-    ![image](https://user-images.githubusercontent.com/75510135/124869127-64b13180-dfde-11eb-9c4a-28714718e0d0.png)
+   - service.yml
+   ![image](https://user-images.githubusercontent.com/75510135/124871029-28cb9b80-dfe1-11eb-9007-119495977656.png)
 
    - values.yml
-   - ![image](https://user-images.githubusercontent.com/75510135/124870504-772c6a80-dfe0-11eb-8f17-87d1ebc6401d.png)
-
-
+![image](https://user-images.githubusercontent.com/75510135/124871362-9677c780-dfe1-11eb-9bdf-cba31810bc83.png)
     
