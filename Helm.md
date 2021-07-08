@@ -111,7 +111,41 @@ More details on Chart Museum, useful for when deploying to different cloud platf
 cmd > helm repo add cmuseum urlofApp
 cmd ? helm repo list
 cmd > helm repo update
-cmd > helm package . 
+cmd > helm package .
+cmd > helm search repo reponame
+cmd > helm install chartname repo/chartname --version 1.0.0
+cmd > curl -x DELETE chartURL
+cmd > helm repo remove repoName
+
+```
+
+# Challenge 3
+![image](https://user-images.githubusercontent.com/75510135/124913156-6b569d80-e00c-11eb-9548-b77da892e25b.png)
+
+# Umbrella Chart
+- values for subchart
+![image](https://user-images.githubusercontent.com/75510135/124913917-58909880-e00d-11eb-9bad-28e0f1350f98.png)
+
+- global values
+![image](https://user-images.githubusercontent.com/75510135/124914244-c210a700-e00d-11eb-882e-c0610253cafc.png)
+
+- make changes in service.yaml
+![image](https://user-images.githubusercontent.com/75510135/124915583-53cce400-e00f-11eb-931e-9bfebe23f983.png)
+
+cmd > helm template umberlla # to validate
+
+- Dependency
+![image](https://user-images.githubusercontent.com/75510135/124916872-c5596200-e010-11eb-9384-e4e7f38083ae.png)
+
+cmd > helm dep list
+cmd > helm dep build 
+
+![image](https://user-images.githubusercontent.com/75510135/124917115-12d5cf00-e011-11eb-8e7d-6844fe74a945.png)
+
+
+
 
 API Commands Available: 
 - https://github.com/helm/chartmuseum
+
+
