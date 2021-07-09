@@ -15,8 +15,8 @@
 # Setup kubernetes
 <img width="1031" alt="image" src="https://user-images.githubusercontent.com/75510135/125042569-9ba74600-e0b7-11eb-94dc-a6389d5241c6.png">
 
-> minikube start
-> minikube dashboard
+- minikube start
+- minikube dashboard
 
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125043457-91d21280-e0b8-11eb-8486-f55d1cb5ea2c.png">
 
@@ -27,8 +27,8 @@
 # Run image into kubernetes
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125046865-08244400-e0bc-11eb-85da-5e4627311c3d.png">
 
-> kubctl apply -f yamlfile
-> kubctl get pods svc deploy
+- kubctl apply -f yamlfile
+- kubctl get pods svc deploy
 
 # Expose to Service(nodeport)
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125047920-0eff8680-e0bd-11eb-896f-2553dd5e18a8.png">
@@ -37,6 +37,34 @@
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125054861-46bdfc80-e0c4-11eb-8e5e-d636cb011676.png">
 
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125055576-f7c49700-e0c4-11eb-97cc-70379928c2c2.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125056078-80dbce00-e0c5-11eb-8966-16880a02c060.png">
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125056205-9fda6000-e0c5-11eb-8a55-26000174cd17.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125056142-8e915380-e0c5-11eb-92bd-115de4883ed0.png">
+
+# Env Var for SQL Server Connection String
+- original
+<img width="678" alt="image" src="https://user-images.githubusercontent.com/75510135/125059606-1f1d6300-e0c9-11eb-976b-77302f0575ca.png">
+- replaced
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125059438-f39a7880-e0c8-11eb-8bfc-ec6473714ea9.png">
+
+# Persistent Value & claim
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125060066-99e67e00-e0c9-11eb-894f-269146cb02d6.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125060192-b8e51000-e0c9-11eb-8e07-d842263f5eb3.png">
+
+* kubectl apply -f mssql-pv.yaml
+* kubect get pv
+
+* add the spec into SQL Server Deployment manifest file
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125060407-fa75bb00-e0c9-11eb-990b-334150042b30.png">
+
+* deploy SQL Server manifest again 
+* kubectl apply -f sqlserver.yaml
+
+
+
 
 
 
