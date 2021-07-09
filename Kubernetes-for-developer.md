@@ -12,3 +12,31 @@
 
 <img width="749" alt="image" src="https://user-images.githubusercontent.com/75510135/124965953-4ed45880-e040-11eb-8386-fece48db9e0d.png">
 
+# Setup kubernetes
+<img width="1031" alt="image" src="https://user-images.githubusercontent.com/75510135/125042569-9ba74600-e0b7-11eb-94dc-a6389d5241c6.png">
+
+> minikube start
+> minikube dashboard
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125043457-91d21280-e0b8-11eb-8486-f55d1cb5ea2c.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125043673-cc3baf80-e0b8-11eb-90c9-fbc83e29859c.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125044111-45d39d80-e0b9-11eb-9ab1-187768ca8b19.png">
+
+# Run image into kubernetes
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125046865-08244400-e0bc-11eb-85da-5e4627311c3d.png">
+
+> kubctl apply -f yamlfile
+> kubctl get pods svc deploy
+
+# Expose to Service(nodeport)
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125047920-0eff8680-e0bd-11eb-896f-2553dd5e18a8.png">
+
+# Deploy MS SQL Server on Kubernetes
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125054861-46bdfc80-e0c4-11eb-8e5e-d636cb011676.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125055576-f7c49700-e0c4-11eb-97cc-70379928c2c2.png">
+
+
+
