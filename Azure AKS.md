@@ -18,4 +18,15 @@
 
 # Template
 az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
-                                                                                
+  
+ -  To launch dashboard                                                                               
+<img width="1047" alt="image" src="https://user-images.githubusercontent.com/75510135/125069774-d075c600-e0d4-11eb-92ce-0ecadc06a27a.png">
+
+  <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125069891-fd29dd80-e0d4-11eb-8d88-9c1848d70085.png">
+
+ - List Kubernetes Worker Nodes
+    1. kubectl get nodes 
+    2. kubectl get nodes -o wide
+  
+# Create Azure Disk for Persistent Valume
+  <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125093678-2b68e680-e0f0-11eb-887e-84597a07945f.png">
