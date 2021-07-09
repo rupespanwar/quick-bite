@@ -28,3 +28,11 @@
 
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125102822-56a40380-e0f9-11eb-9767-2fad4c1c732f.png">
 
+- copy and publish yaml file
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125103263-cca86a80-e0f9-11eb-81eb-aa1d4f818903.png">
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125103902-6c65f880-e0fa-11eb-8836-81d3f9b656e1.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125103296-d5993c00-e0f9-11eb-8955-6a6ab93a61e4.png">
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125104167-b3ec8480-e0fa-11eb-9c54-d4335c9df1eb.png">
+
+
