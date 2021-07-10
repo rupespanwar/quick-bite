@@ -42,4 +42,32 @@
 - change in image path if FEAPP.yaml
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152077-087a1900-e168-11eb-9c76-dc6ed407af49.png">
 
+# Release Pipeline
+
+- create new pipeline 
+
+<img width="1508" alt="image" src="https://user-images.githubusercontent.com/75510135/125152177-97873100-e168-11eb-8676-a0640a12d984.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152226-d87f4580-e168-11eb-804e-c57d43493a38.png">
+- pull kubernetes config
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152284-3f046380-e169-11eb-8161-6cd583258a0b.png">
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152343-9e627380-e169-11eb-8416-6db5e85833b6.png">
+- run each yaml file separately - congifmap
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152433-1b8de880-e16a-11eb-9b1e-6e716a5c45f5.png">
+
+- then secret
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152453-45dfa600-e16a-11eb-84bd-e5ba3ab601b2.png">
+
+- next PV
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152491-86d7ba80-e16a-11eb-8d64-8e3b57adc403.png">
+
+- then SQL Server
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152501-99ea8a80-e16a-11eb-89a0-489d9cac6a9b.png">
+
+- lastly FE App
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152528-af5fb480-e16a-11eb-81b8-4295cbe07188.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152532-bab2e000-e16a-11eb-8f5d-dc676dd84c5f.png">
+
+
 
