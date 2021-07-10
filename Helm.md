@@ -149,3 +149,29 @@ API Commands Available:
 - https://github.com/helm/chartmuseum
 
 
+# Deploy Helm to kubernetes
+## Create n deploy Helm package
+- install Helm
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/75510135/125152887-81c83a80-e16d-11eb-91d6-c826282d8d0c.png">
+
+<img width="784" alt="image" src="https://user-images.githubusercontent.com/75510135/125152986-509c3a00-e16e-11eb-8147-e378b27d76ab.png">
+
+<img width="866" alt="image" src="https://user-images.githubusercontent.com/75510135/125153001-77f30700-e16e-11eb-953e-9cd62e093a48.png">
+
+<img width="969" alt="image" src="https://user-images.githubusercontent.com/75510135/125153022-9bb64d00-e16e-11eb-9ee3-904e938b8530.png">
+
+<img width="1002" alt="image" src="https://user-images.githubusercontent.com/75510135/125153139-5cd4c700-e16f-11eb-8eb2-fe465f3d941c.png">
+
+- create package
+<img width="804" alt="image" src="https://user-images.githubusercontent.com/75510135/125153164-7ece4980-e16f-11eb-806a-ef49cb985766.png">
+
+<img width="1291" alt="image" src="https://user-images.githubusercontent.com/75510135/125153337-9e19a680-e170-11eb-993b-fc7302d4365f.png">
+
+- helm install packagename
+# to instal SonarQube in kubernetes
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125153287-4e3adf80-e170-11eb-95e3-ac647075416a.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125153311-76c2d980-e170-11eb-8bf3-0ce588464400.png">
+
+
+
