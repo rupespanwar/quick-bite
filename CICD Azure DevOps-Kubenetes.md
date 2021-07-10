@@ -35,4 +35,11 @@
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125103296-d5993c00-e0f9-11eb-8955-6a6ab93a61e4.png">
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125104167-b3ec8480-e0fa-11eb-9c54-d4335c9df1eb.png">
 
+- Replace container tag , to replace the build id
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125151954-7d008800-e167-11eb-9ac2-e38f33d690ab.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152008-c5b84100-e167-11eb-9045-e8ba4c9786f9.png">
+- change in image path if FEAPP.yaml
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125152077-087a1900-e168-11eb-9c76-dc6ed407af49.png">
+
 
