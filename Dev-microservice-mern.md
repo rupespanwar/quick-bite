@@ -76,6 +76,11 @@
 
 <img width="825" alt="image" src="https://user-images.githubusercontent.com/75510135/125168852-0a25fa00-e1c5-11eb-96d1-aa31cebedab9.png">
 
-* Note add logic for above , refer github repo
+1. Note add logic for above , refer github repo
+  1. Create boiler plate code for Meoderation service
+  2. Add Status field in Comment service
+  3. Emit event from Moderation service
+  4. Comment service will check the status to approve or reject
+<img width="833" alt="image" src="https://user-images.githubusercontent.com/75510135/125179661-f2269880-e20d-11eb-8bfa-b0e16fe2dde5.png">
 
 
