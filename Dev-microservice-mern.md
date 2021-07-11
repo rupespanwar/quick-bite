@@ -77,10 +77,29 @@
 <img width="825" alt="image" src="https://user-images.githubusercontent.com/75510135/125168852-0a25fa00-e1c5-11eb-96d1-aa31cebedab9.png">
 
 1. Note add logic for above , refer github repo
-  1. Create boiler plate code for Meoderation service
-  2. Add Status field in Comment service
-  3. Emit event from Moderation service
-  4. Comment service will check the status to approve or reject
+    1. Create boiler plate code for Meoderation service
+    2. Add Status field in Comment service
+    3. Emit event from Moderation service
+    4. Comment service will check the status to approve or reject
+    5. lastly Query Service will parse the event and update the comment
 <img width="833" alt="image" src="https://user-images.githubusercontent.com/75510135/125179661-f2269880-e20d-11eb-8bfa-b0e16fe2dde5.png">
+
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/75510135/125179726-9a3c6180-e20e-11eb-99dc-5a5e5d877545.png">
+
+2. Dealing with Events
+
+<img width="887" alt="image" src="https://user-images.githubusercontent.com/75510135/125183860-46923e00-e237-11eb-9d3f-f35d0dd54814.png">
+
+<img width="916" alt="image" src="https://user-images.githubusercontent.com/75510135/125183896-8a854300-e237-11eb-8b78-c17f2fa9d99c.png">
+
+- solution - approach1
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/75510135/125183914-a4268a80-e237-11eb-8344-01f1de36df99.png">
+
+<img width="738" alt="image" src="https://user-images.githubusercontent.com/75510135/125184030-45154580-e238-11eb-8c4a-f7f67f23b9f5.png">
+<img width="798" alt="image" src="https://user-images.githubusercontent.com/75510135/125184107-cd93e600-e238-11eb-8c2a-9808cd06b8a2.png">
+
+
+
+
 
 
