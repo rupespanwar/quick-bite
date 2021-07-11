@@ -42,10 +42,14 @@ This course does not support the use of MicroK8s and will likely not work in the
 and Minikube for Linux users. If you choose to use MicroK8s you will need to do your own research and refactoring to resolve the issues that may arise.
 <img width="919" alt="image" src="https://user-images.githubusercontent.com/75510135/125190890-207f9480-e25d-11eb-9086-b691edaa5129.png">
 
-<img width="778" alt="image" src="https://user-images.githubusercontent.com/75510135/125191337-735a4b80-e25f-11eb-9162-44b6463f153b.png">
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/75510135/125191417-fa0f2880-e25f-11eb-919e-c85ce57266e0.png">
 
 - basic terms
 
 <img width="826" alt="image" src="https://user-images.githubusercontent.com/75510135/125191386-c16f4f00-e25f-11eb-90b4-ba534fb66ac8.png">
+
+- config files to create pods, svc, deployments
+
+<img width="789" alt="image" src="https://user-images.githubusercontent.com/75510135/125191497-5ffbb000-e260-11eb-98b1-d158c7a799c5.png">
 
 
