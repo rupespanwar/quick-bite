@@ -77,6 +77,45 @@
 
 <img width="616" alt="image" src="https://user-images.githubusercontent.com/75510135/125192513-e4046680-e265-11eb-9f12-e982fbbe7431.png">
 
+# Quick reference for POD specs
+
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/75510135/125192650-94726a80-e266-11eb-8732-df155e422c22.png">
+<img width="1174" alt="image" src="https://user-images.githubusercontent.com/75510135/125193028-11eaaa80-e268-11eb-90e4-cc2e4b5db72a.png">
+
+# Common KubeCtl Cmdlets
+<img width="908" alt="image" src="https://user-images.githubusercontent.com/75510135/125192884-840ebf80-e267-11eb-84a0-450044beaf0a.png">
+
+<img width="781" alt="image" src="https://user-images.githubusercontent.com/75510135/125192932-bb7d6c00-e267-11eb-8d15-6c6bb419d94f.png">
+
+# Create Deployment to spin up pods n manage
+<img width="661" alt="image" src="https://user-images.githubusercontent.com/75510135/125193360-a0136080-e269-11eb-9ced-ec4660c32b75.png">
+
+<img width="914" alt="image" src="https://user-images.githubusercontent.com/75510135/125193404-ecf73700-e269-11eb-849a-6437ac49ea8a.png">
+
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/75510135/125193670-401db980-e26b-11eb-9611-cba2785bd885.png">
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: posts-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: posts
+  template:
+    metadata:
+      labels:
+        app: posts
+    spec:
+      containers:
+        - name: posts
+          image:  rupeshpanwar/posts:0.0.1
+   ```
+   
+   <img width="868" alt="image" src="https://user-images.githubusercontent.com/75510135/125194039-23828100-e26d-11eb-9fcf-7f377903aa29.png">
+
 
 
 
