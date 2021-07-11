@@ -52,8 +52,19 @@
 
 <img width="577" alt="image" src="https://user-images.githubusercontent.com/75510135/125190533-4efc7000-e25b-11eb-971f-22858d745e62.png">
 
+- k8s deployment
 
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/75510135/125190890-207f9480-e25d-11eb-9086-b691edaa5129.png">
 
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/75510135/125191417-fa0f2880-e25f-11eb-919e-c85ce57266e0.png">
+
+- basic terms
+
+<img width="826" alt="image" src="https://user-images.githubusercontent.com/75510135/125191386-c16f4f00-e25f-11eb-90b4-ba534fb66ac8.png">
+
+- config files to create pods, svc, deployments
+
+<img width="789" alt="image" src="https://user-images.githubusercontent.com/75510135/125191500-62f6a080-e260-11eb-93e3-abb39e097948.png">
 
 
 
