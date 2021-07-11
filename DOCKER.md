@@ -9,6 +9,14 @@ https://docs.docker.com/engine/reference/commandline/build/#specifying-external-
 # To make an image , quick bite cmds
 <img width="733" alt="image" src="https://user-images.githubusercontent.com/75510135/125189765-5c176000-e257-11eb-8a77-8e2d6d151086.png">
 
+<img width="894" alt="image" src="https://user-images.githubusercontent.com/75510135/125190024-b82eb400-e258-11eb-8178-4f5c7adddf9b.png">
+
+<img width="726" alt="image" src="https://user-images.githubusercontent.com/75510135/125190033-c8469380-e258-11eb-91ea-b7ec231e07d3.png">
+<img width="965" alt="image" src="https://user-images.githubusercontent.com/75510135/125190094-0f348900-e259-11eb-8766-3a1f6bfa2aaf.png">
+
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/75510135/125190139-32f7cf00-e259-11eb-93c6-6907fdfa08ba.png">
+
+
 
 # Listing file in docker image
 <img width="417" alt="image" src="https://user-images.githubusercontent.com/75510135/123888162-82dcb900-d970-11eb-93d4-f21554750812.png">
