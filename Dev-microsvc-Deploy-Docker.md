@@ -27,3 +27,20 @@
 
 <img width="691" alt="image" src="https://user-images.githubusercontent.com/75510135/125186685-6d597000-e249-11eb-9271-a184fcaafd7c.png">
 
+# Create Dockerfile - POST service
+ - create .dockerignore file to avoid copying node_moudle
+
+<img width="428" alt="image" src="https://user-images.githubusercontent.com/75510135/125189876-f11a5900-e257-11eb-90c3-68f46f46f410.png">
+
+
+<img width="492" alt="image" src="https://user-images.githubusercontent.com/75510135/125189837-c3cdab00-e257-11eb-8ac1-c440e52279f9.png">
+
+- docker build .
+<img width="570" alt="image" src="https://user-images.githubusercontent.com/75510135/125189909-1e670700-e258-11eb-9bf4-8c8efdb17eb6.png">
+
+
+- run instance of above build docker image <= docker run  imageId
+<img width="913" alt="image" src="https://user-images.githubusercontent.com/75510135/125189933-43f41080-e258-11eb-9b14-57be29cc3a2c.png">
+
+
+
