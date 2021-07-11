@@ -52,4 +52,8 @@ and Minikube for Linux users. If you choose to use MicroK8s you will need to do 
 
 <img width="789" alt="image" src="https://user-images.githubusercontent.com/75510135/125191497-5ffbb000-e260-11eb-98b1-d158c7a799c5.png">
 
+- create n log pod using custom docker image
+<img width="616" alt="image" src="https://user-images.githubusercontent.com/75510135/125192503-d7800e00-e265-11eb-82e4-a70f3f31f32a.png">
+
+
 
