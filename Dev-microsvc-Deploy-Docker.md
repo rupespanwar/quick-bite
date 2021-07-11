@@ -67,5 +67,17 @@
 <img width="789" alt="image" src="https://user-images.githubusercontent.com/75510135/125191500-62f6a080-e260-11eb-93e3-abb39e097948.png">
 
 
+# Create a single POD first - POSTs service
+- first build docker image
+ - docker build -t rupeshpanwar/posts:0.0.1 .
+
+- docker images # to list the images
+<img width="1174" alt="image" src="https://user-images.githubusercontent.com/75510135/125191987-f29d4e80-e262-11eb-994f-2e10bd6963b4.png">
+- Create pod using above docker image 
+
+<img width="616" alt="image" src="https://user-images.githubusercontent.com/75510135/125192513-e4046680-e265-11eb-9f12-e982fbbe7431.png">
+
+
+
 
 
