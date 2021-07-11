@@ -51,3 +51,31 @@
 <img width="869" alt="image" src="https://user-images.githubusercontent.com/75510135/124768680-7d760480-df56-11eb-8083-2e5fd5c51600.png">
 
 
+- Query service , modify React App
+<img width="886" alt="image" src="https://user-images.githubusercontent.com/75510135/125166093-96c9bb80-e1b7-11eb-957d-b54940dd7b22.png">
+
+- ADD a simple feature- comment moderation - to flag for a word 
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/75510135/125167891-5c185100-e1c0-11eb-82ab-d2096194013e.png">
+
+<img width="847" alt="image" src="https://user-images.githubusercontent.com/75510135/125168027-05f7dd80-e1c1-11eb-8c54-16d597b685d4.png">
+
+- approach 1 - Moderation service
+<img width="768" alt="image" src="https://user-images.githubusercontent.com/75510135/125168382-f1b4e000-e1c2-11eb-84f0-6227f28e8b7c.png">
+
+- approach 2
+<img width="778" alt="image" src="https://user-images.githubusercontent.com/75510135/125168576-cf6f9200-e1c3-11eb-895a-3062cc567d2b.png">
+
+<img width="620" alt="image" src="https://user-images.githubusercontent.com/75510135/125168634-0fcf1000-e1c4-11eb-9e6e-626990c23668.png">
+
+<img width="334" alt="image" src="https://user-images.githubusercontent.com/75510135/125168653-25dcd080-e1c4-11eb-8711-a4c4f9195c8b.png">
+
+<img width="917" alt="image" src="https://user-images.githubusercontent.com/75510135/125168664-312ffc00-e1c4-11eb-9615-13f2a0638127.png">
+
+
+<img width="878" alt="image" src="https://user-images.githubusercontent.com/75510135/125168777-b7e4d900-e1c4-11eb-8b65-f645babcca14.png">
+
+<img width="825" alt="image" src="https://user-images.githubusercontent.com/75510135/125168852-0a25fa00-e1c5-11eb-96d1-aa31cebedab9.png">
+
+* Note add logic for above , refer github repo
+
+
