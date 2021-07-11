@@ -42,5 +42,19 @@
 - run instance of above build docker image <= docker run  imageId
 <img width="913" alt="image" src="https://user-images.githubusercontent.com/75510135/125189933-43f41080-e258-11eb-9b14-57be29cc3a2c.png">
 
+<img width="726" alt="image" src="https://user-images.githubusercontent.com/75510135/125190038-cb418400-e258-11eb-84e4-613e5c975fa7.png">
+
+<img width="965" alt="image" src="https://user-images.githubusercontent.com/75510135/125190098-12c81000-e259-11eb-93f3-84ed20c3cd61.png">
+
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/75510135/125190149-35f2bf80-e259-11eb-9fc7-bcefd5d42074.png">
+
+- create similiar Dockerfile, .dockerignore for all the microservices 
+
+<img width="577" alt="image" src="https://user-images.githubusercontent.com/75510135/125190533-4efc7000-e25b-11eb-971f-22858d745e62.png">
+
+
+
+
+
 
 
