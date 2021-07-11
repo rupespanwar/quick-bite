@@ -6,6 +6,9 @@ https://docs.docker.com/develop/develop-images/build_enhancements/
 
 https://docs.docker.com/engine/reference/commandline/build/#specifying-external-cache-sources
 
+# To make an image , quick bite cmds
+<img width="733" alt="image" src="https://user-images.githubusercontent.com/75510135/125189765-5c176000-e257-11eb-8a77-8e2d6d151086.png">
+
 
 # Listing file in docker image
 <img width="417" alt="image" src="https://user-images.githubusercontent.com/75510135/123888162-82dcb900-d970-11eb-93d4-f21554750812.png">
