@@ -201,10 +201,20 @@ spec:
 
 - update in the POST service app
 
+<img width="911" alt="image" src="https://user-images.githubusercontent.com/75510135/125269736-a0256600-e326-11eb-800e-cfaaceca07b2.png">
+
+<img width="930" alt="image" src="https://user-images.githubusercontent.com/75510135/125269835-b6332680-e326-11eb-867e-167b3c077ad1.png">
+
+
 <img width="1023" alt="image" src="https://user-images.githubusercontent.com/75510135/125268388-48d2c600-e325-11eb-8189-ed00eba91589.png">
 
 <img width="1139" alt="image" src="https://user-images.githubusercontent.com/75510135/125269423-4de44500-e326-11eb-8e67-c3d5b08b7186.png">
 <img width="760" alt="image" src="https://user-images.githubusercontent.com/75510135/125269547-6eac9a80-e326-11eb-8b16-771eff36aad1.png">
+
+# Testing - via postman
+
+
+![Uploading image.png…]()
 
 
 
