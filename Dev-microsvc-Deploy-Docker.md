@@ -137,6 +137,58 @@ spec:
 * Rollout the deployment
 <img width="810" alt="image" src="https://user-images.githubusercontent.com/75510135/125217160-a3483400-e2dd-11eb-89ca-35c6b6514001.png">
 
+ # Service - Networking
+ <img width="737" alt="image" src="https://user-images.githubusercontent.com/75510135/125217529-7f392280-e2de-11eb-942f-40c7e5984079.png">
+
+<img width="685" alt="image" src="https://user-images.githubusercontent.com/75510135/125217700-ec4cb800-e2de-11eb-8a53-809e22835b28.png">
+
+<img width="702" alt="image" src="https://user-images.githubusercontent.com/75510135/125217716-f66eb680-e2de-11eb-85fc-071cc282db94.png">
+
+<img width="739" alt="image" src="https://user-images.githubusercontent.com/75510135/125217825-3d5cac00-e2df-11eb-9c41-ea1011373fd3.png">
+
+
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/75510135/125217893-62e9b580-e2df-11eb-9616-7096f0745bf5.png">
+
+# Port visitbilty via Service
+<img width="923" alt="image" src="https://user-images.githubusercontent.com/75510135/125233639-a1419d80-e2fc-11eb-9edb-412a7d5d09cc.png">
+
+<img width="563" alt="image" src="https://user-images.githubusercontent.com/75510135/125234016-67bd6200-e2fd-11eb-9b61-a2b888497909.png">
+
+- note down NodePort # 30XXXX
+<img width="922" alt="image" src="https://user-images.githubusercontent.com/75510135/125234211-db5f6f00-e2fd-11eb-93b5-8031f7dda659.png">
+
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/75510135/125234387-3c874280-e2fe-11eb-9dd6-0c05bb92b11b.png">
+
+<img width="794" alt="image" src="https://user-images.githubusercontent.com/75510135/125234409-4dd04f00-e2fe-11eb-9733-10ae275e18f3.png">
+
+<img width="678" alt="image" src="https://user-images.githubusercontent.com/75510135/125236138-17e09a00-e301-11eb-89e1-4d1ad67e261a.png">
+
+<img width="709" alt="image" src="https://user-images.githubusercontent.com/75510135/125237475-6131e900-e303-11eb-9666-b4b39478cf5c.png">
+
+# Steps to build Deployment and cluster IP service
+- docker build -t rupeshpanwar/event-bus .
+- docker push rupeshpanwar/event-bus
+- create event-bus deployment file
+- kubectl apply -f event-bus.depl.yaml
+- kubectl get pods
+
+
+
+<img width="630" alt="image" src="https://user-images.githubusercontent.com/75510135/125237651-ac4bfc00-e303-11eb-959c-28597895cdb4.png">
+
+<img width="892" alt="image" src="https://user-images.githubusercontent.com/75510135/125239484-588ee200-e306-11eb-9481-38f7e318c090.png">
+
+<img width="732" alt="image" src="https://user-images.githubusercontent.com/75510135/125239805-d3f09380-e306-11eb-8fbd-595507a67602.png">
+
+<img width="651" alt="image" src="https://user-images.githubusercontent.com/75510135/125242925-f97f9c00-e30a-11eb-9ef6-fc65231d59b9.png">
+
+<img width="642" alt="image" src="https://user-images.githubusercontent.com/75510135/125242904-ed93da00-e30a-11eb-8f21-b426632c12e5.png">
+
+<img width="786" alt="image" src="https://user-images.githubusercontent.com/75510135/125242859-dead2780-e30a-11eb-8ed1-b41451fc1029.png">
+
+<img width="617" alt="image" src="https://user-images.githubusercontent.com/75510135/125243230-70b53000-e30b-11eb-8874-2af342445e67.png">
+
+<img width="821" alt="image" src="https://user-images.githubusercontent.com/75510135/125243345-993d2a00-e30b-11eb-8017-68eda3e9fdcc.png">
 
 
 
