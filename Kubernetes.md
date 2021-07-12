@@ -131,7 +131,41 @@ https://minikube.sigs.k8s.io/docs/commands/docker-env/
 - include "LATEST" tag with image or dont include , docker will assume to pick the latest
      <img width="581" alt="image" src="https://user-images.githubusercontent.com/75510135/125215628-a7725280-e2d9-11eb-9dc7-08c5044a1533.png">
 
-     
+ # Service - Networking
+ <img width="737" alt="image" src="https://user-images.githubusercontent.com/75510135/125217529-7f392280-e2de-11eb-942f-40c7e5984079.png">
+
+<img width="685" alt="image" src="https://user-images.githubusercontent.com/75510135/125217695-e9ea5e00-e2de-11eb-935a-c41dc94222f6.png">
+
+<img width="702" alt="image" src="https://user-images.githubusercontent.com/75510135/125217714-f40c5c80-e2de-11eb-9a4b-6fb1a59b1fce.png">
+
+<img width="739" alt="image" src="https://user-images.githubusercontent.com/75510135/125217819-39c92500-e2df-11eb-8bc0-6b4713c86000.png">
+
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/75510135/125217882-5feec500-e2df-11eb-86ab-af2ac9ebfebf.png">
+
+# Port exposed via Service
+
+<img width="923" alt="image" src="https://user-images.githubusercontent.com/75510135/125233650-a999d880-e2fc-11eb-9ef3-b3bf348f6f5e.png">
+
+<img width="563" alt="image" src="https://user-images.githubusercontent.com/75510135/125234011-655b0800-e2fd-11eb-928a-24efdc558866.png">
+
+- note down NodePort # 30XXXX
+<img width="922" alt="image" src="https://user-images.githubusercontent.com/75510135/125234211-db5f6f00-e2fd-11eb-93b5-8031f7dda659.png">
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/75510135/125234382-3a24e880-e2fe-11eb-824b-7ab1e705e62e.png">
+
+<img width="794" alt="image" src="https://user-images.githubusercontent.com/75510135/125234416-5032a900-e2fe-11eb-8896-e3f0f7fd3822.png">
+
+<img width="678" alt="image" src="https://user-images.githubusercontent.com/75510135/125236130-157e4000-e301-11eb-868d-88591e75b43a.png">
+
+<img width="709" alt="image" src="https://user-images.githubusercontent.com/75510135/125237487-642cd980-e303-11eb-9d40-0b3e409b73c5.png">
+
+<img width="892" alt="image" src="https://user-images.githubusercontent.com/75510135/125239496-5cbaff80-e306-11eb-8bd9-f153c466b945.png">
+
+<img width="786" alt="image" src="https://user-images.githubusercontent.com/75510135/125242859-dead2780-e30a-11eb-8ed1-b41451fc1029.png">
+
+
+
+
+
 
 
 
