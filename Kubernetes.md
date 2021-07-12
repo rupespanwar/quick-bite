@@ -56,4 +56,88 @@ and Minikube for Linux users. If you choose to use MicroK8s you will need to do 
 <img width="616" alt="image" src="https://user-images.githubusercontent.com/75510135/125192503-d7800e00-e265-11eb-82e4-a70f3f31f32a.png">
 
 
+ErrImagePull, ErrImageNeverPull and ImagePullBackoff Errors
+
+If your pods are showing ErrImagePull, ErrImageNeverPull, or ImagePullBackOff errors after running kubectl apply, the simplest solution is to provide an imagePullPolicy to the pod.
+
+First, run kubectl delete -f infra/k8s/
+
+Then, update your pod manifest:
+
+    spec:
+      containers:
+        - name: posts
+          image: cygnet/posts:0.0.1
+          imagePullPolicy: Never
+
+Then, run kubectl apply -f infra/k8s/
+
+This will ensure that Kubernetes will use the image built locally from your image cache instead of attempting to pull from a registry.
+
+Minikube Users:
+
+If you are using a vm driver, you will need to tell Kubernetes to use the Docker daemon running inside of the single node cluster instead of the host.
+
+Run the following command:
+
+eval $(minikube docker-env)
+
+Note - This command will need to be repeated anytime you close and restart the terminal session.
+
+Afterward, you can build your image:
+
+docker build -t USERNAME/REPO .
+
+Update, your pod manifest as shown above and then run:
+
+kubectl apply -f infra/k8s/
+
+https://minikube.sigs.k8s.io/docs/commands/docker-env/
+
+# Quick note for POD yaml 
+<img width="842" alt="image" src="https://user-images.githubusercontent.com/75510135/125192619-6ee56100-e266-11eb-805b-48a578dac6f7.png">
+<img width="1174" alt="image" src="https://user-images.githubusercontent.com/75510135/125193017-0b5c3300-e268-11eb-8d4a-fe5bc906a9f8.png">
+
+# Deployment - to create POD n manage, 2 purpose
+<img width="661" alt="image" src="https://user-images.githubusercontent.com/75510135/125193349-95f16200-e269-11eb-9631-43bcdae39bce.png">
+
+<img width="914" alt="image" src="https://user-images.githubusercontent.com/75510135/125193397-e1a40b80-e269-11eb-9e32-ebd0fa9d9efb.png">
+
+
+
+# Common KubeCtl Cmdlets
+<img width="908" alt="image" src="https://user-images.githubusercontent.com/75510135/125192879-8244fc00-e267-11eb-8519-0620e357ff89.png">
+
+<img width="781" alt="image" src="https://user-images.githubusercontent.com/75510135/125192930-b91b1200-e267-11eb-9379-e2b887aebde5.png">
+
+
+# Create Deployment to spin up pods n manage
+<img width="661" alt="image" src="https://user-images.githubusercontent.com/75510135/125193360-a0136080-e269-11eb-9ced-ec4660c32b75.png">
+
+<img width="914" alt="image" src="https://user-images.githubusercontent.com/75510135/125193404-ecf73700-e269-11eb-849a-6437ac49ea8a.png">
+
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/75510135/125193670-401db980-e26b-11eb-9611-cba2785bd885.png">
+
+<img width="868" alt="image" src="https://user-images.githubusercontent.com/75510135/125194052-339a6080-e26d-11eb-82b0-327f4aea39d1.png">
+
+<img width="903" alt="image" src="https://user-images.githubusercontent.com/75510135/125194090-62b0d200-e26d-11eb-86a4-afc718c926e8.png">
+
+# Updating the application via Deployment
+- Approach 1
+<img width="878" alt="image" src="https://user-images.githubusercontent.com/75510135/125215241-76455280-e2d8-11eb-8527-c4e2b3ad627a.png">
+
+- Approach 2
+<img width="820" alt="image" src="https://user-images.githubusercontent.com/75510135/125215562-83167600-e2d9-11eb-98f2-3b7a8a925544.png"
+- include "LATEST" tag with image or dont include , docker will assume to pick the latest
+     <img width="581" alt="image" src="https://user-images.githubusercontent.com/75510135/125215628-a7725280-e2d9-11eb-9dc7-08c5044a1533.png">
+
+     
+
+
+
+
+
+
+
+
 
