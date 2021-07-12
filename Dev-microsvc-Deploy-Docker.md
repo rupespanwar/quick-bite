@@ -190,6 +190,25 @@ spec:
 
 <img width="821" alt="image" src="https://user-images.githubusercontent.com/75510135/125243345-993d2a00-e30b-11eb-8017-68eda3e9fdcc.png">
 
+# Now update Service Name in Posts and vice versa to access the endpoint 
+<img width="815" alt="image" src="https://user-images.githubusercontent.com/75510135/125243945-59c30d80-e30c-11eb-941b-09e36f7ed435.png">
+
+<img width="899" alt="image" src="https://user-images.githubusercontent.com/75510135/125244004-6c3d4700-e30c-11eb-9bc7-359ca8efcef9.png">
+
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/75510135/125244080-8414cb00-e30c-11eb-8d6b-d88bfd66069c.png">
+
+<img width="862" alt="image" src="https://user-images.githubusercontent.com/75510135/125244159-9db61280-e30c-11eb-8bf1-8d2cdf6a3546.png">
+
+- update in the POST service app
+
+<img width="1023" alt="image" src="https://user-images.githubusercontent.com/75510135/125268388-48d2c600-e325-11eb-8189-ed00eba91589.png">
+
+<img width="1139" alt="image" src="https://user-images.githubusercontent.com/75510135/125269423-4de44500-e326-11eb-8e67-c3d5b08b7186.png">
+<img width="760" alt="image" src="https://user-images.githubusercontent.com/75510135/125269547-6eac9a80-e326-11eb-8b16-771eff36aad1.png">
+
+
+
+
 
 
 
