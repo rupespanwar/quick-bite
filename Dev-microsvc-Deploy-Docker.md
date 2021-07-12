@@ -116,6 +116,35 @@ spec:
    
    <img width="868" alt="image" src="https://user-images.githubusercontent.com/75510135/125194039-23828100-e26d-11eb-9fcf-7f377903aa29.png">
 
+<img width="903" alt="image" src="https://user-images.githubusercontent.com/75510135/125194096-680e1c80-e26d-11eb-8833-4a09131809ac.png">
+
+# Updating the application via Deployment
+<img width="878" alt="image" src="https://user-images.githubusercontent.com/75510135/125215249-7f362400-e2d8-11eb-90eb-547933731676.png">
+- Approach 2
+<img width="820" alt="image" src="https://user-images.githubusercontent.com/75510135/125215589-8f023800-e2d9-11eb-9a39-8becae188944.png">
+- Include "*LATEST" tag with image or dont include , docker will assume automatically
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/75510135/125215671-b953f580-e2d9-11eb-8c07-f7fedaeee412.png">
+
+
+* Step1: untag image
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/75510135/125216048-983fd480-e2da-11eb-940e-8f287b5eb15c.png">
+* Step2: build new docker image
+<img width="1225" alt="image" src="https://user-images.githubusercontent.com/75510135/125216258-392e8f80-e2db-11eb-99ad-9c8fafeda03e.png">
+
+* Step3: push the docker image to Docker Registry
+
+<img width="834" alt="image" src="https://user-images.githubusercontent.com/75510135/125216355-8f9bce00-e2db-11eb-90af-ceb57b64cd87.png">
+* Rollout the deployment
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/75510135/125217160-a3483400-e2dd-11eb-89ca-35c6b6514001.png">
+
+
+
+
+
+
+
+
+
 
 
 
