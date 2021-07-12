@@ -211,10 +211,9 @@ spec:
 <img width="1139" alt="image" src="https://user-images.githubusercontent.com/75510135/125269423-4de44500-e326-11eb-8e67-c3d5b08b7186.png">
 <img width="760" alt="image" src="https://user-images.githubusercontent.com/75510135/125269547-6eac9a80-e326-11eb-8b16-771eff36aad1.png">
 
-# Testing - via postman
 
 
-![Uploading image.png…]()
+
 
 
 
