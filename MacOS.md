@@ -28,3 +28,5 @@ Open Visual Studio Code and press Command + Shift + P or F1 then type Shell in c
 
 <img width="507" alt="image" src="https://user-images.githubusercontent.com/75510135/125458435-db281d51-8fd6-4c83-afaa-19a7c1f7024e.png">
 
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/75510135/125458608-e51d3db2-0769-4e41-93b9-6d9b8a377545.png">
+
