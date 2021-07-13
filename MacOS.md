@@ -10,3 +10,5 @@ The procedure is as follows:
     Open the terminal app again and verify that bash is your default shell.
 
 
+# How to set Code as default editor
+Open Visual Studio Code and press Command + Shift + P or F1 then type Shell in command palette now you are able to find this option like Shell Command : Install code in PATH from suggested list in command palette. Select that options.
