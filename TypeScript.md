@@ -9,3 +9,8 @@
 
 <img width="687" alt="image" src="https://user-images.githubusercontent.com/75510135/125455320-aa8478bb-1fcb-435d-9522-ecb5a0913235.png">
 
+# Installation 
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/125456226-d769617f-bd86-4986-bb1a-ba9b78ca04fe.png">
+
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/75510135/125456889-a0c23f94-2f8e-45a4-9f32-6f6e8635f251.png">
+
