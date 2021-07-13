@@ -14,3 +14,14 @@
 
 <img width="545" alt="image" src="https://user-images.githubusercontent.com/75510135/125456889-a0c23f94-2f8e-45a4-9f32-6f6e8635f251.png">
 
+# first app
+<img width="711" alt="image" src="https://user-images.githubusercontent.com/75510135/125458758-f36c4812-84d5-46fc-afeb-6cdbff636244.png">
+
+<img width="707" alt="image" src="https://user-images.githubusercontent.com/75510135/125458889-0301b2fd-f178-45a0-8ed1-0ce430aafb88.png">
+
+<img width="779" alt="image" src="https://user-images.githubusercontent.com/75510135/125458996-e71981e9-8622-41c1-ac19-29f8f3b2bd40.png">
+
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/75510135/125459040-905d71b3-ac43-481e-86b9-2ae70bf5f9d6.png">
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/75510135/125459112-2a38ff06-a4ad-4376-a817-dccf97bc452d.png">
+
+
