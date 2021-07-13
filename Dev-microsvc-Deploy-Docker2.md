@@ -41,6 +41,60 @@
 
 <img width="591" alt="image" src="https://user-images.githubusercontent.com/75510135/125302285-6e71c680-e349-11eb-982d-a1f89fdea635.png">
 
+# Bring React app to container
+
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/75510135/125326839-1d210180-e360-11eb-8e26-8ea13734b000.png">
+
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/75510135/125327021-4c377300-e360-11eb-930b-6c2e51544bce.png">
+
+<img width="932" alt="image" src="https://user-images.githubusercontent.com/75510135/125327157-6d985f00-e360-11eb-961b-7fb9782659d1.png">
+
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/75510135/125327284-90c30e80-e360-11eb-9251-45290c6d3fbe.png">
+
+<img width="836" alt="image" src="https://user-images.githubusercontent.com/75510135/125327648-f57e6900-e360-11eb-9f9b-207998eb930d.png">
+
+
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/75510135/125328326-d207ee00-e361-11eb-8909-c14169111e94.png">
+
+<img width="891" alt="image" src="https://user-images.githubusercontent.com/75510135/125328589-20b58800-e362-11eb-84c0-d66dcaab2fd1.png">
+
+Update on Ingress Nginx Mandatory Commands
+
+In the upcoming lecture, we will be installing Ingress Nginx. In the video, it is shown that there is a required mandatory command that needed to be run for all providers. This has since been removed, so, the provider-specific commands (Docker Desktop, Minikube, etc) are all that is required.
+
+https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps
+
+# Ingress controller
+Update on Ingress Nginx Mandatory Commands
+
+In the upcoming lecture, we will be installing Ingress Nginx. In the video, it is shown that there is a required mandatory command that needed to be run for all providers. This has since been removed, so, the provider-specific commands (Docker Desktop, Minikube, etc) are all that is required.
+
+https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps
+
+# Load balancer
+<img width="907" alt="image" src="https://user-images.githubusercontent.com/75510135/125389130-59834a80-e3be-11eb-85df-0dc38c11821b.png">
+
+<img width="610" alt="image" src="https://user-images.githubusercontent.com/75510135/125389199-761f8280-e3be-11eb-8323-b13bc00ad5e6.png">
+
+<img width="662" alt="image" src="https://user-images.githubusercontent.com/75510135/125389325-a8c97b00-e3be-11eb-8d8b-d13d71685b1e.png">
+
+- installation https://kubernetes.github.io/ingress-nginx/deploy/
+- step1 # kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.47.0/deploy/static/provider/cloud/deploy.yaml
+- step2 # 
+
+# Writing Ingress config file
+<img width="879" alt="image" src="https://user-images.githubusercontent.com/75510135/125398440-ef25d680-e3cc-11eb-82ce-ecb144a08951.png">
+
+<img width="949" alt="image" src="https://user-images.githubusercontent.com/75510135/125399701-98b99780-e3ce-11eb-90c1-3505cadbd609.png">
+
+<img width="758" alt="image" src="https://user-images.githubusercontent.com/75510135/125400469-89871980-e3cf-11eb-90ad-80144bbf266f.png">
+- final Ingress config file
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/75510135/125404187-fbf9f880-e3d3-11eb-8a27-d2fa34aaf30a.png">
+
+
+
+
+
 
 
 
