@@ -144,6 +144,144 @@ Then save the file.  That's it!  Continue on to the next video.
  kubectl apply -f client-depl.yaml 
 ```
 
+# Routes for different application components
+<img width="579" alt="image" src="https://user-images.githubusercontent.com/75510135/125412558-a8d87380-e3dc-11eb-8298-d95c280c2e41.png">
+
+<img width="584" alt="image" src="https://user-images.githubusercontent.com/75510135/125413054-a59b5a9d-1f0b-4ac1-ba66-b529c011ef3a.png">
+
+- change the routes in Client app and respective application
+
+<img width="911" alt="image" src="https://user-images.githubusercontent.com/75510135/125413190-b4b503f7-07ac-411b-9b43-60f4a748f053.png">
+<img width="940" alt="image" src="https://user-images.githubusercontent.com/75510135/125413255-3d3594fa-029e-4f46-a161-7a19d2106708.png">
+
+- build docker image for client then for posts
+- deploy the manifest for client then for posts
+<img width="464" alt="image" src="https://user-images.githubusercontent.com/75510135/125415798-d4f0937a-042f-4ec8-b85f-03cd1d68ec87.png">
+<img width="542" alt="image" src="https://user-images.githubusercontent.com/75510135/125415851-84f30453-2eab-4992-aa84-85b48629a9c3.png">
+
+# final routing config
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/75510135/125416068-0d35bb28-d535-4170-8254-08cde1cbb898.png">
+
+
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/75510135/125416445-505ef13f-cf26-4c97-9fbf-095ac5ecbd2e.png">
+
+<img width="745" alt="image" src="https://user-images.githubusercontent.com/75510135/125416783-a463fd6f-2b77-4438-8488-e144318fdd5b.png">
+
+- apply ingress file again to rollout new changes[ kubectl apply -f ingress-srv.yml]
+```
+  519  kubectl apply -f ingress-srv.yml 
+  520  kubectl get pods
+  521  kubectl get deploy
+  ```
+
+
+# Skaffold
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/75510135/125419339-e62b96af-e5ef-4af6-a33a-bca76f3c4a86.png">
+<img width="1014" alt="image" src="https://user-images.githubusercontent.com/75510135/125419588-1082dc46-9a9f-4aeb-98a2-6c2ee663a619.png">
+
+<img width="665" alt="image" src="https://user-images.githubusercontent.com/75510135/125429689-fd25dbe1-6341-4448-8da7-b933c79f0a7b.png">
+
+<img width="733" alt="image" src="https://user-images.githubusercontent.com/75510135/125429874-aae70f5f-33f5-4a1c-91df-bb899f24c2e2.png">
+- skaffold.yaml
+
+```
+apiVersion: skaffold/v2alpha3
+kind: Config
+deploy:
+  kubectl:
+    manifests:
+      - ./infra/k8s/*
+build:
+  local:
+    push: false
+  artifacts:
+    - image:  rupeshpanwar/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.js'
+            dest: .
+    - image:  rupeshpanwar/comments
+      context: comments
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '*.js'
+            dest: .
+    - image:  rupeshpanwar/event-bus
+      context: event-bus
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '*.js'
+            dest: .
+    - image:  rupeshpanwar/moderation
+      context: moderation
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '*.js'
+            dest: .
+    - image:  rupeshpanwar/posts
+      context: posts
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '*.js'
+            dest: .
+    - image:  rupeshpanwar/query
+      context: query
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '*.js'
+            dest: .
+            
+     ```
+
+- skaffold dev
+
+blog $ skaffold dev
+Listing files to watch...
+ - rupeshpanwar/client
+ - rupeshpanwar/comments
+ - rupeshpanwar/event-bus
+ - rupeshpanwar/moderation
+ - rupeshpanwar/posts
+ - rupeshpanwar/query
+Generating tags...
+ - rupeshpanwar/client -> rupeshpanwar/client:255b786
+ - rupeshpanwar/comments -> rupeshpanwar/comments:255b786
+ - rupeshpanwar/event-bus -> rupeshpanwar/event-bus:255b786
+ - rupeshpanwar/moderation -> rupeshpanwar/moderation:255b786
+ - rupeshpanwar/posts -> rupeshpanwar/posts:255b786
+ - rupeshpanwar/query -> rupeshpanwar/query:255b786
+Checking cache...
+ - rupeshpanwar/client: Not found. Building
+ - rupeshpanwar/comments: Not found. Building
+ - rupeshpanwar/event-bus: Not found. Building
+ - rupeshpanwar/moderation: Not found. Building
+ - rupeshpanwar/posts: Not found. Building
+ - rupeshpanwar/query: Not found. Building
+Starting build...
+Found [docker-desktop] context, using local docker daemon.
+Building [rupeshpanwar/query]...
+
+
+
+
+
+
+
+
+
 
 
 
