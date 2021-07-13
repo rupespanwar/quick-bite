@@ -270,6 +270,20 @@ https://www.udemy.com/course/microservices-with-node-js-and-react/learn/lecture/
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/75510135/125404176-f8667180-e3d3-11eb-9fa9-e301c9217fdf.png">
 
 
+# Routes for different application components
+<img width="579" alt="image" src="https://user-images.githubusercontent.com/75510135/125412558-a8d87380-e3dc-11eb-8298-d95c280c2e41.png">
+
+# final routing config
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/75510135/125416068-0d35bb28-d535-4170-8254-08cde1cbb898.png">
+
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/75510135/125416465-91cd0e57-8181-43b0-ae64-048c25741741.png">
+
+
+# Skaffold
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/75510135/125419339-e62b96af-e5ef-4af6-a33a-bca76f3c4a86.png">
+<img width="1014" alt="image" src="https://user-images.githubusercontent.com/75510135/125419598-2849c477-dc3e-4f95-a2c8-a77156f45818.png">
+
+
 
 
 
