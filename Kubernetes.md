@@ -164,6 +164,118 @@ https://minikube.sigs.k8s.io/docs/commands/docker-env/
 
 
 
+# Bring React app to container
+
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/75510135/125326839-1d210180-e360-11eb-8e26-8ea13734b000.png">
+
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/75510135/125327021-4c377300-e360-11eb-930b-6c2e51544bce.png">
+
+<img width="932" alt="image" src="https://user-images.githubusercontent.com/75510135/125327157-6d985f00-e360-11eb-961b-7fb9782659d1.png">
+
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/75510135/125327284-90c30e80-e360-11eb-9251-45290c6d3fbe.png">
+
+
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/75510135/125328339-d6340b80-e361-11eb-847e-bca54375ac77.png">
+
+<img width="891" alt="image" src="https://user-images.githubusercontent.com/75510135/125328594-24490f00-e362-11eb-9e64-0b28e3dbd284.png">
+
+Update on Ingress Nginx Mandatory Commands
+
+In the upcoming lecture, we will be installing Ingress Nginx. In the video, it is shown that there is a required mandatory command that needed to be run for all providers. This has since been removed, so, the provider-specific commands (Docker Desktop, Minikube, etc) are all that is required.
+
+https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps
+
+
+# Ingress controller
+Update on Ingress Nginx Mandatory Commands
+
+In the upcoming lecture, we will be installing Ingress Nginx. In the video, it is shown that there is a required mandatory command that needed to be run for all providers. This has since been removed, so, the provider-specific commands (Docker Desktop, Minikube, etc) are all that is required.
+
+https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps
+
+# Load balancer
+<img width="907" alt="image" src="https://user-images.githubusercontent.com/75510135/125389130-59834a80-e3be-11eb-85df-0dc38c11821b.png">
+<img width="610" alt="image" src="https://user-images.githubusercontent.com/75510135/125389203-77e94600-e3be-11eb-8d79-f090e84a6ad7.png">
+
+<img width="662" alt="image" src="https://user-images.githubusercontent.com/75510135/125389312-a404c700-e3be-11eb-8b07-8939a7060126.png">
+
+<img width="841" alt="image" src="https://user-images.githubusercontent.com/75510135/125389390-c1d22c00-e3be-11eb-930a-150e8c254372.png">
+
+- installation of ingnx https://kubernetes.github.io/ingress-nginx/deploy/
+
+Ingress - networking.k8s.io/v1beta1 Ingress is deprecated
+
+When running kubectl apply in the upcoming lecture you may encounter a warning about the v1beta1 API version that is being used:
+
+Warning: networking.k8s.io/v1beta1 Ingress is deprecated in v1.19+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
+
+To be clear, any changes to the Ingress will be optional and this API will be supported until Kubernetes v1.22. If you are currently experiencing any errors or issues with your Ingress this warning is not the cause of it.
+
+If you wish to update to the v1 API, only a few very minor changes are needed:
+
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+Notably, a pathType needs to be added, and how we specify the backend service name and port has changed:
+```
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      name: ingress-srv
+      annotations:
+        kubernetes.io/ingress.class: nginx
+    spec:
+      rules:
+        - host: posts.com
+          http:
+            paths:
+              - path: /posts
+                pathType: Prefix
+                backend:
+                  service:
+                    name: posts-clusterip-srv
+                    port:
+                      number: 4000
+```
+
+While the old API is still supported we will include a separate v1 Ingress file attached to each appropriate lecture that students can refer to.
+# Writing ingress config file
+<img width="879" alt="image" src="https://user-images.githubusercontent.com/75510135/125398401-e503d800-e3cc-11eb-9ce7-b9f17d8ca430.png">
+
+<img width="949" alt="image" src="https://user-images.githubusercontent.com/75510135/125399709-9a835b00-e3ce-11eb-95fe-89e239b9741d.png">
+
+Important Note About Port 80
+
+In the upcoming lecture, we will be editing our hosts file so that we can access posts.com/posts in our browser. If you are unable to access the application you may have something already running on port 80, which is the default port for the ingress.
+
+You'll need to identify what is using this port and shut it down. Some students have even had applications from other courses or personal projects still running. For Windows Pro users, both SQL Server Reporting Services (MSSQLSERVER) and the World Wide Web Publishing Service / IIS Server have been the most common services causing a conflict.
+
+To determine what might be using this port, run:
+
+macOS / Linux
+
+sudo lsof -i tcp:80
+
+Windows:
+
+netstat -aon | findstr :80
+
+Minikube users on Windows and macOS should make sure that they aren't using the docker driver which is not compatible with an ingress as noted here:
+
+https://www.udemy.com/course/microservices-with-node-js-and-react/learn/lecture/23145358#questions
+
+<img width="878" alt="image" src="https://user-images.githubusercontent.com/75510135/125400136-2b5a3680-e3cf-11eb-9de4-9639e2694025.png">
+
+<img width="870" alt="image" src="https://user-images.githubusercontent.com/75510135/125400206-42008d80-e3cf-11eb-82ba-b4d5c072b583.png">
+
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/75510135/125404176-f8667180-e3d3-11eb-9fa9-e301c9217fdf.png">
+
+
+
+
+
+
+
+
 
 
 
