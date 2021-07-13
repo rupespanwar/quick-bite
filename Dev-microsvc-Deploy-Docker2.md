@@ -91,13 +91,58 @@ https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps
 - final Ingress config file
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/75510135/125404187-fbf9f880-e3d3-11eb-8a27-d2fa34aaf30a.png">
 
+- need to fulfil for all other components
+
+<img width="904" alt="image" src="https://user-images.githubusercontent.com/75510135/125404769-a1ad6780-e3d4-11eb-8327-e3f55305b8b3.png">
+
+# Important Note to Add Environment Variable
+
+Please don't skip this!  You must make a small change to get a step shown in the next video to work correctly!
+
+The next video is going to show the deployment of the React app to our Kubernetes cluster.  The React app will be running in a Docker container.
+
+Unfortunately, create-react-app currently has a bug that prevents it from running correctly in a docker container.  Create-react-app does have an open issue tracking this: https://github.com/facebook/create-react-app/issues/8688
 
 
+To solve this, we have to make a small update to the Dockerfile in the client folder.  Find the Dockerfile in the client folder and make the following change:
+
+    FROM node:alpine
+     
+    # Add the following line 
+    ENV CI=true
+     
+    WORKDIR /app
+    COPY package.json ./
+    RUN npm install
+    COPY ./ ./
+     
+    CMD ["npm", "start"]
+
+Then save the file.  That's it!  Continue on to the next video.
 
 
+# SetUp ReactApp inside Pod
+<img width="881" alt="image" src="https://user-images.githubusercontent.com/75510135/125405292-32844300-e3d5-11eb-93ea-eb654cd500ff.png">
 
+- update post.com/posts in all files @ client react project
 
+<img width="910" alt="image" src="https://user-images.githubusercontent.com/75510135/125406748-cd315180-e3d6-11eb-9d1a-057278ed98cd.png">
 
+<img width="885" alt="image" src="https://user-images.githubusercontent.com/75510135/125406840-e33f1200-e3d6-11eb-81e3-a0656082db3d.png">
+
+<img width="899" alt="image" src="https://user-images.githubusercontent.com/75510135/125406888-f0f49780-e3d6-11eb-8cf0-fe2718464345.png">
+
+- build docker image for client app
+- docker push 
+- create client-deployment manifest file & service one
+- apply kubectl apply -f to run app as pod
+
+```
+ docker build -t rupeshpanwar/client .
+ docker push rupeshpanwar/client
+ kubectl apply -f ingress-srv.yml 
+ kubectl apply -f client-depl.yaml 
+```
 
 
 
