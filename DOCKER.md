@@ -130,6 +130,29 @@ Also, you will no longer get the error regarding the missing package.json as sho
 <img width="566" alt="image" src="https://user-images.githubusercontent.com/75510135/125577571-43415657-855f-4e35-aa71-3de5669b02c3.png">
 
 
+# Port forwarding
+<img width="909" alt="image" src="https://user-images.githubusercontent.com/75510135/125577807-8d3234e3-7ef6-4b4b-8922-7e8aa57be76e.png">
+
+<img width="899" alt="image" src="https://user-images.githubusercontent.com/75510135/125579187-a8220f13-e77b-4243-8736-30ad63d662a8.png">
+
+<img width="903" alt="image" src="https://user-images.githubusercontent.com/75510135/125579349-61296c73-1365-472f-bf3d-0a28abb20df9.png">
+
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/75510135/125579461-4eb9b8b6-d557-461c-bdab-84477eb31efe.png">
+
+# Working dir
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/75510135/125580839-fccc610c-0cbe-4fb3-83d0-bc6e4ddedacd.png">
+
+<img width="513" alt="image" src="https://user-images.githubusercontent.com/75510135/125587824-85476501-2a64-4e9b-9e36-51883eb738bf.png">
+
+<img width="620" alt="image" src="https://user-images.githubusercontent.com/75510135/125587973-ea3d0a06-4571-4b42-8f42-93373da7f4db.png">
+
+<img width="921" alt="image" src="https://user-images.githubusercontent.com/75510135/125588018-2ff20bdd-f2f1-4cdb-a6b9-de4382d8a4c3.png">
+
+<img width="927" alt="image" src="https://user-images.githubusercontent.com/75510135/125588528-34526a50-25b9-4d03-b244-799083d0c34e.png">
+
+# Minimizing builds
+<img width="568" alt="image" src="https://user-images.githubusercontent.com/75510135/125589928-3a3713cc-d65c-48f8-9dee-c1100ce296f7.png">
+
 
 
 
