@@ -99,6 +99,36 @@ docker commit -c "CMD 'redis-server'" CONTAINERID
 <img width="735" alt="image" src="https://user-images.githubusercontent.com/75510135/125561641-e8163f1e-fbcb-4bc8-9f83-5b1a23fa7e47.png">
 <img width="516" alt="image" src="https://user-images.githubusercontent.com/75510135/125561661-f8766d77-93f7-4387-89c8-eaa8005538f7.png">
 
+<img width="894" alt="image" src="https://user-images.githubusercontent.com/75510135/125563790-2b71caab-1b84-4bf4-82df-224fd69296d5.png">
+
+<img width="670" alt="image" src="https://user-images.githubusercontent.com/75510135/125573337-26957e92-aa51-427b-bbcf-b99fbbd3445c.png">
+
+Required WORKDIR update - "Could not detect node name", "idealTree" errors
+
+10-24-2020
+
+The v15 version of Node has recently been released and is causing issues with some of our project code.
+
+In the next lecture you may get the following error when building the Dockerfile:
+
+npm ERR! could not detect node name from path or package
+
+or
+
+npm ERR! idealTree already exists
+
+To resolve this, add a WORKDIR right after the FROM instruction: (we will be adding this very soon anyway)
+
+    FROM node:alpine
+     
+    WORKDIR /usr/app
+
+Also, you will no longer get the error regarding the missing package.json as shown at around 7:16 in the video. With Node v15 / npm v7, if you run npm install in a directory without a package.json, an empty package.json is now created for you and will no longer throw this error. However, a properly written package.json listing your dependencies is still required to run a Node based application.
+
+<img width="565" alt="image" src="https://user-images.githubusercontent.com/75510135/125576589-380be128-b26c-4a67-87e6-9e98775d5ac5.png">
+
+<img width="566" alt="image" src="https://user-images.githubusercontent.com/75510135/125577571-43415657-855f-4e35-aa71-3de5669b02c3.png">
+
 
 
 
