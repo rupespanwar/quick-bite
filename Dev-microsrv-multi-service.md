@@ -21,3 +21,34 @@
 
 <img width="880" alt="image" src="https://user-images.githubusercontent.com/75510135/125452812-6df8fa92-bb7d-465d-b04b-be1f3d41596c.png">
 
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125664191-819d9b6d-7592-42e7-844d-881b04810a74.png">
+# App Code
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125708543-b20cf4e0-0fd7-434e-8205-2a3a0ef95fbb.png">
+Note on Code Reloading
+
+Hi!
+
+If you did not see your server restart after changing the index.ts file, do the following:
+
+    Open the package.json file in the ‘auth’ directory
+
+    Find the ‘start’ script
+
+Update the start script to the following:
+
+ts-node-dev --poll src/index.ts 
+
+# Dockerization to prepare containerization for K8S
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125707533-bbebe16a-9010-460e-bbc5-f532f3d71c8b.png">
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125707554-808ebfbe-b5e9-4487-92b4-697c9b9be786.png">
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125707598-8c9bbd0b-3118-4d52-aa36-29b91eb5b1a1.png">
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125707829-52f9ac52-c0fc-4881-9f4d-da38c3e37ae1.png">
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125707966-cb21d1bb-ee40-407d-95f5-b938289d8945.png">
+
+# Skaffold - to sync up the latest changes and deploy to container on change
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125708351-b5950be2-8bfc-46df-b8e1-352157896ca2.png">
+
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/75510135/125708411-d99c4bb7-972d-408f-bed9-004247cb9322.png">
+
+
+
