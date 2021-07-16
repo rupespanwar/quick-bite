@@ -152,6 +152,62 @@ spec:
 # Dev Env on Google cloud
 <img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125902347-f9db7d07-fe3b-4e48-8dd2-62b31358370c.png">
 
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125903046-9e663874-c232-4e94-8d10-0b6cf41d2a4f.png">
+
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125903106-9f68ce72-f5b4-451e-b7d5-cebe92ca8502.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125903265-5ba31680-a684-48e3-b12d-9dc900430915.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125903547-d1187c44-dbd4-42c0-8bda-5868a1554669.png">
+# sign up 
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125903826-710bb5eb-b631-4eae-95d4-ed8f60e3855b.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125905576-23487b88-2b52-40ec-b7b8-4c2456468bd3.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125905727-446db5d7-e479-407b-ae94-6fdbe92c1c9a.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125906068-8f4dddfc-fedd-4c96-8341-fb0f38179ec9.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125906163-878b23b3-e116-4d8d-9dd5-6114bd206d59.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125908101-137ef3cd-f2cf-4d01-9721-e27cc6deb28f.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125908485-a940f01c-a763-4cb2-af1c-a99df032b952.png">
+
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125908625-e6540ce4-6a82-446d-ae39-bf4af7db9209.png">
+
+- gcloud auth login
+- gcloud init
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125930147-50277316-1a3f-407d-8895-c9611765ce64.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125957444-a8038116-8f60-4b31-b361-5a871fe389b7.png">
+ - gcloud auth login
+ - gcloud container clusters get-credentials ticketing-dev
+ - gcloud config set project savvy-aileron-320007
+ 
+# Update skaffold to sync to GCP
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125957667-bab3bfdd-7cbb-4079-98ed-7e67aaef2267.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/125958524-026e77da-97cf-4f9b-af8c-1315eadb36d6.png">
+
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125959090-7c8e6dbb-d1e7-447c-801e-7345f64abb0c.png">
+- fixes
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125959216-76c9621d-0069-4c90-ad69-23bbbd5bc46c.png">
+
+- nginx doc
+
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125959364-cabbe173-bc8c-4bd3-9eb1-1f6e73fd9572.png">
+
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125959583-bb1e89ca-d19b-4a86-8234-d04e143a35c4.png">
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125959618-608bb33c-2cae-45bb-a4b0-aa5f44b9a34c.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
