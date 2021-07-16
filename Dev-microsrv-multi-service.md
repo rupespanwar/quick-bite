@@ -145,4 +145,14 @@ spec:
  <img width="1231" alt="image" src="https://user-images.githubusercontent.com/75510135/125897109-457523b5-ddd1-4fd9-b444-e8cbaf7e27d0.png">
 
 
+# Change hosts file
+<img width="978" alt="image" src="https://user-images.githubusercontent.com/75510135/125898052-8f98870e-9efb-48da-bee4-4eb2bed9cd37.png">
+<img width="978" alt="image" src="https://user-images.githubusercontent.com/75510135/125901111-e0f24875-ce96-478f-9f6e-f78dbfe13aa2.png">
+
+# Dev Env on Google cloud
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/75510135/125902347-f9db7d07-fe3b-4e48-8dd2-62b31358370c.png">
+
+
+
+
 
