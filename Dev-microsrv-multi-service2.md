@@ -96,6 +96,31 @@
 <img width="712" alt="image" src="https://user-images.githubusercontent.com/75510135/126106177-d3518c64-e560-49f1-9596-130afb8a81ec.png">
 
 
+# SignUp workflow
+
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/75510135/126106388-78b7ca86-8ae7-484f-a1de-a64ace112d05.png">
+
+- user model
+
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/75510135/126106770-267023c1-9361-424f-862f-2ecb524536e2.png">
+
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/75510135/126106876-d18d356d-6472-45bd-8f49-901805d7b4dc.png">
+
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/75510135/126106896-0c4b310b-04b2-4e14-9d15-d54afc8cc02d.png">
+
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/75510135/126106966-d7b74082-79ce-4930-b347-b054e35c3f5c.png">
+
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/75510135/126107841-cf933468-4621-4b7e-8f20-bc8bd6596ccc.png">
+
+- type checking for User model
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/75510135/126138034-75e644f3-5dc4-40df-831f-167390fd9ddf.png">
+
+- Creating user
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/75510135/126137978-8475ddc0-1ffc-4b33-afde-6c02980958a8.png">
+
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/75510135/126152897-9259b169-d006-4e3e-8521-b0452c3901c0.png">
+
+<img width="809" alt="image" src="https://user-images.githubusercontent.com/75510135/126170397-903836cf-1fa5-493e-9eec-44089f03765c.png">
 
 
 
