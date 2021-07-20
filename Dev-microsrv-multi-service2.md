@@ -180,6 +180,51 @@
 <img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126252233-6a6f7896-5304-4b6e-ab98-9d859d5524b6.png">
 
 
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126254163-85cce678-a008-4300-aa8f-fcab7bb000f3.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126254378-17f5dfef-e84b-48c8-a59a-ff2c381de7cb.png">
+
+- issue with JWT token n server side rendering
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126254929-933fbc91-8199-409d-a8b3-f415f4b5f24f.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126255153-449001e4-b574-48cc-b210-3ed60a24d242.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126255424-9ca77ec4-da20-4486-a997-54d1e1ff9e71.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126255568-f34aed69-23d0-41c8-b127-a7c3ceda5268.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126255601-20310717-6541-4698-8b3c-8ad7d1c265b3.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126255735-10a5599b-7e45-41a5-8cb2-6f1ad7f2edb5.png">
+
+- Cookie management 
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126255866-60833977-e9a4-4d21-b7ad-19eb2b94973a.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126255914-d4da7262-1fc8-4204-a9f3-ed20e588b49b.png">
+
+- set cookie   -  npm i cookie-session
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126257902-4b1f625e-fe09-49d3-b561-79fad974924a.png">
+
+- JWT
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126257595-d2b348f3-33a2-4b97-9693-d0dea3a9aa7c.png">
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126257743-42c0d712-952a-4b95-9e3c-bce77a26208b.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126258385-abdb125f-cfdb-40fc-94cb-be7b31c002b2.png">
+
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126259147-d923b39e-6872-4610-85cb-16ce06096897.png">
+
+<img width="995" alt="image" src="https://user-images.githubusercontent.com/75510135/126363196-c68188f9-d47d-4c39-a9d0-60cefcc0d3f5.png">
+
+<img width="995" alt="image" src="https://user-images.githubusercontent.com/75510135/126363366-2e8c4cb3-2879-4233-b02d-353c784f2a38.png">
+
+<img width="995" alt="image" src="https://user-images.githubusercontent.com/75510135/126363483-8436efc6-3ae3-4bc5-b919-ae173b4659ff.png">
+
+<img width="995" alt="image" src="https://user-images.githubusercontent.com/75510135/126363767-4984093c-1223-41a9-8be3-c2e4e8eda2fb.png">
+
+
 
 
 
