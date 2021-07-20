@@ -15,4 +15,8 @@
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/124699403-5a246880-df08-11eb-8de4-abf5d718e2b6.png">
 
 
+- Cookie setting , SSL to be Turned off
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126258476-9a29794e-6c5e-4b30-b1a9-533fe23d7b39.png">
+
 
