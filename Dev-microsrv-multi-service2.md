@@ -123,6 +123,62 @@
 <img width="809" alt="image" src="https://user-images.githubusercontent.com/75510135/126170397-903836cf-1fa5-493e-9eec-44089f03765c.png">
 
 
+# Password hashing
+<img width="1057" alt="image" src="https://user-images.githubusercontent.com/75510135/126170747-a415c23e-605b-4484-b319-de739fa98094.png">
+
+<img width="1057" alt="image" src="https://user-images.githubusercontent.com/75510135/126170959-305534c4-1f94-4894-912b-e83a5f86e189.png">
+
+<img width="1057" alt="image" src="https://user-images.githubusercontent.com/75510135/126171392-a672d558-4e17-4eb9-85f8-63ac651b67ce.png">
+
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126195379-9d1a66c9-3a00-4e08-ba4e-55f7bceedfd4.png">
+
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126195404-a6586871-0aca-4c59-893a-b9d62466abb4.png">
+
+# Auth Strategies
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126195485-4e6a299a-5378-4d17-ac69-2c7d694659cb.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126242094-cdbc9205-e508-48df-b6db-4052011c5d04.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126242236-bb6766a4-9597-4f88-aa20-3f564f4af62a.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126242419-feb7ed5d-11c5-427d-8b2a-d0a72d1562a3.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126242486-ca9c81be-7255-4f05-9158-3d4226f8495f.png">
+
+- issue 
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126242669-a3b12a43-a6ed-41c7-8e1e-df8260956605.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126242893-6e3a70b7-843b-47cf-8f4e-60bf32ee911d.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126243005-6f8cc4b3-ed1e-4949-ae6c-26ce15daab2e.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126243117-8af3e7ae-699a-4604-b9fe-02e7762a3cf2.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126243156-1fba9727-f8b6-4d3a-a653-57f3c25933b2.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126243441-cc704eea-6794-4b17-a0a5-fa4034b0c0f0.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126243536-7d00bc4d-c8bc-4545-b1f0-ebebd43a7e37.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126243586-1cfd5323-1265-4242-8b54-1fc951629e01.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126243681-335b5839-8620-4ad6-9523-bd3d537d37aa.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126243866-8918c029-9cc8-4748-acf0-e3140a238293.png">
+
+- JWT Tocken/Cookie
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126251821-7d65c1b2-0140-48df-817b-97480d151b5a.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126251573-985fbdfd-7fe3-47ed-9175-4d0dbf2cccb6.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126251598-096c5656-3166-463e-b383-b92f4a6ccd83.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126251723-4b7a7ff7-8aab-48cc-8819-9b2172b0da13.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126251798-2fe42a62-1bb0-4734-b87d-c611a1c84e10.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126252233-6a6f7896-5304-4b6e-ab98-9d859d5524b6.png">
+
 
 
 
