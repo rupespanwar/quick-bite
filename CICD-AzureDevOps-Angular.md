@@ -1,8 +1,5 @@
-# Select the source, branch
+# Select the source, branch, then Select a template - Node.js with Grunt
 ![image](https://user-images.githubusercontent.com/75510135/126268651-c874249b-f1c9-4f4e-9039-419cc8f7bcd7.png)
-
-# Select a template - Node.js with Grunt
-![image](https://user-images.githubusercontent.com/75510135/126266201-0aea4bf8-b8e9-427d-a13b-abcbdffeb450.png)
 
 - Rename the pipeline
 ![image](https://user-images.githubusercontent.com/75510135/126268576-a7a1b822-4c3b-43e9-b595-228152b63a00.png)
@@ -23,3 +20,27 @@
 - Publish Artifacts, keep as it is
 
 ![image](https://user-images.githubusercontent.com/75510135/126267777-3a5d9760-5ca5-42a4-b85d-07852fdafa00.png)
+
+- Run the CI Pipeline
+
+![image](https://user-images.githubusercontent.com/75510135/126268903-57dd5656-73cd-4565-b7e0-ef72fd3e61d1.png)
+
+![image](https://user-images.githubusercontent.com/75510135/126268931-329782b3-57c1-49c5-802b-eff392f9995d.png)
+
+# CD - Deploy App to Web App
+
+- Select the template to deploy
+
+- Add Artifact produced by CI pipeline
+
+![image](https://user-images.githubusercontent.com/75510135/126271555-f1f4c0c1-60c9-418e-9799-2efbf5addf55.png)
+
+
+- Select the respective fields
+![image](https://user-images.githubusercontent.com/75510135/126271172-02efdb01-9161-4ad6-b574-afd5e099975f.png)
+
+- Enable CD(continuous deployment
+
+![image](https://user-images.githubusercontent.com/75510135/126271726-73683e8e-a86d-4510-81ad-62fffb8de844.png)
+
+
