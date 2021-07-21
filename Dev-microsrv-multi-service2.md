@@ -224,6 +224,48 @@
 
 <img width="995" alt="image" src="https://user-images.githubusercontent.com/75510135/126363767-4984093c-1223-41a9-8be3-c2e4e8eda2fb.png">
 
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126410329-0c974626-740d-46c3-9f80-dbcaf99b94d6.png">
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126410487-7a1a58bc-d322-46f8-a429-0d330737d69b.png">
+
+# Schema level -> Common prop response, returning pwd and v_ from res.send
+<img width="995" alt="image" src="https://user-images.githubusercontent.com/75510135/126410747-50ab164e-ee7b-459b-a4bb-438a62220d7e.png">
+
+<img width="995" alt="image" src="https://user-images.githubusercontent.com/75510135/126411696-d1839708-cbf7-4d69-a61c-72475c6e5870.png">
+# Sign-in workflow
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126418829-d1e53974-7f71-4fa0-a9eb-6f089de53ffe.png">
+
+- validation request handler 
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126419963-c2eacd5e-688a-4b8b-a401-d687aa520514.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126420419-f004ff79-4a86-4f0d-bcff-c122dbcc4dec.png">
+
+# Current User Handler
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126428330-04dfe61d-a058-48b4-9010-f0422dcb4aae.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126428609-cdcb44de-ac7f-43d5-83b8-695851f71e44.png">
+
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126434343-e337ea17-b840-4ca1-b76b-67be4b6746c5.png">
+
+# Sign-out handler
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126434424-03b19cf7-6964-4dd2-9ee9-0ed8c7d9ccf9.png">
+
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126435350-c903b662-b4f5-4953-8bfe-a34ec5348abc.png">
+
+# Current User Middleware
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126435692-212d19d7-c316-4fd2-8eda-688eea06a2c2.png">
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126440586-360eb891-90dd-447d-9d6e-86fadd0956d0.png">
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126440606-3c51a687-8d7e-46b1-b815-43416d4209f6.png">
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126440640-ebfa0f73-e5a2-453a-8f37-f30aac13c100.png">
+
+# Require Auth for routes
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126440750-fb5fc82d-ff64-47b7-8bc0-9e9157bf4f0d.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126440911-6472f9d8-fa0a-4d24-a951-9a16d6ef035b.png">
+
+<img width="1127" alt="image" src="https://user-images.githubusercontent.com/75510135/126441121-3e689bf4-f6cd-43f4-84af-4d1a767d660a.png">
 
 
 
