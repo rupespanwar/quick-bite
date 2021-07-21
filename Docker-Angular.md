@@ -27,3 +27,21 @@ RUN ls -ld /usr/share/nginx/html/*
 EXPOSE 4200
 CMD ["nginx","-g","daemon off;"]
 ```
+
+
+# Nginx config file, nginx.conf
+```
+server {
+    listen  80;
+
+    root /usr/share/nginx/html;
+    index index.html;
+
+    server_name _;
+
+    location / {
+        try_files $uri /index.html;
+    }
+}
+
+```
