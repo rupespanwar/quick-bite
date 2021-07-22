@@ -39,4 +39,24 @@
 
 <img width="979" alt="image" src="https://user-images.githubusercontent.com/75510135/126469667-affa8388-cc4a-425a-b4fa-6a2d77741cb6.png">
 
+- first test
+
+<img width="774" alt="image" src="https://user-images.githubusercontent.com/75510135/126494480-01ae4e0b-186d-437b-9d70-312835bad008.png">
+<img width="842" alt="image" src="https://user-images.githubusercontent.com/75510135/126494519-6b73765d-af39-4677-b4de-805a124c84a1.png">
+- signup
+<img width="926" alt="image" src="https://user-images.githubusercontent.com/75510135/126580874-45bb72fe-ebe3-4513-977b-c18fa801fa8f.png">
+- sign in
+<img width="926" alt="image" src="https://user-images.githubusercontent.com/75510135/126580897-693d172f-4d36-4804-b119-7187293b9e0c.png">
+- current user
+
+<img width="926" alt="image" src="https://user-images.githubusercontent.com/75510135/126580924-79a9e138-5eb9-465f-80a0-36b61d9569ae.png">
+
+- sign out
+
+<img width="926" alt="image" src="https://user-images.githubusercontent.com/75510135/126580949-4465f2c8-6333-4367-9d9f-e93a4d87fa95.png">
+
+
+
+
+
 
