@@ -214,3 +214,22 @@ ingress-nginx-controller
 
 <img width="992" alt="image" src="https://user-images.githubusercontent.com/75510135/126644146-1090a5a8-0732-4c42-a67b-10cc91564a7d.png">
 
+# Sign In page
+<img width="997" alt="image" src="https://user-images.githubusercontent.com/75510135/126660986-e08c487b-80c9-40f0-acf5-e84da9be2d15.png">
+
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/126661511-98966a7f-4b2c-40f6-a550-bed4ddc9db56.png">
+
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/126661550-9868ccbc-6f89-46bf-9213-54c76d1dba38.png">
+
+# App diagram wrt Sign in/up/out flow
+<img width="997" alt="image" src="https://user-images.githubusercontent.com/75510135/126663248-268c7842-c20b-48b7-8d1c-c7bbcc588626.png">
+
+<img width="997" alt="image" src="https://user-images.githubusercontent.com/75510135/126663370-e8ff12d2-b9f8-4995-92bb-ca1b1e43dbd5.png">
+
+<img width="997" alt="image" src="https://user-images.githubusercontent.com/75510135/126664431-cc479f29-15ba-4ffe-88a6-c91c60d3912a.png">
+
+<img width="997" alt="image" src="https://user-images.githubusercontent.com/75510135/126666134-57696b03-9f3a-480a-b080-e6084eaf3356.png">
+
+
+
+
