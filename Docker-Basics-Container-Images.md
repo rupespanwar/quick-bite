@@ -5,6 +5,12 @@ If you want to learn more about features Buildkit has to offer, please check out
 https://docs.docker.com/develop/develop-images/build_enhancements/
 
 https://docs.docker.com/engine/reference/commandline/build/#specifying-external-cache-sources
+
+# Quick bite
+- prune old image , older than 7 days
+
+docker image prune -a --force --filter "until=168h"
+
 # Stack
 <img width="1217" alt="image" src="https://user-images.githubusercontent.com/75510135/126723075-b885fbe3-50ce-40d7-9ccb-6c20351d469a.png">
 
