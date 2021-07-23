@@ -112,3 +112,130 @@ Due to a recent update in the Create React App library, we will need to change h
 In the upcoming lecture, you'll need to add the -it flag to run the container in interactive mode:
 
 docker run -it -p 3000:3000 IMAGE_ID 
+
+## to make changes in code / use DOCKER VOLUME
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126765609-37ca7e10-c777-45ee-9a13-e012c612df26.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126765793-a1bd6a0e-bc9e-4a9e-a95b-9134c1af9c68.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126766631-ce31f596-ea83-401d-b7da-feb7808a7d0c.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126766661-41d0c061-3c7a-42f1-876e-3f9a9a3cf5a0.png">
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126766846-095fc789-df4a-4d30-92b1-3050dae1234c.png">
+
+### React App Exited With Code 0
+
+4-1-2020
+
+Recently, a bug was introduced with the latest Create React App version that is causing the React app to exit when starting with Docker Compose.
+
+To Resolve this:
+
+Add stdin_open property to your docker-compose.yml file
+
+      web:
+        stdin_open: true
+
+Make sure you rebuild your containers after making this change with  docker-compose down && docker-compose up --build
+
+https://github.com/facebook/create-react-app/issues/8688
+
+https://stackoverflow.com/questions/60790696/react-scripts-start-exiting-in-docker-foreground-cmd
+
+
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/126769318-54df84d2-3707-460e-bc43-bac59fef56f3.png">
+
+<img width="1081" alt="image" src="https://user-images.githubusercontent.com/75510135/126769374-e070a3e0-4f52-4034-89d2-487212941ca2.png">
+
+# Executing TESTs
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126769783-fd39834b-01e5-4cc0-b474-1c588b34a626.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126769907-bde73a00-0d22-4aa3-b953-05e5836e65a0.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126770144-403f4d66-43f6-4753-a24e-9e5814c7dd99.png">
+
+- CONTINUOUS running TESTS
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126770381-00bb0cd3-e85e-46ad-ab7b-b21de2f69caf.png">
+
+- run docker-compose.yml first
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126770490-941eb2ab-d7e9-4588-b853-e70232c700f8.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126770650-bba25407-9cd7-4572-8c03-6b15967c9d4b.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126770668-0ce1f050-c384-4c04-ad6b-c9cb6e11bfba.png">
+
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/126775096-0447837c-6be6-4eb8-9db2-1c0f8793f7b2.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126775152-7d142d2a-eb4d-4504-a8cb-405b61888218.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126775196-6f34d665-f6a0-47ba-b801-81277ddd57b1.png">
+
+<img width="1090" alt="image" src="https://user-images.githubusercontent.com/75510135/126775511-691d9239-2fc7-4415-ba0e-3322d944855d.png">
+
+# Need for NGINX
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126778994-a48dc3df-656e-4efa-addf-99b8a28d58a2.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126779051-46b50484-2a61-4703-864b-760c21a0f4e5.png">
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126779099-aa1e6ae1-5bc1-4345-802a-ce27cc51ede7.png">
+
+## Multi-stage Docker build
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126779431-7cf62e99-3e60-4ebe-b711-6c366b13734b.png">
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126780182-925ab2cd-fdeb-4d81-b36c-dfb8798f7013.png">
+
+Named Builders and AWS
+
+updated 10-1-2020
+
+In the next lecture, we will be creating a multi-step build in our production Dockerfile. When we deploy to AWS in section 7, this currently will fail if you attempt to use a named builder as shown.
+
+To remedy this, we should create an unnamed builder like so:
+
+Instead of this:
+
+    FROM node:alpine as builder
+    WORKDIR '/app'
+    COPY package.json .
+    RUN npm install
+    COPY . .
+    RUN npm run build
+     
+    FROM nginx
+    COPY --from=builder /app/build /usr/share/nginx/html
+
+Do this:
+
+    FROM node:alpine
+    WORKDIR '/app'
+    COPY package.json .
+    RUN npm install
+    COPY . .
+    RUN npm run build
+     
+    FROM nginx
+    COPY --from=0 /app/build /usr/share/nginx/html
+    
+   
+   
+   
+    
+   <img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126781860-32abeae1-b3c7-42a2-b5ed-70f6f7fcdee2.png">
+### multi stage docker file
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/126782238-d4be8c3d-109f-48e1-b01d-141b83774922.png">
+
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126782646-6930494c-2cc7-4230-ba32-2be5c5faa2ae.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
