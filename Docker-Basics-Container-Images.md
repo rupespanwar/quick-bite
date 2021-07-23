@@ -157,6 +157,52 @@ https://docs.docker.com/engine/reference/commandline/build/#specifying-external-
 
 <img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730067-8673133b-081f-4412-9b0a-c10f4e271103.png">
 
+### OVERALL FLOW
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730221-15ea5dd1-6c38-4843-8eb6-545b43a45cb0.png">
+
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730330-78092e60-da0d-4064-9aa0-a02345158753.png">
+
+### rebuild wtith CACHE
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730410-072b443b-6201-446d-a988-5de6a144eab4.png">
+
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730437-89bf4238-248b-43ac-94bd-fe1bcc94720a.png">
+
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730536-30858a6d-de9c-4933-921c-d81f41f6b9da.png">
+
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730623-9a8a79c2-8212-4012-9e6c-9c95e49b15ae.png">
+
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730719-05361bec-8e56-4878-899b-7b57396219f0.png">
+
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730767-857c081a-6d6f-4a70-9aa0-de29d936cc52.png">
+
+
+### Tagging an image
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126730921-585425e6-79bd-4a2c-ae8b-284340f4f2a4.png">
+
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126731000-c1b1fcc3-80d7-4884-9f00-abf76d53e272.png">
+
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/75510135/126731038-a5c50761-100b-45c1-a0a3-f2cd7482645e.png">
+
+Quick Note for Windows Users
+
+In the upcoming lecture, we will be running a command to create a new image using docker commit with this command:
+
+docker commit -c 'CMD ["redis-server"]' CONTAINERID
+
+If you are a Windows user you may get an error like "/bin/sh: [redis-server]: not found" or "No Such Container"
+
+Instead, try running the command like this:
+
+docker commit -c "CMD 'redis-server'" CONTAINERID
+
+### docker COMMIT - to create image out of container
+<img width="1046" alt="image" src="https://user-images.githubusercontent.com/75510135/126731310-35e585a1-d58b-49ed-bac6-892f55290177.png">
+
+<img width="1046" alt="image" src="https://user-images.githubusercontent.com/75510135/126731382-c5668439-33bb-44b9-87ba-6e3be015cf40.png">
+
+<img width="1046" alt="image" src="https://user-images.githubusercontent.com/75510135/126731462-6346a6fc-c9c3-478b-aacc-c5df3a3316e0.png">
+
+
 
 
 
