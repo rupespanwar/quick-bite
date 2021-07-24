@@ -7,6 +7,7 @@
 
 # Github
 <img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126786558-7c1d82bd-7093-4da0-8892-447be8148bc2.png">
+# Reference Repo : https://github.com/rupeshpanwar/multistagedockerapp.git
 
 # Travis CI
 <img width="1129" alt="image" src="https://user-images.githubusercontent.com/75510135/126786669-c0542021-a045-4417-a236-c896c6c76df1.png">
@@ -330,3 +331,55 @@ The command "docker run  -e CI=true rupeshpanwar/multistagedockerapp npm run tes
 Skipping a deployment with the elasticbeanstalk provider because this branch is not permitted: main
 
 ```
+
+# Working as a team , to push the code to a feature branch
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126850719-b4af65dc-d991-4cce-82b2-b24b855de93c.png">
+
+- checkout a new feature branch
+
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126850750-e8e6a584-4a18-480c-b62c-5d1a0c0dd608.png">
+
+- make changes into code
+
+<img width="1008" alt="image" src="https://user-images.githubusercontent.com/75510135/126851063-6047a1b5-b201-4fea-bf59-8c7a180abb83.png">
+
+- push the changes to feature branch
+
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126850801-df96f460-cea3-4ada-81a2-b4a0cea2fcf4.png">
+
+- Create pull request
+
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126851102-ed251d57-d910-4faf-87f6-2be31a44713e.png">
+
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126851126-4f1d0112-bd95-47a5-b0b4-499e88270c6c.png">
+
+
+- Let Travis complete the testing for new code
+
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126851144-be2c4cbe-e789-4f18-be9f-48946dcb057f.png">
+
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126851166-22209688-66fb-4c67-8445-a576e9d32ca4.png">
+
+- Click on "Complete merge"
+
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126851256-68c2e315-1c53-4a15-ba50-3efacd2fc961.png">
+
+## CI is triggered on merge commit 
+<img width="1224" alt="image" src="https://user-images.githubusercontent.com/75510135/126851295-d83c294e-bae8-4f3d-9a99-9854e1d5d062.png">
+
+# Environment Cleanup
+
+Remember, we need to delete the resources we created or you might end up paying real money for them.  To clean up the Elastic Beanstalk instance we created, do the following:
+
+1. Go to the Elastic Beanstalk dashboard.
+
+2. In the left sidebar click "Applications"
+
+3. Click the application you'd like to delete.
+
+4. Click the "Actions" button and click "Delete Application"
+
+5. You will be prompted to enter the name of your application to confirm the deletion.
+
+Note: it might take a few minutes for the dashboard to update and show that your app is being deleted.  Be a little patient!
+
