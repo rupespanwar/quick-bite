@@ -203,6 +203,8 @@ services:
 
 # Final NgInx.conf file 
 <img width="851" alt="image" src="https://user-images.githubusercontent.com/75510135/126870681-b8f73a2d-df71-4371-b4ad-570edde6f62e.png">
+
+
 ```
 upstream client {
   server client:3000;
@@ -232,6 +234,7 @@ server {
   }
 }
 ```
+
 
 
 
