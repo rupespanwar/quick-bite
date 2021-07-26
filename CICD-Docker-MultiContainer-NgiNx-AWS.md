@@ -246,7 +246,121 @@ after_success:
 <img width="1155" alt="image" src="https://user-images.githubusercontent.com/75510135/126918404-ed270798-acb8-466b-94c1-87440d207fa7.png">
 <img width="1155" alt="image" src="https://user-images.githubusercontent.com/75510135/126918413-50fe1b87-45ce-4378-a85d-72585ef6a721.png">
 
+<img width="1155" alt="image" src="https://user-images.githubusercontent.com/75510135/126931603-7c5e85cc-4673-4b57-8dfd-a5d490b7392f.png">
 
+## Create Security group
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/75510135/126932258-88ed058c-6341-46f4-af60-e30a75d8df57.png">
+
+- define port range for inbound traffic
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/75510135/126932330-a3da833b-7b72-41e7-a42d-2686a037f4d7.png">
+
+### attach above created SG to Redis cache, select "modify" on above created Redis 
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/75510135/126932491-d3da1859-f141-4dc7-b26b-b5c64e6dc358.png">
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/75510135/126932535-52648fc5-cc2d-4400-9408-31771eb61842.png">
+
+### attach  above created SG to Postgres, Under "Connectivity&Security" on above created Postgres 
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126933048-a27b041d-74cb-472a-b469-0d8e48ea3d9d.png">
+
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126933322-4d687e0a-becf-41cc-a374-d641ef741126.png">
+
+### attach above created SG to EC2 instances in EBS
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126933796-644ccd6b-a6c0-4003-b31f-5265cf216c6d.png">
+- click on configuration
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126933819-ebd8bf94-6a1f-4d86-a43b-be9ec80fbc6a.png">
+
+- click on Edit against instances
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126933854-c566f957-7a3b-436a-9d18-844e6d37172f.png">
+
+- Select Multi-docker 
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126933884-34d83a5b-6285-4fdb-b6f5-3ac061404a59.png">
+
+### Set Env vars
+- click on configuration under EBS => Configuration
+
+<img width="1171" alt="image" src="https://user-images.githubusercontent.com/75510135/126935437-cd1eaf3b-8a7d-42a0-b58e-c92893e037a4.png">
+
+- then click on Edit in Software section
+<img width="1171" alt="image" src="https://user-images.githubusercontent.com/75510135/126935582-c0274736-3dbf-4109-87c7-5a95460ee243.png">
+
+- note # take endpoint from Redis configuration
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126936352-dcaace26-8145-4a36-ab28-426c8d211843.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126935874-4bd48c59-da31-4d33-8708-e306d86e0edd.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126936275-dd272261-f9e4-4585-9ffa-9d2c43587f8c.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126936472-623a5490-069a-4026-ae39-c5030bb52a0c.png">
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126936550-a964eebb-1f5d-42da-9ba3-2396f0ea87c3.png">
+
+# STEP 5 Travis to deploy Application to AWS
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126939821-454f80dc-98a5-4034-b275-e1fa08c2ec5d.png">
+
+## Single app deployment , Travis code
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/75510135/126939873-3a2993c3-ba15-4feb-819b-ed303e5fee59.png">
+
+
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/126943698-ae1ccc85-9b03-4290-aef4-63369e8040f4.png">
+      
+  
+  
+  
+  # Sub step - create IAM user 
+
+   - go to IAM section , click on Add user
+
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126941122-e60db129-e4e9-418f-95a9-f7e08de5d85d.png">
+
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126941213-10c72464-25a1-41d8-9347-87f40e382895.png">
+- assign EBS policy to user
+<img width="587" alt="image" src="https://user-images.githubusercontent.com/75510135/126941798-8c5f103f-90dd-46df-9f94-69b3997d22a2.png">
+
+<img width="587" alt="image" src="https://user-images.githubusercontent.com/75510135/126941859-44d88742-ac05-4e60-b076-f9eff945c154.png">
+
+## Sub step - create Env vars in Travis for the current repo
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126941928-a323b7a9-f602-4a9b-a335-6d01f7bd958b.png">
+
+    - AWS_ACCESS_KEY
+    - AWS_SECRET_KEY
+
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126942028-7bc8c152-80bb-448f-9ebb-6598a8477dc0.png">
+```
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "mulit-docker"
+  env: "MultiDocker-env"
+  bucket_name: "elasticbeanstalk-us-east-2-075890588897"
+  bucket_path: "docker-multi"
+  on: 
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
+  skip_cleanup: true
+  
+ ```
+ 
+ 
+## Substep- look for existing S3 bucket
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126943623-8feea9e4-32f3-46ce-b3a8-0d63beb9e792.png">
+
+# Substep - add memory to each container via Dockerrun
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/126946337-4a1477eb-2ea3-449b-b03d-688d9b7019cd.png">
+
+## Finally push the code to github to be deployed to AWS
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/126946512-3662e228-a233-4a17-ac6d-123adfda371d.png">
+
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126949118-3fa73c9b-8566-45f7-8c93-318728ff47d0.png">
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126949147-a2fa382e-4b59-40aa-b4dd-0cf7e5d61e40.png">
+
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126949181-2b95c39d-d08d-473e-910e-b68c8ceb43b6.png">
+
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/75510135/126949370-e572b09c-e9bc-4ae5-9cd0-9e6ad8f56c4a.png">
+
+# Clean up AWS side components in order to avoid charges
 
 
 
