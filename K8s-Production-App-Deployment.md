@@ -35,4 +35,61 @@ git push -u origin main
 
 <img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127082749-51f110b5-8c77-4672-9a24-1482d93189b3.png">
 
+# Create Client-deployment.yml
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127093012-d2361bc6-adca-43bf-b353-dd9147b92af3.png">
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: client
+        image: rupeshpanwar/multi-client
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
+
+```
+# Create Client-Cluster-IP-Service
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127094688-b0feb8fb-eb69-4759-999e-0ff84f4984ab.png">
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-cluster-ip-service
+spec:
+  type: ClusterIP
+  selector:
+    app: web
+  ports:
+  - port: 3000
+    targetPort: 3000
+```
+
+- create deployment & service [test to check if you are able to deploy or not]
+
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127094869-96466325-902e-418c-816f-a9265aab3f88.png">
+
+- Note # to delete the deployment 
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127095142-1b0fa68d-b237-4fb8-b7e7-1fc7432cf45b.png">
+
+# Create deployment for Server
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127095550-9ce00b33-215f-4b34-81cc-31ffad106f0d.png">
+
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127096324-e26f6089-47d0-43fd-b289-e0b4bb0175db.png">
+
+
 
