@@ -240,6 +240,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 kubectl get pods -n ingress-nginx \
   -l app.kubernetes.io/name=ingress-nginx --watch
   
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/127200392-a03ead26-d95c-4128-bff3-0ce0a077f3ee.png">
 
 
 # Docker Engagement
