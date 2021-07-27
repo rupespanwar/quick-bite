@@ -169,5 +169,12 @@ spec:
 kubectl get pods -n ingress-nginx \
   -l app.kubernetes.io/name=ingress-nginx --watch
   
+- create routing rule for 
 
+<img width="1180" alt="image" src="https://user-images.githubusercontent.com/75510135/127198538-dfad60b6-7ed7-4143-856c-a5b8b2eba2d5.png">
+
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/127200415-4d085b9f-4734-424b-916f-25e5a03ba99e.png">
+
+# Apply the config 
+- kubectl apply -f k8s
 
