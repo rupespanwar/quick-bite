@@ -35,7 +35,7 @@ git push -u origin main
 
 <img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127082749-51f110b5-8c77-4672-9a24-1482d93189b3.png">
 
-# Create Client-deployment.yml
+# Create deployment for client
 <img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127093012-d2361bc6-adca-43bf-b353-dd9147b92af3.png">
 ```
 apiVersion: apps/v1
@@ -63,7 +63,7 @@ spec:
         - containerPort: 3000
 
 ```
-# Create Client-Cluster-IP-Service
+# Create service for client
 <img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127094688-b0feb8fb-eb69-4759-999e-0ff84f4984ab.png">
 ```
 apiVersion: v1
@@ -86,10 +86,80 @@ spec:
 - Note # to delete the deployment 
 <img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127095142-1b0fa68d-b237-4fb8-b7e7-1fc7432cf45b.png">
 
-# Create deployment for Server
+# Create deployment/service for Server
 <img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127095550-9ce00b33-215f-4b34-81cc-31ffad106f0d.png">
 
 <img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127096324-e26f6089-47d0-43fd-b289-e0b4bb0175db.png">
+
+- create ClusterIP service for server
+
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127100148-15c5807c-993f-407c-a175-b59690e72690.png">
+
+# Create deployment for worker
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127101719-4bb8bce2-c6fa-4590-ba68-8c3016fcd4fb.png">
+
+
+# Create deployment / service for Redis
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127104182-966762c2-29af-4f9f-9b0c-4ca109dfe948.png">
+
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127104355-6fd43f46-860b-4513-9a3f-f60e12909ef6.png">
+
+# Create deployment/service for Postgres
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127105584-7967ddb1-d259-40fe-b487-99ae85c3fd6f.png">
+
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127105891-4e2080c3-840f-4f92-8375-6ba4c64ea477.png">
+
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127106134-c7e869ea-bda5-4d72-aaa1-fdbb5b4842d4.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127111547-6c8b971a-75b3-4033-83fc-342619c4f4ff.png">
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127112635-f06fa7e7-920d-4254-be45-5ac1065007f2.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127113000-f4a050ad-7414-40ec-85a0-5f9a75828b42.png">
+
+- create PVC( like advertisement)
+
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127116907-a8d3ae96-0b5c-4ce8-bb96-7966030830cb.png">
+- now mount volume(claiming the volumne defined above)
+
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127134873-28279de2-3ba6-41aa-a10e-8e5934a620b1.png">
+- kubectl get pv
+- kubectl get pvc
+
+# Setup Env vars
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127137867-3d775f6a-a951-4600-b5ce-c48ac91b9bb9.png">
+- via cluster IP service
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127138043-e05d8af0-bcc3-4425-8899-38605b28a70b.png">
+- for worker 
+
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127138988-98db1bd3-72f0-488d-bea0-23f9726c75d7.png">
+
+- for server
+
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127139689-0a63ed8d-89d1-4f5d-ac23-f2b0511c4d20.png">
+
+- secret (to store DB password)
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127140376-4c6c43b0-06b8-4316-b374-deb67458e3d7.png">
+
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127141595-f14ddd63-c6a5-4aae-8ac9-c46cb10922ee.png">
+
+- update postgres password in server deployment
+
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127142625-28d59e40-b3d8-4c5e-b857-0863a6714695.png">
+
+- update postgres password in postgres deployment
+
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/127144621-2e33bcda-33e2-45d0-ae99-5fc2886ef02c.png">
+
+# Deploy above config
+- kubectl apply -f k8s
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127145170-fc813042-434e-46ca-9c3d-67700d931099.png">
+
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127145417-afb43ac3-121c-4510-a272-1161fbf2be4a.png">
+
+
+
 
 
 
