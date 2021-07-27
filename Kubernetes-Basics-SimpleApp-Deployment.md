@@ -157,6 +157,43 @@ https://github.com/rupeshpanwar/k8s-simple-deployment
 - to get the advertised volumne 
 -<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127134929-6589b628-f29a-4240-bd65-8b8a702f49a0.png">
 
+- kubectl get pv
+
+- kubectl get pvc
+- setup Env to connect to DB
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127137904-6605adab-7efb-44b7-a11c-7159a645664a.png">
+
+- via cluster IP service
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127138043-e05d8af0-bcc3-4425-8899-38605b28a70b.png">
+
+- for worker
+
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127139004-2ab8618d-1392-47bf-813d-9ffc8d3e330d.png">
+
+- for server
+
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127139689-0a63ed8d-89d1-4f5d-ac23-f2b0511c4d20.png">
+
+- Secret
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127139947-9f303a77-920f-4fda-b436-bc40e03f3b10.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127140354-62b772ab-36bf-43b4-b96c-bb2370a8e789.png">
+- type of secret, generic/docker-registery / TLS
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127141584-c1b78b13-9013-4214-bae6-bb03532bd218.png">
+
+
+- eg: update postgres password in server deployment
+
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127142625-28d59e40-b3d8-4c5e-b857-0863a6714695.png">
+
+- eg: update postgres password in postgres deployment
+
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/127144621-2e33bcda-33e2-45d0-ae99-5fc2886ef02c.png">
+
+
 
 
 
