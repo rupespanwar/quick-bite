@@ -80,6 +80,12 @@ https://github.com/rupeshpanwar/k8s-simple-deployment
 
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/75510135/126999366-525ea9e2-47ef-4ab8-bec6-f8825e28e616.png">
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/75510135/126999576-26c4cfea-3e68-459e-a7b7-3a38ee922a03.png">
+## Cluster IP
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127093203-e9452ff7-5e61-4170-ba66-f2e547a952e4.png">
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127093351-dd728dbe-5174-4165-8809-c8a896c2f417.png">
+
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127094665-3647a822-5b9b-410b-9bbb-3a0454826d6b.png">
+
 
 # Deployment - way to maintain sets of containers(RC)
 <img width="1190" alt="image" src="https://user-images.githubusercontent.com/75510135/126983239-ed456610-9cda-4992-bbe8-a8ea1bd897dd.png">
