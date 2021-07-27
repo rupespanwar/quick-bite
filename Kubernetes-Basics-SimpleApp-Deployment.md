@@ -194,9 +194,52 @@ https://github.com/rupeshpanwar/k8s-simple-deployment
 <img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/127144621-2e33bcda-33e2-45d0-ae99-5fc2886ef02c.png">
 
 
+# Networking
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127164395-cabf5c55-5917-4f9d-85f2-f87010464b93.png">
 
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127164920-669367c4-1065-4080-a92f-d1ccff00240e.png">
 
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127165402-4ac7437e-94cf-420f-ba8d-8cdf52fb7f8f.png">
 
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127165858-f8197e6c-373a-4646-b5b9-84e9b3bf4e27.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127166194-fc3871de-aed6-4c0c-8465-b68ffeb040b7.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127166354-707e3a70-502f-41ab-b47a-5347f921e486.png">
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127166951-0a233297-b6dc-4c68-9e46-62b500c738aa.png">
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127167128-88aa62fe-68b8-495e-b97c-f7855b74f69c.png">
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127167366-3fa266c7-4255-4939-b6fd-c3e7d94d0116.png">
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127167586-ea74c0ed-24fd-4923-a901-bf53e126fe89.png">
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127167778-334da7c8-5175-4bb9-8f2b-43c5677fd97c.png">
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127167948-2bcdc636-8a01-4122-b15a-3c8cf260fd5f.png">
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127168324-48a30b18-194b-444b-84d0-ab0ced4cefb8.png">
+
+- why notusing  Normal NGiNX
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127168914-7463f451-08ba-458d-8cd7-6c3feb7036e8.png">
+
+- normal NgInx, bypass clusterIP service and directly connect to POD
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127169541-f2a78527-a260-4cf3-8be9-2900677cc61c.png">
+
+- Reference , https://www.joyfulbikeshedding.com/blog/2018-03-26-studying-the-kubernetes-ingress-system.html. 
+- Ingress Nginx Mandatory Commands
+- https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.48.1/deploy/static/provider/cloud/deploy.yaml
+
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127172372-32ebdc59-e488-448f-8c25-a5342d121c14.png">
+- verify installation
+
+kubectl get pods -n ingress-nginx \
+  -l app.kubernetes.io/name=ingress-nginx --watch
+  
 
 
 # Docker Engagement
