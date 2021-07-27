@@ -37,6 +37,7 @@ git push -u origin main
 
 # Create deployment for client
 <img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127093012-d2361bc6-adca-43bf-b353-dd9147b92af3.png">
+
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -61,10 +62,12 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 3000
-
 ```
+
+
 # Create service for client
 <img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127094688-b0feb8fb-eb69-4759-999e-0ff84f4984ab.png">
+
 ```
 apiVersion: v1
 kind: Service
@@ -78,6 +81,7 @@ spec:
   - port: 3000
     targetPort: 3000
 ```
+
 
 - create deployment & service [test to check if you are able to deploy or not]
 
