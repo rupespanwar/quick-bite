@@ -159,7 +159,15 @@ spec:
 <img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/127145417-afb43ac3-121c-4510-a272-1161fbf2be4a.png">
 
 
+# Setup Ingress Networking
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127167993-8348a5c8-3e6b-4ede-b228-c8c8e2d4a3e5.png">
+- https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/75510135/127172535-cdb526fc-731f-449d-b218-d942a46dc9a2.png">
 
+- verify installation
 
+kubectl get pods -n ingress-nginx \
+  -l app.kubernetes.io/name=ingress-nginx --watch
+  
 
 
