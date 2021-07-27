@@ -572,3 +572,65 @@ spec:
 ```
 <img width="808" alt="image" src="https://user-images.githubusercontent.com/75510135/126992402-e35e53a0-3f54-49e9-b101-45e2b9db2666.png">
 
+# Docker Desktop's Kubernetes Dashboard
+
+updated 3-10-2021
+
+This note is for students using Docker Desktop's built-in Kubernetes. If you are using Minikube, the setup here does not apply to you and can be skipped.
+
+If you are using Docker Desktop's built-in Kubernetes, setting up the admin dashboard is going to take a little more work.
+
+1. Grab the most current script from the install instructions:
+
+https://github.com/kubernetes/dashboard#install
+
+eg:
+
+As of today, the kubectl apply command looks like this:
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml
+
+Copy the URL within the apply command:
+
+https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml
+
+2. We will need to download the config file locally so we can edit it (make sure you are copying the most current URL from the official Github repo - do not rely on the version shown in the examples below).
+
+If on Mac or using GitBash on Windows enter the following:
+
+curl https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml > kubernetes-dashboard.yaml
+
+If using PowerShell:
+
+Invoke-RestMethod -Uri https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml -Outfile kubernetes-dashboard.yaml
+
+3. Open up the downloaded file in your code editor and use CMD+F or CTL+F to find the args. Add the following two lines underneath --auto-generate-certificates:
+
+    args:
+      - --auto-generate-certificates
+      - --enable-skip-login
+      - --disable-settings-authorizer
+
+4. Run the following command inside the directory where you downloaded the dashboard manifest file a few steps ago:
+
+kubectl apply -f kubernetes-dashboard.yaml
+
+5. Start the server by running the following command:
+
+kubectl proxy
+
+6. You can now access the dashboard by visiting:
+
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+7. You will be presented with a login screen:
+
+8. Click the "SKIP" link next to the SIGN IN button.
+
+9. You should now be redirected to the Kubernetes Dashboard:
+
+Important! The only reason we are bypassing RBAC Authorization to access the Kubernetes Dashboard is that we are running our cluster locally. You would never do this on a public-facing server like Digital Ocean and would need to refer to the official docs to get the dashboard setup.
+
+If you wish to instead create a sample user, you can follow the instructions here:
+
+https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
