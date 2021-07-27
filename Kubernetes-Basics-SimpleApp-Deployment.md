@@ -120,6 +120,48 @@ https://github.com/rupeshpanwar/k8s-simple-deployment
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/75510135/126999381-1ecc43e0-9f39-4a24-a577-b5fad0dd6c4a.png">
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/75510135/126999555-f396cbd3-fb8a-4eaf-9cd0-0be61dcb644a.png">
 
+## Volume
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127110887-53c26530-e890-4a1f-911d-4455b46e8489.png">
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127110940-d8292dba-2d13-45ce-8f2a-5176b52c4d50.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127111034-1e383752-1bad-4860-8826-8df2722f1955.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127111243-6ac4ecb1-0d95-43da-8f60-fda48f634d1a.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127111339-32865975-3a82-4a75-8094-f5ee654cdeb5.png">
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127112707-3e0d20a3-e5ce-410f-9a3e-6fa2ae8b0cff.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127112842-fd882960-78e8-4a57-b0a3-f9394fd5362a.png">
+
+- Note , in K8S, Volumne is tied with POD , if pod is deleted then Volumne also gets deleted
+- Volumne Vss Persistent Volumne
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127113628-ec8d3787-271b-4f5f-8497-bed0057a7100.png">
+
+- analogy
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127114466-71d4e250-8098-45ba-b34b-9981267d554d.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127115985-aef40652-dfc4-4fc4-8b3b-c3ca87c3f270.png">
+<img width="883" alt="image" src="https://user-images.githubusercontent.com/75510135/127116872-c1258565-b8cb-462f-832a-41b9d54de256.png">
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127117336-ffa465aa-9b2a-4b6c-b9f2-6defe5e1daac.png">
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127118054-b999832c-e6e5-4e30-92b8-24c7015d9738.png">
+- kubectl get storageclass
+- kubectl describe storageclass
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127118999-5276856c-72f6-4912-8dd9-c50729c95fcd.png">
+
+<img width="1133" alt="image" src="https://user-images.githubusercontent.com/75510135/127119853-14def25c-358e-42a0-ad3c-1aa57b016e76.png">
+
+
+- to get the advertised volumne 
+-<img width="683" alt="image" src="https://user-images.githubusercontent.com/75510135/127134929-6589b628-f29a-4240-bd65-8b8a702f49a0.png">
+
+
+
+
+
+
 # Docker Engagement
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/75510135/127074215-9345394b-656a-499e-bdf7-db284439de38.png">
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/75510135/127074348-24572c7b-16ef-4eff-8c62-564eaff603e5.png">
