@@ -242,6 +242,117 @@ kubectl get pods -n ingress-nginx \
   
 <img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/127200392-a03ead26-d95c-4128-bff3-0ce0a077f3ee.png">
 
+# HTTPS
+<img width="1061" alt="image" src="https://user-images.githubusercontent.com/75510135/127299240-305213f3-edc5-4642-84f4-568a15bdc5ec.png">
+
+<img width="1061" alt="image" src="https://user-images.githubusercontent.com/75510135/127300118-d9b889c2-b276-4e3e-8bc2-e9445e65f8e4.png">
+
+<img width="1061" alt="image" src="https://user-images.githubusercontent.com/75510135/127300235-cd6a61fa-07ae-42b6-abb6-840792e92bfe.png">
+- ingress IP address
+<img width="1061" alt="image" src="https://user-images.githubusercontent.com/75510135/127300637-dcf4dda6-0d55-47a3-8f9a-ae681fce47f9.png">
+- DNS setting of domain
+
+<img width="1017" alt="image" src="https://user-images.githubusercontent.com/75510135/127301053-92707559-6920-48a1-a459-1b7ae96757b3.png">
+
+- TLS certs
+<img width="1061" alt="image" src="https://user-images.githubusercontent.com/75510135/127301375-c1ed16bf-85cd-441d-b27f-2349032fd30c.png">
+<img width="1061" alt="image" src="https://user-images.githubusercontent.com/75510135/127301499-3490de14-c7fd-4c72-8ce8-e24576c68b81.png">
+
+<img width="1061" alt="image" src="https://user-images.githubusercontent.com/75510135/127302156-0ca3b7f6-f590-4558-ac96-82bc273616bd.png">
+
+<img width="1061" alt="image" src="https://user-images.githubusercontent.com/75510135/127302604-c56e63b3-3fa3-4be9-bfbb-ec1d83c24754.png">
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/75510135/127312561-ce62ab72-15d4-413a-9dd6-0e2913c1e294.png">
+- certificate
+<img width="936" alt="image" src="https://user-images.githubusercontent.com/75510135/127316780-fbce32ae-ad70-486f-b8ad-d11c86f0d83c.png">
+- issuer
+<img width="936" alt="image" src="https://user-images.githubusercontent.com/75510135/127316808-8d77d674-c57c-4ac2-81b8-954ac1da01aa.png">
+
+- ingres
+
+<img width="936" alt="image" src="https://user-images.githubusercontent.com/75510135/127316941-6ddf3ef0-7a39-4b97-b7fc-f26b983241de.png">
+
+
+- Required Updates for Cert Manager Install
+
+    Create the namespace for cert-manager:
+
+    kubectl create namespace cert-manager
+
+    Add the Jetstack Helm repository
+
+    helm repo add jetstack https://charts.jetstack.io
+
+    Update your local Helm chart repository cache:
+
+    helm repo update
+
+    Install the cert-manager Helm chart:
+
+        helm install \
+          cert-manager jetstack/cert-manager \
+          --namespace cert-manager \
+          --version v1.2.0 \
+          --create-namespace
+
+    Install the CRDs:
+    kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.crds.yaml
+   
+   Required Update for the Certificate
+
+In the upcoming lecture, a few minor changes are required per the official docs:
+
+1. Update the API version used:
+
+apiVersion: cert-manager.io/v1
+
+2. Remove the acme challenge from the certificate spec.
+
+The full updated Certificate manifest can be found below:
+
+    apiVersion: cert-manager.io/v1
+     
+    kind: Certificate
+    metadata:
+      name: yourdomain-com-tls
+    spec:
+      secretName: yourdomain-com
+      issuerRef:
+        name: letsencrypt-prod
+        kind: ClusterIssuer
+      commonName: yourdomain.com
+      dnsNames:
+        - yourdomain.com
+        - www.yourdomain.com
+
+1. Update apiVersion:
+
+apiVersion: cert-manager.io/v1
+
+2. Add a solvers property:
+
+        solvers:
+          - http01:
+              ingress:
+                class: nginx
+
+The full issuer.yaml manifest can be found below:
+
+    apiVersion: cert-manager.io/v1
+    kind: ClusterIssuer
+    metadata:
+      name: letsencrypt-prod
+    spec:
+      acme:
+        server: https://acme-v02.api.letsencrypt.org/directory
+        email: "test@test.com"
+        privateKeySecretRef:
+          name: letsencrypt-prod
+        solvers:
+          - http01:
+              ingress:
+                class: nginx
+
 
 # Docker Engagement
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/75510135/127074215-9345394b-656a-499e-bdf7-db284439de38.png">
