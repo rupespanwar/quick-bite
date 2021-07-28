@@ -70,28 +70,28 @@
 
 <img width="1004" alt="image" src="https://user-images.githubusercontent.com/75510135/127247491-d77f36ed-4e23-4b49-bd96-df3bf03783ff.png">
 
+- encrypt the file
+<img width="1103" alt="image" src="https://user-images.githubusercontent.com/75510135/127249048-b6ed9f2f-2be5-4b29-8b50-035afcb81d56.png">
+
+- login into Travis using Github token
+
+multi-k8s-prod $ travis login --github-token GIT_HUB_TOKEN --com
+Successfully logged in as rupeshpanwar!
+
+
+- Note
+     * travis login --github-token YOUR_PERSONAL_TOKEN --com
+
+   or
+
+    * travis login --github-token YOUR_PERSONAL_TOKEN --pro
+    
+- travis encrypt-file premium-student-321118-adbe9ed0b7ce.json -r rupeshpanwar/multi-k8s --com
+
+<img width="862" alt="image" src="https://user-images.githubusercontent.com/75510135/127251040-d05ddda0-f42e-432f-a30a-3b603fff1efb.png">
+- take the cmd from above step to add into travis file
+
+- openssl aes-256-cbc -K $encrypted_1d15443f7143_key -iv $encrypted_1d15443f7143_iv -in premium-student-321118-adbe9ed0b7ce.json.enc -out premium-student-321118-adbe9ed0b7ce.json -d
 
 
 
-
-docker run -it -v $(pwd):/app ruby:2.4 sh
-
-With this version, we will no longer be passing the --no-rdoc or --no-ri flags when installing Travis. The command will simply be:
-
-gem install travis 
-
-The login command will now look like this:
-
-travis login --github-token YOUR_PERSONAL_TOKEN --com
-
-or
-
-travis login --github-token YOUR_PERSONAL_TOKEN --pro
-
-When you encrypt the file, you must pass the same --com or --pro flag you used to log in:
-
-travis encrypt-file service-account.json -r USERNAME/REPO --com
-
-or
-
-travis encrypt-file service-account.json -r USERNAME/REPO --pro
