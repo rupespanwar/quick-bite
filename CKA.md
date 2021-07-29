@@ -298,6 +298,17 @@ nginx   1/1     Running   0          3m25s   10.1.1.89   docker-desktop   <none>
 
   <img width="765" alt="image" src="https://user-images.githubusercontent.com/75510135/127461287-9eb800f2-17d7-4b99-af8b-ce2725073916.png">
 
+   ```
+   kubectl apply -f replica-sets.yaml
+   kubectl get rc,pods
+   kubetcl replace -f replica-sets.yaml
+   kubectl scale --replicas=4 replicaset myapp-replicaset
+   kubectl delete rc myapp-replicaset --cascade=false
+    ```
+    
+    
+    
+    
   
   
   
