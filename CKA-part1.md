@@ -304,28 +304,9 @@ nginx   1/1     Running   0          3m25s   10.1.1.89   docker-desktop   <none>
    kubetcl replace -f replica-sets.yaml
    kubectl scale --replicas=4 replicaset myapp-replicaset
    kubectl delete rc myapp-replicaset --cascade=false
-    ```
+```
     
-    
-    
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
+ 
 
 
 
