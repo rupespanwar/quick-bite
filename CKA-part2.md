@@ -101,6 +101,83 @@
 
 <img width="825" alt="image" src="https://user-images.githubusercontent.com/75510135/127500130-7b900fbc-23b4-41bb-a51c-87672d315aff.png">
 
+# Imperative vs Declarative
+<img width="833" alt="image" src="https://user-images.githubusercontent.com/75510135/127530808-b31424bb-2cc1-4841-87fc-105ce8db8785.png">
+
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/75510135/127530896-1d85781c-2496-4c56-a130-e679b8a4e837.png">
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/75510135/127531430-f82c5a00-2960-4298-be4e-eff6a1cc85af.png">
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/75510135/127531482-473131e1-79cf-4a7e-a497-ed6e2384662b.png">
+
+<img width="798" alt="image" src="https://user-images.githubusercontent.com/75510135/127531698-9e7dc347-76d0-406f-99fb-150aad00ba5e.png">
+
+<img width="739" alt="image" src="https://user-images.githubusercontent.com/75510135/127531956-14df35f7-989a-42c5-8abd-56950352b55f.png">
+
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/75510135/127532160-0e3ce3fe-29e1-4776-859d-1c7576dddfe0.png">
+
+<img width="802" alt="image" src="https://user-images.githubusercontent.com/75510135/127532318-5fa3ddfd-c6d4-4a3d-a068-ab51fee0c681.png">
+
+--dry-run: By default as soon as the command is run, the resource will be created. If you simply want to test your command , use the --dry-run=client option. This will not create the resource, instead, tell you whether the resource can be created and if your command is right.
+
+-o yaml: This will output the resource definition in YAML format on screen.
+
+
+Use the above two in combination to generate a resource definition file quickly, that you can then modify and create resources as required, instead of creating the files from scratch.
+
+POD
+Create an NGINX Pod
+
+kubectl run nginx --image=nginx
+
+
+Generate POD Manifest YAML file (-o yaml). Don't create it(--dry-run)
+kubectl run nginx --image=nginx --dry-run=client -o yaml
+
+
+Deployment
+Create a deployment
+kubectl create deployment --image=nginx nginx
+
+
+Generate Deployment YAML file (-o yaml). Don't create it(--dry-run)
+kubectl create deployment --image=nginx nginx --dry-run=client -o yaml
+
+
+Generate Deployment with 4 Replicas
+kubectl create deployment nginx --image=nginx --replicas=4
+
+
+You can also scale a deployment using the kubectl scale command.
+kubectl scale deployment nginx --replicas=4
+
+Another way to do this is to save the YAML definition to a file and modify
+kubectl create deployment nginx --image=nginx --dry-run=client -o yaml > nginx-deployment.yaml
+
+
+You can then update the YAML file with the replicas or any other field before creating the deployment.
+
+
+Service
+Create a Service named redis-service of type ClusterIP to expose pod redis on port 6379
+
+kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml
+
+(This will automatically use the pod's labels as selectors)
+
+Or
+
+kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml (This will not use the pods labels as selectors, instead it will assume selectors as app=redis. You cannot pass in selectors as an option. So it does not work very well if your pod has a different label set. So generate the file and modify the selectors before creating the service)
+
+
+Create a Service named nginx of type NodePort to expose pod nginx's port 80 on port 30080 on the nodes:
+kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-run=client -o yaml
+
+# Apply 
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/75510135/127535153-c18583d9-2b98-4eb3-827e-380cf1931afa.png">
+<img width="778" alt="image" src="https://user-images.githubusercontent.com/75510135/127535501-3df04002-fceb-4fde-bf5b-7b85573130b3.png">
+
+
+
+
 
   
   
