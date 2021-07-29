@@ -176,6 +176,19 @@ kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-ru
 <img width="778" alt="image" src="https://user-images.githubusercontent.com/75510135/127535501-3df04002-fceb-4fde-bf5b-7b85573130b3.png">
 
 
+# Scheduling
+<img width="684" alt="image" src="https://user-images.githubusercontent.com/75510135/127535951-fd23019b-320a-42fc-b6ab-5c68e5bb92b1.png">
+
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/75510135/127536536-95ba7c1b-06f3-41b0-a9f3-c33ba0fb6a95.png">
+
+<img width="692" alt="image" src="https://user-images.githubusercontent.com/75510135/127536575-ae70aafc-c93a-4d26-bdfd-5b65297d3704.png">
+
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/75510135/127536629-eca4b589-1f47-4c10-bb88-79c185ce9593.png">
+
+<img width="744" alt="image" src="https://user-images.githubusercontent.com/75510135/127536673-ca392734-f2fb-4ccc-80d6-ece0c3543e28.png">
+
+<img width="709" alt="image" src="https://user-images.githubusercontent.com/75510135/127536701-fbe964f8-7f94-45e9-9928-c6e153a9175c.png">
+
 
 
 
