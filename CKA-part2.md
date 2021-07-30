@@ -189,7 +189,52 @@ kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-ru
 
 <img width="709" alt="image" src="https://user-images.githubusercontent.com/75510135/127536701-fbe964f8-7f94-45e9-9928-c6e153a9175c.png">
 
+# Labels and Selectors
+<img width="765" alt="image" src="https://user-images.githubusercontent.com/75510135/127580694-c9c850f7-0841-4205-9d36-a0c94dc95291.png">
 
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/75510135/127580724-aa6dbd7a-292a-491e-abab-d56d2912f837.png">
+
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/75510135/127580743-3a026ec8-1feb-4fb0-9977-7434c44f633d.png">
+
+<img width="692" alt="image" src="https://user-images.githubusercontent.com/75510135/127580756-9a4236ff-ed17-48ca-b968-ae75516c47af.png">
+
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/127580775-a6164a7c-781d-429f-8839-d3d3ff1f5dd3.png">
+
+<img width="606" alt="image" src="https://user-images.githubusercontent.com/75510135/127580798-0f0672cf-277d-4c2a-857c-b4689457a50b.png">
+
+<img width="649" alt="image" src="https://user-images.githubusercontent.com/75510135/127580813-273a5f72-e440-4df3-82fb-908293d25cf8.png">
+
+<img width="610" alt="image" src="https://user-images.githubusercontent.com/75510135/127580850-f75a8e64-e00a-46cb-834a-245dff82f720.png">
+
+<img width="649" alt="image" src="https://user-images.githubusercontent.com/75510135/127580870-564657bb-d454-4eb1-82ae-484e0f7dc85c.png">
+
+<img width="580" alt="image" src="https://user-images.githubusercontent.com/75510135/127580891-d161cfb1-7458-4c21-8148-2f68a6734a9f.png">
+
+# Taints and Tolerations vs Node Affinity
+<img width="813" alt="image" src="https://user-images.githubusercontent.com/75510135/127581948-a06c1fde-0d50-4298-8666-51f03aa3f221.png">
+
+<img width="823" alt="image" src="https://user-images.githubusercontent.com/75510135/127581970-1f03c1f7-79d2-4930-8747-e59f945c713e.png">
+
+<img width="868" alt="image" src="https://user-images.githubusercontent.com/75510135/127582022-72445a4f-e4f4-418e-a80c-a84170c428b8.png">
+<img width="891" alt="image" src="https://user-images.githubusercontent.com/75510135/127582056-d3e964ec-5373-4f6b-9b1f-4604dc3b0b47.png">
+
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/75510135/127582105-2379f2df-2c8e-4c1c-8308-82e716e2c2a6.png">
+
+<img width="705" alt="image" src="https://user-images.githubusercontent.com/75510135/127582124-2a441c9a-22b5-4a3b-bbdf-c724548cbfc2.png">
+
+<img width="695" alt="image" src="https://user-images.githubusercontent.com/75510135/127582252-6b60a0e7-93de-4d45-93f7-e9e33e8d587c.png">
+
+      kubectl describe nodes node01 | grep Taints
+      kubectl taint nodes node01 spray=mortein:NoSchedule
+      kubectl taint nodes controlplane node-role.kubernetes.io/master:NoSchedule-
+
+
+     add below section to pod definition to apply taint n toleration
+     tolerations:
+    - key: spray
+      value: mortein
+      effect: NoSchedule
+      operator: Equal
 
 
   
