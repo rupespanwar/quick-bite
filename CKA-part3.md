@@ -100,15 +100,15 @@ Configuring applications comprises of understanding the following concepts:
 ![image](https://user-images.githubusercontent.com/75510135/127651344-e26dcf44-ce0b-463d-b6fb-49a53ac46321.png)
 ![image](https://user-images.githubusercontent.com/75510135/127651299-ec962704-bd37-478a-bfdd-3fd256dee769.png)
 
-kubectl get cm
-kubectl create configmap webapp-config-map --from-literal=APP_COLOR=darkblue
-kubectl get pods webapp-color -o yaml > new-webapp.yaml
-kubectl delete pods webapp-color
-Update pod definition file, under spec.containers section update the below.
-- envFrom:
-  - configMapRef:
-     name: webapp-config-map
-kubectl create -f new-webapp.yaml
+        kubectl get cm
+        kubectl create configmap webapp-config-map --from-literal=APP_COLOR=darkblue
+        kubectl get pods webapp-color -o yaml > new-webapp.yaml
+        kubectl delete pods webapp-color
+        Update pod definition file, under spec.containers section update the below.
+        - envFrom:
+          - configMapRef:
+             name: webapp-config-map
+        kubectl create -f new-webapp.yaml
 
 
 
