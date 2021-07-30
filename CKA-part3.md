@@ -59,7 +59,75 @@ Configuring applications comprises of understanding the following concepts:
 
 <img width="818" alt="image" src="https://user-images.githubusercontent.com/75510135/127632853-57247347-19a4-43ab-a22a-a3c67a94cf58.png">
 
+![image](https://user-images.githubusercontent.com/75510135/127644944-5035a569-4bac-4969-a1d8-cecbbf75db92.png)
+![image](https://user-images.githubusercontent.com/75510135/127645011-3a634d02-d4d6-4e7c-8683-7da4a80f0bca.png)
 
- 
+* Create a pod with the ubuntu image to run a container to sleep for 5000 seconds
+
+                                apiVersion: v1
+                                kind: Pod
+                                metadata:
+                                  name: ubuntu-sleeper-pod
+                                spec:
+                                 containers:
+                                 - name: ubuntu-sleeper
+                                   image: ubuntu-sleeper
+                                   command: ["sleep","5000"]
+                                //   args: ["5000"]
+  
+
+ # Configure Environment Variables In Applications
+
+![image](https://user-images.githubusercontent.com/75510135/127650614-b264f7e9-ae5b-454e-a8a4-98b04a38f9a6.png)
+![image](https://user-images.githubusercontent.com/75510135/127650673-94e4f3e0-b60c-470b-9fee-a0cd2685c938.png)
+![image](https://user-images.githubusercontent.com/75510135/127650730-bd323e68-c391-4865-ba1e-61f570f104d3.png)
+![image](https://user-images.githubusercontent.com/75510135/127650798-d7329bed-b087-40df-a47c-db8bf36d5b9a.png)
+    kubectl create configmap app-config --from-literal=APP_COLOR=blue --from-literal=APP_MODE=prod
+    kubectl create configmap app-config --from-file=app_config.properties (Another way)
+
+![image](https://user-images.githubusercontent.com/75510135/127650969-731aec36-1ac9-4001-a733-03e840f62f0f.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127651084-5e69c7c5-4c59-4984-8e24-a46856cab6f9.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127651150-37b1d1f0-8eb9-4d5c-a341-3f7eb42647af.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127651202-b0ebea5f-cdac-4cc8-8574-03eb73338d1e.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127651242-af1e88a5-b364-4032-9c86-0c5c79f42779.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127651268-df726b6f-c2d4-4bda-89b0-cde5f0a3cdd4.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127651344-e26dcf44-ce0b-463d-b6fb-49a53ac46321.png)
+![image](https://user-images.githubusercontent.com/75510135/127651299-ec962704-bd37-478a-bfdd-3fd256dee769.png)
+
+kubectl get cm
+kubectl create configmap webapp-config-map --from-literal=APP_COLOR=darkblue
+kubectl get pods webapp-color -o yaml > new-webapp.yaml
+kubectl delete pods webapp-color
+Update pod definition file, under spec.containers section update the below.
+- envFrom:
+  - configMapRef:
+     name: webapp-config-map
+kubectl create -f new-webapp.yaml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
