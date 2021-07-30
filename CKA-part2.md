@@ -420,5 +420,50 @@ kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-ru
 
 
 
+<img width="902" alt="image" src="https://user-images.githubusercontent.com/75510135/127614581-c2cfdcf3-a2f2-452e-bd57-ef543922228a.png">
+
+# Logging & Monitoring
+
+    Monitor Cluster Components
+    Monitor Applications
+    Monitor Cluster Components Logs
+    Application Logs
+
+<img width="662" alt="image" src="https://user-images.githubusercontent.com/75510135/127615024-eae57380-a2a3-41ef-9a8c-cdc2d0def46d.png">
+
+
+## Monitor Cluster Components
+<img width="733" alt="image" src="https://user-images.githubusercontent.com/75510135/127618132-89870bbe-7db8-469b-b48d-dcc5c85d72d4.png">
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/75510135/127618195-54cf416b-1e8f-4ee6-a4fa-6b1e4a080ed8.png">
+<img width="792" alt="image" src="https://user-images.githubusercontent.com/75510135/127618225-ba248762-332f-428a-99a9-0c3d90728af6.png">
+<img width="663" alt="image" src="https://user-images.githubusercontent.com/75510135/127618249-daa57f0c-c425-4f84-827f-ba1ed8909cea.png">
+<img width="789" alt="image" src="https://user-images.githubusercontent.com/75510135/127618287-e45a4a86-0f07-4693-84de-0c094a5c284c.png">
+
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/75510135/127618319-bc8dcbb2-c395-419e-87f6-c4924b575109.png">
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/75510135/127618362-aad49154-83ab-4c12-942e-2657687e1d98.png">
+
+            git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+            kubectl create -f kubernetes-metrics-server
+            kubectl top node
+            kubectl top pods
+
+# Managing Application Logs
+<img width="537" alt="image" src="https://user-images.githubusercontent.com/75510135/127621862-3edadd38-eea4-4e05-be92-921933875b51.png">
+<img width="548" alt="image" src="https://user-images.githubusercontent.com/75510135/127621889-fd436de9-6eb7-4ad1-ab60-56b69cfcf7b3.png">
+<img width="898" alt="image" src="https://user-images.githubusercontent.com/75510135/127621934-25492df9-7d0a-4a69-8f2f-79669d199286.png">
+<img width="890" alt="image" src="https://user-images.githubusercontent.com/75510135/127621969-1d3a51f7-c14e-4b98-b4fd-e29942a32405.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
