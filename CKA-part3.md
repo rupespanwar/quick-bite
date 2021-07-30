@@ -111,6 +111,35 @@ Configuring applications comprises of understanding the following concepts:
         kubectl create -f new-webapp.yaml
 
 
+# Secrets
+<img width="753" alt="image" src="https://user-images.githubusercontent.com/75510135/127661115-0cf75fc7-c656-4d3b-bf23-57791a63daf2.png">
+
+<img width="747" alt="image" src="https://user-images.githubusercontent.com/75510135/127661149-cfe12a91-b54e-414a-80a8-7db7b9cb291b.png">
+
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/75510135/127661176-f6a9a496-5c30-4a03-b675-fe5d58309043.png">
+
+<img width="762" alt="image" src="https://user-images.githubusercontent.com/75510135/127661200-44b970bb-0233-4827-8479-a3b221f9d7cb.png">
+
+<img width="772" alt="image" src="https://user-images.githubusercontent.com/75510135/127661224-e78cbb87-6dc9-47de-8d1a-372cd0572a91.png">
+
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/75510135/127661246-c9de3890-8584-4703-9097-f69b245302cd.png">
+
+<img width="771" alt="image" src="https://user-images.githubusercontent.com/75510135/127661289-81dc4d92-c564-453c-b0e6-1c3a561e5ff7.png">
+
+<img width="631" alt="image" src="https://user-images.githubusercontent.com/75510135/127661309-a4461e28-350e-4197-ac9c-77b5f89b971c.png">
+<img width="764" alt="image" src="https://user-images.githubusercontent.com/75510135/127661327-17b87273-2705-4ae0-99d4-f154c16a87ef.png">
+
+<img width="733" alt="image" src="https://user-images.githubusercontent.com/75510135/127661360-94fddb4b-7bb2-4477-a97e-bcc09add2b6c.png">
+
+<img width="769" alt="image" src="https://user-images.githubusercontent.com/75510135/127661406-7e97c4be-4793-49df-8b46-31370f725b75.png">
+
+<img width="767" alt="image" src="https://user-images.githubusercontent.com/75510135/127661449-32d807a1-7c7f-463d-b443-0b034a8e9605.png">
+<img width="671" alt="image" src="https://user-images.githubusercontent.com/75510135/127661479-33baadc5-65cc-4fd6-adbc-5c3350c89609.png">
+<img width="723" alt="image" src="https://user-images.githubusercontent.com/75510135/127661502-cc0d14e1-fa1e-49b1-897e-9301c51186ea.png">
+
+
+
+
 
 
 
