@@ -338,9 +338,85 @@ kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-ru
   
   
   
-  
-  
+  # Daemon Set
+  <img width="731" alt="image" src="https://user-images.githubusercontent.com/75510135/127603644-9f3742d1-a3d3-445b-a03a-603aec20bf33.png">
 
+<img width="747" alt="image" src="https://user-images.githubusercontent.com/75510135/127603671-04e8b7e6-8676-411e-8c16-dee3858dbcd7.png">
+
+<img width="729" alt="image" src="https://user-images.githubusercontent.com/75510135/127603696-474639f3-a992-4d68-8641-34d7d0fd4dc3.png">
+
+<img width="746" alt="image" src="https://user-images.githubusercontent.com/75510135/127603732-e2357fed-edf4-49bd-a042-6e5ed4d5cbdc.png">
+
+<img width="642" alt="image" src="https://user-images.githubusercontent.com/75510135/127603750-4bbe03d1-a00a-4f30-89b8-5420507f7ef6.png">
+
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/75510135/127603770-87e5525c-a0f6-43fc-890c-b14c90aa64a7.png">
+
+<img width="714" alt="image" src="https://user-images.githubusercontent.com/75510135/127603799-e10a17d4-9aee-4883-962f-bfe7a2d66445.png">
+
+<img width="748" alt="image" src="https://user-images.githubusercontent.com/75510135/127603823-2e587743-1b31-4523-9300-3f29dba1a18c.png">
+
+            kubectl get daemonsets --all-namespaces
+            kubectl describe daemonset kube-proxy --namespace=kube-system
+            kubectl describe daemonset kube-flannel-ds-amd64 --namespace=kube-system
+            kubectl get pod -n kube-system|grep elasticsearch
+
+  
+# Static PODs
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/75510135/127606451-1bb6f231-a4a4-451c-8e55-494bc5b763f0.png">
+
+<img width="703" alt="image" src="https://user-images.githubusercontent.com/75510135/127606471-09805938-f0e9-4de9-a49b-a53266d5906a.png">
+
+<img width="801" alt="image" src="https://user-images.githubusercontent.com/75510135/127606495-02077dee-cdd5-496f-9180-6c6711e4c4a6.png">
+<img width="815" alt="image" src="https://user-images.githubusercontent.com/75510135/127606638-8aa10157-cbf7-4a50-a590-bb7f7c826f2b.png">
+
+<img width="798" alt="image" src="https://user-images.githubusercontent.com/75510135/127606653-c962ef2c-40d5-4006-9a15-a322a7e1c437.png">
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/75510135/127606681-3f87b91a-bfb2-4030-9e72-3ecb0e94894d.png">
+
+<img width="703" alt="image" src="https://user-images.githubusercontent.com/75510135/127606709-32b1a342-e593-435a-94ef-c9608359ad99.png">
+<img width="781" alt="image" src="https://user-images.githubusercontent.com/75510135/127606728-dc4f690c-3cdf-45c9-880e-dec62f5eb630.png">
+**pods with controlplane are marked as static**
+            kubectl get pods --all-namespaces -o wide
+
+            ps -aux | grep kubelet
+            - identify the config file - --config=/var/lib/kubelet/config.yaml
+            - /etc/kubernetes/manifests
+            - image defined in the /etc/kubernetes/manifests/kube-apiserver.yaml 
+            - $ kubectl run --restart=Never --image=busybox static-busybox --dry-run=client -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
+            - Run the command with updated image tag:
+            kubectl run --restart=Never --image=busybox:1.28.4 static-busybox--dry-run=client -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
+
+            $ grep staticPodPath /var/lib/kubelet/config.yaml
+            $ node01 $ rm -rf /etc/just-to-mess-with-you/greenbox.yaml
+
+# Multiple Schedulers
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/75510135/127610307-a2740be6-64f0-4436-9def-2c9cbd41477f.png">
+
+# Deploy additional scheduler
+* Download the binary
+            $ wget https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kube-scheduler
+
+<img width="780" alt="image" src="https://user-images.githubusercontent.com/75510135/127610427-70cfa1fa-81d1-44a4-b236-1f051b99a3e1.png">
+
+<img width="842" alt="image" src="https://user-images.githubusercontent.com/75510135/127610455-99ac71c2-145e-4cb8-a040-db5c4b396aa7.png">
+
+<img width="833" alt="image" src="https://user-images.githubusercontent.com/75510135/127610487-f07ca5da-b3a8-470a-9a4b-c529d17d0e45.png">
+
+<img width="829" alt="image" src="https://user-images.githubusercontent.com/75510135/127610509-60bc8bce-f647-45fb-b014-ecd5685a7b63.png">
+
+<img width="829" alt="image" src="https://user-images.githubusercontent.com/75510135/127610537-2b086f9e-7dff-4b72-a869-349f05bb8bf3.png">
+
+<img width="844" alt="image" src="https://user-images.githubusercontent.com/75510135/127610577-5249016b-ab05-42fe-92d5-0253dc3b55bc.png">
+
+kubectl get pods --namespace=kube-system
+kubectl describe pod kube-scheduler-controlplane --namespace=kube-system
+cat /etc/kubernetes/manifests/kube-scheduler.yaml > custom-scheduler.yaml
+change name , port then create custom scheduler
+kubectl create -f custom-scheduler.yaml
+
+grep schedulerName /root/nginx-pod.yaml
+schedulerName: my-scheduler
+
+kubectl create -f /root/nginx-pod.yaml
 
 
 
