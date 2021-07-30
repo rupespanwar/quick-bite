@@ -407,16 +407,16 @@ kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-ru
 
 <img width="844" alt="image" src="https://user-images.githubusercontent.com/75510135/127610577-5249016b-ab05-42fe-92d5-0253dc3b55bc.png">
 
-kubectl get pods --namespace=kube-system
-kubectl describe pod kube-scheduler-controlplane --namespace=kube-system
-cat /etc/kubernetes/manifests/kube-scheduler.yaml > custom-scheduler.yaml
-change name , port then create custom scheduler
-kubectl create -f custom-scheduler.yaml
+         kubectl get pods --namespace=kube-system
+         kubectl describe pod kube-scheduler-controlplane --namespace=kube-system
+         cat /etc/kubernetes/manifests/kube-scheduler.yaml > custom-scheduler.yaml
+         change name , port then create custom scheduler
+         kubectl create -f custom-scheduler.yaml
 
-grep schedulerName /root/nginx-pod.yaml
-schedulerName: my-scheduler
+         grep schedulerName /root/nginx-pod.yaml
+         schedulerName: my-scheduler
 
-kubectl create -f /root/nginx-pod.yaml
+         kubectl create -f /root/nginx-pod.yaml
 
 
 
