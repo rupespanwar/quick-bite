@@ -236,10 +236,105 @@ kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-ru
       effect: NoSchedule
       operator: Equal
 
+# Node Selectors
+<img width="732" alt="image" src="https://user-images.githubusercontent.com/75510135/127592102-b8b11041-6340-4605-b6d0-05d29cb49bb2.png">
 
+<img width="849" alt="image" src="https://user-images.githubusercontent.com/75510135/127592111-d2f5899b-6557-4ff2-b06e-d72dfadf1c2c.png">
+
+<img width="756" alt="image" src="https://user-images.githubusercontent.com/75510135/127592127-632cf228-7434-43b6-996e-8b8647cfbd63.png">
+
+<img width="839" alt="image" src="https://user-images.githubusercontent.com/75510135/127592149-92564a35-83e6-40e0-ad8e-12548fed20d4.png">
+
+<img width="836" alt="image" src="https://user-images.githubusercontent.com/75510135/127592162-a0540a23-173f-4a4b-b336-3929230e2c4d.png">
+
+# Node Affinity
+<img width="767" alt="image" src="https://user-images.githubusercontent.com/75510135/127592200-b88e02c8-3810-43ad-b8cb-2c045e1d1051.png">
+
+<img width="684" alt="image" src="https://user-images.githubusercontent.com/75510135/127592219-0d0131d9-1029-4ce9-98e5-958caa6be64a.png">
+
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/75510135/127592238-2a9096af-b175-4fc8-bbb8-b47d055ab118.png">
+
+<img width="549" alt="image" src="https://user-images.githubusercontent.com/75510135/127592260-41d57147-c9a6-4a22-b55f-92ca86f25eec.png">
+
+<img width="643" alt="image" src="https://user-images.githubusercontent.com/75510135/127592286-5f5fb9ba-34a0-4e59-9452-42acb9588c45.png">
+
+<img width="571" alt="image" src="https://user-images.githubusercontent.com/75510135/127592309-5ca7310b-9071-4410-945c-f80b7068fc9e.png">
+
+<img width="677" alt="image" src="https://user-images.githubusercontent.com/75510135/127592391-d0862994-c77c-4edf-8f22-30b08c771d7b.png">
+
+<img width="688" alt="image" src="https://user-images.githubusercontent.com/75510135/127592413-7582a11f-729f-49d8-89c8-1311042b1e22.png">
+
+<img width="804" alt="image" src="https://user-images.githubusercontent.com/75510135/127592431-c29f8904-0d7d-430e-873c-96cf461d263e.png">
+
+           kubectl get nodes -o wide
+           kubectl describe node node01 | grep labels
+           kubectl describe node node01 | grep -i Labels
+           kubectl label nodes node01 color=blue
+
+            kubectl create deploy blue --image=nginx --replicas=3
+            kubectl edit deployment blue
+
+           append below template.spec
+           affinity:
+              nodeAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                  nodeSelectorTerms:
+                  - matchExpressions:
+                    - key: node-role.kubernetes.io/master
+                      operator: Exists
+
+           append below template.spec          
+           affinity:
+             nodeAffinity:
+                 requiredDuringSchedulingIgnoredDuringExecution:
+                   nodeSelectorTerms:
+                   - matchExpressions:
+                     - key: color
+                       operator: In
+                       values:
+                       - blue
   
+  # Node Affinity vs T&T
+  <img width="802" alt="image" src="https://user-images.githubusercontent.com/75510135/127594684-1000a3fe-7eba-4b5f-ab45-0d393f5898b3.png">
+
+<img width="794" alt="image" src="https://user-images.githubusercontent.com/75510135/127594726-099352cb-4951-4c18-bb54-428f8282625b.png">
+
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/75510135/127594806-1a998092-da8a-4f16-9560-f79dc320b543.png">
+
+<img width="759" alt="image" src="https://user-images.githubusercontent.com/75510135/127594892-a5fd2330-d8d3-4947-aeb6-2102f2008297.png">
+
+# Resource Requirements & Limits 
   
-  
+<img width="901" alt="image" src="https://user-images.githubusercontent.com/75510135/127597422-47681fcf-f7fc-4a2d-acd9-d55efcbfd177.png">
+
+<img width="979" alt="image" src="https://user-images.githubusercontent.com/75510135/127597435-570974e0-c014-4d7f-a15a-c9884c65f813.png">
+
+<img width="943" alt="image" src="https://user-images.githubusercontent.com/75510135/127597448-0632e4e3-e498-45c6-80f8-a9d300570ad9.png">
+
+<img width="822" alt="image" src="https://user-images.githubusercontent.com/75510135/127597466-27cc1288-b2a5-4010-9c21-ccc2c66e6a12.png">
+
+<img width="692" alt="image" src="https://user-images.githubusercontent.com/75510135/127597491-cd14f09e-97ca-4500-be82-012190227868.png">
+
+<img width="959" alt="image" src="https://user-images.githubusercontent.com/75510135/127597509-7070ccff-f31a-4943-97de-32dc17c7dd23.png">
+
+<img width="787" alt="image" src="https://user-images.githubusercontent.com/75510135/127597523-08bf1a7e-e25a-4795-a8be-413324818674.png">
+
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/75510135/127597537-297db263-e166-49ce-97d5-aa2ad236d497.png">
+
+
+            kubectl describe pod rabbit
+
+            resources:
+                  limits:
+                    cpu: "1"
+                    memory: 512Mi
+                  requests:
+                    cpu: "1"
+                    memory: 512Mi
+
+            kubectl get events | grep nginx
+            kubectl describe pod nginx | grep -i image
+            kubectl describe pod nginx | grep IP:
   
   
   
