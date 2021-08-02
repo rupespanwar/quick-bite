@@ -246,6 +246,175 @@ curl -v -k https://localhost:6443/api/v1/pods -u "user1:password123"
 <img width="819" alt="image" src="https://user-images.githubusercontent.com/75510135/127772098-6eb1e44a-6d11-462a-9f78-3366170526ab.png">
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/75510135/127772109-b26666e7-4c68-48ac-873b-f5917c87ca88.png">
 
+                A new member akshay joined our team. He requires access to our cluster. The Certificate Signing Request
+                .csr & .key
+
+                Create a CertificateSigningRequest object with the name akshay with the contents of the akshay.csr
+                kubectl create -f /var/answers/akshay-csr.yaml
+
+                Check csr status
+                kubectl get csr
+
+                Approve csr
+                kubectl certificate approve akshay
+
+                Check approval requests
+                 kubectl get csr
+
+                 Check the details about the CSR request. Preferebly in YAML.
+                 kubectl get csr agent-smith -o yaml
+
+                 Reject the request
+                 kubectl certificate deny agent-smith 
+
+                 Delete the csr request
+                 kubectl delete csr agent-smith
+                 
+ # KubeConfig
+ <img width="823" alt="image" src="https://user-images.githubusercontent.com/75510135/127779200-19fae2bd-720b-4d58-aadc-85e9af46fcfa.png">
+
+<img width="820" alt="image" src="https://user-images.githubusercontent.com/75510135/127779207-070acd69-2437-490c-950e-9c72474e5fb7.png">
+
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/75510135/127779218-5e75bb98-92c7-4c59-9525-9885284d1b99.png">
+<img width="836" alt="image" src="https://user-images.githubusercontent.com/75510135/127779230-5e74011f-bf2d-47bb-8c22-90c8a8ddc83d.png">
+
+<img width="839" alt="image" src="https://user-images.githubusercontent.com/75510135/127779241-cf9382e7-ac1b-46ef-8ba0-b4de15da6bbf.png">
+<img width="804" alt="image" src="https://user-images.githubusercontent.com/75510135/127779247-689332e1-0e8a-4e88-9c3c-b61fee94cb7a.png">
+<img width="841" alt="image" src="https://user-images.githubusercontent.com/75510135/127779257-40efae2e-e42f-4f2f-9cb3-f80c0aac7520.png">
+<img width="685" alt="image" src="https://user-images.githubusercontent.com/75510135/127779262-f9a4202e-4975-4631-91b6-b8aaa176977c.png">
+<img width="850" alt="image" src="https://user-images.githubusercontent.com/75510135/127779271-4351db39-2bd2-4c5a-a271-d751fadc0ac4.png">
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/75510135/127779280-78d615a4-ce90-4723-b59f-90b6728b97d5.png">
+
+                kube config file under /root/.kube
+                 ls -l /root/.kube
+
+                Cluster info, cluster/users/context
+                kubectl config view 
+
+                To view config other than .kube path
+                kubectl config view --kubeconfig my-kube-config 
+
+                Set the current context to research
+                kubectl config --kubeconfig=/root/my-kube-config use-context research
+
+                Replace the contents in the default kubeconfig file with the content from my-kube-config file
+                mv .kube/config .kube/config.bak $ cp /root/my-kube-config .kube/config 
+
+                If the path to certificate is incorrect in the kubeconfig file. Fix it. All users  certificates are stored at /etc/kubernetes/pki/users
+                $ kubectl get pods master $ ls dev-user.crt dev-user.csr dev-user.key master $ vi /root/.kube/config master $ grep dev-user.crt /root/.kube/config client-certificate: /etc/kubernetes/pki/users/dev-user/dev-user.crt master $ pwd /etc/kubernetes/pki/users/dev-user master $ kubectl get pods No resources found in default namespace. 
+
+# API Group
+<img width="834" alt="image" src="https://user-images.githubusercontent.com/75510135/127790728-5026cb7f-f714-4bd9-9cfe-dfc72fb3bf53.png">
+
+<img width="847" alt="image" src="https://user-images.githubusercontent.com/75510135/127790742-5eb66d36-bbd5-46d5-b986-e80e8cc19539.png">
+
+<img width="825" alt="image" src="https://user-images.githubusercontent.com/75510135/127790748-09d813f6-d9cd-4092-996b-48ef079251f3.png">
+
+<img width="669" alt="image" src="https://user-images.githubusercontent.com/75510135/127790755-e40cd57c-0b0a-4d50-8e0d-9886bc00627a.png">
+
+<img width="852" alt="image" src="https://user-images.githubusercontent.com/75510135/127790761-31bfab41-7735-4648-8d6a-7ff27eeb739b.png">
+
+<img width="839" alt="image" src="https://user-images.githubusercontent.com/75510135/127790769-7d2a2a50-4521-48d1-927f-f8a039b8632f.png">
+
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/75510135/127790784-8e93e6fd-ec69-4d83-81fb-46010bc78f9d.png">
+
+# Authorization
+<img width="832" alt="image" src="https://user-images.githubusercontent.com/75510135/127790809-8ea71eff-8565-4b4c-a882-0dd5c8650b2d.png">
+
+<img width="567" alt="image" src="https://user-images.githubusercontent.com/75510135/127790818-27b13a92-7594-4451-ad83-40c414da5a07.png">
+
+<img width="835" alt="image" src="https://user-images.githubusercontent.com/75510135/127790825-ff8bb327-b180-4a77-af04-12751036ddaa.png">
+
+<img width="842" alt="image" src="https://user-images.githubusercontent.com/75510135/127790832-958e2770-8b48-49d4-9344-b11733190975.png">
+
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/75510135/127790846-bdf5d7fc-39a2-43d9-9be9-f31e93ac5334.png">
+
+<img width="839" alt="image" src="https://user-images.githubusercontent.com/75510135/127790857-51accc9a-bd06-44e9-b855-3bd5b565504b.png">
+
+<img width="837" alt="image" src="https://user-images.githubusercontent.com/75510135/127790873-01d62ac3-5917-4677-808a-667d9fc7a3ce.png">
+
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/75510135/127790885-fe1e160d-21e5-4e3a-8b41-8540ffaf6729.png">
+
+# RBAC
+<img width="783" alt="image" src="https://user-images.githubusercontent.com/75510135/127790921-b940bd47-a422-4523-a466-f52299b0293a.png">
+
+<img width="599" alt="image" src="https://user-images.githubusercontent.com/75510135/127790928-63dba7ca-eecb-40c7-9526-f1aea565acb6.png">
+
+<img width="813" alt="image" src="https://user-images.githubusercontent.com/75510135/127790934-a5888fd2-4f63-4d83-a5d2-bf0472704229.png">
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/75510135/127790943-07292994-02c6-423a-829d-1bc3e158dace.png">
+<img width="658" alt="image" src="https://user-images.githubusercontent.com/75510135/127790952-fcf6ecc1-a8b7-4aab-98eb-432fc64cbc9d.png">
+<img width="723" alt="image" src="https://user-images.githubusercontent.com/75510135/127790959-405404e4-0135-48d0-8898-4cc1aaa3fbde.png">
+<img width="682" alt="image" src="https://user-images.githubusercontent.com/75510135/127790963-54f66527-98d2-405d-9b06-a2e27dbd2126.png">
+<img width="690" alt="image" src="https://user-images.githubusercontent.com/75510135/127790971-174a5bcd-0e21-475c-8082-eb45bd432411.png">
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/75510135/127790981-b3acda43-5984-4894-bb99-4ff40c39df26.png">
+                <img width="826" alt="image" src="https://user-images.githubusercontent.com/75510135/127790988-ae52cf6d-b337-4bc6-922b-68df465aec60.png">
+
+                identify the authorization modes configured on the cluster.
+                kubectl describe pod kube-apiserver-controlplane -n kube-system > look for --authorization-mode=Node,RBAC
+
+                How many roles exist in the default namespace
+                kubectl get roles
+                kubectl get roles --all-namespaces
+
+                the resources the kube-proxy role in the kube-system namespace is given access to
+                kubectl describe role kube-proxy -n kube-system
+
+                Which account is the kube-proxy role assigned to
+                kubectl describe rolebinding kube-proxy -n kube-system 
+
+                A user dev-user is created. User's details have been added to the kubeconfig file. Inspect the permissions granted to the user. Check if the user can list pods in the default namespace
+                kubectl get pods --as dev-user
+
+                Create the necessary roles and role bindings required for the dev-user to create, list and delete pods in the default namespace.
+                kubectl create -f /var/answers/developer-role.yaml
+
+                dev-user is trying to get details about the dark-blue-app pod in the blue namespace. Investigate and fix the issue.
+                $ kubectl get roles,rolebindings -n blue
+                $ kubectl describe role developer -n blue
+                $ kubectl edit role developer -n blue (update the resourceNames)
+
+# Cluster Roles
+<img width="707" alt="image" src="https://user-images.githubusercontent.com/75510135/127791744-98f1b76f-016d-41aa-ae5d-cad76894d809.png">
+<img width="827" alt="image" src="https://user-images.githubusercontent.com/75510135/127791755-7f5cc099-bd24-4828-af1d-5127a4e4f4cd.png">
+<img width="626" alt="image" src="https://user-images.githubusercontent.com/75510135/127791764-7e4dfce8-9ba6-4f07-ad41-bc2e311ae6ad.png">
+<img width="833" alt="image" src="https://user-images.githubusercontent.com/75510135/127791782-4b4e5868-b0f1-48a1-9670-8092fe9ed7a8.png">
+<img width="839" alt="image" src="https://user-images.githubusercontent.com/75510135/127791797-823d16ff-eb51-494e-a1cd-3f4e4121257f.png">
+<img width="844" alt="image" src="https://user-images.githubusercontent.com/75510135/127791816-d9006934-e4bf-47a5-99d7-62252e5f72a1.png">
+
+                How many ClusterRoles do you see defined in the cluster
+                $ kubectl get clusterroles --no-headers | wc -l (or)
+                $ kubectl get clusterroles --no-headers -o json | jq '.items | length'
+
+                How many ClusterRoleBindings exist on the cluster
+                $ kubectl get clusterrolebindings --no-headers | wc -l (or)
+                $ kubectl get clusterrolebindings --no-headers -o json | jq '.items | length'
+
+                What namespace is the cluster-admin clusterrole part o
+
+                What user/groups are the cluster-admin role bound to
+                kubectl describe clusterrolebinding cluster-admin
+
+                What level of permission does the cluster-admin role grant?
+                kubectl describe clusterrole cluster-admin
+
+                A new user michelle joined the team. She will be focusing on the nodes in the cluster. Create the required ClusterRoles and ClusterRoleBindings so she gets access to the nodes.
+                kubectl create -f /var/answers/michelle-node-admin.yaml
+
+                michelle's responsibilities are growing and now she will be responsible for storage as well. Create the required ClusterRoles and ClusterRoleBindings to allow her access to Storage.
+                kubectl create -f /var/answers/michelle-storage-admin.yaml
+
+                Grant the dev-user permissions to create deployments in the blue namespace.
+                kubectl create -f /var/answers/dev-user-deploy.yaml
+
+
+
+
+
+
+
+
+
+
 
 
 
