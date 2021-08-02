@@ -173,6 +173,63 @@
         Delete POD
         kubectl delete pod webapp
 
+# Storage Class
+![image](https://user-images.githubusercontent.com/75510135/127896272-9fad3340-207a-4a80-9553-b61d4755756c.png)
+![image](https://user-images.githubusercontent.com/75510135/127896290-fb0e1c94-8e82-4b23-8fbb-b83c96b816fd.png)
+![image](https://user-images.githubusercontent.com/75510135/127896320-20b7cf84-f85f-4b88-a773-f0e010fea310.png)
+![image](https://user-images.githubusercontent.com/75510135/127896346-baab9beb-431c-4983-9277-ddcd36f503a8.png)
+![image](https://user-images.githubusercontent.com/75510135/127896377-a1babc4f-31ec-4ab9-aa71-0a82e6bd82d8.png)
+![image](https://user-images.githubusercontent.com/75510135/127896418-82378437-cb15-4ee5-a98d-e60f20345981.png)
+![image](https://user-images.githubusercontent.com/75510135/127896445-d2f5dcc8-eef6-4d4b-8000-4b381c270521.png)
+
+
+How many StorageClasses exist in the cluster 
+
+What is the name of the Storage Class that does not support dynamic volume provisioning?
+What is the Volume Binding Mode used for this storage class
+Is there a PersistentVolumeClaim that is consuming the PersistentVolume called local-pv
+Create a new PersistentVolumeClaim by the name of local-pvc that should bind to the volume local-pv
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: local-pvc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 500Mi
+  storageClassName: local-storage
+The Storage Class called local-storage makes use of VolumeBindingMode set to WaitForFirstConsumer
+Create a new pod called nginx with the image nginx:alpine. The Pod should make use of the PVC local-pvc and mount the volume at the path /var/www/html
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    name: nginx
+spec:
+    containers:
+    - name: nginx
+      image: nginx:alpine
+      volumeMounts:
+      - name: local-persistent-storage
+        mountPath: /var/www/html
+    volumes:
+    - name: local-persistent-storage
+      persistentVolumeClaim:
+        claimName: local-pvc
+  Create a new Storage Class called delayed-volume-sc that makes use of the below specs:
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: delayed-volume-sc
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+
+
 
 
 
