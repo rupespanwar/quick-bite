@@ -406,6 +406,141 @@ curl -v -k https://localhost:6443/api/v1/pods -u "user1:password123"
                 Grant the dev-user permissions to create deployments in the blue namespace.
                 kubectl create -f /var/answers/dev-user-deploy.yaml
 
+# Image Security
+![image](https://user-images.githubusercontent.com/75510135/127806832-e6c14992-b6dc-4289-aea0-b3c539c286c9.png)
+![image](https://user-images.githubusercontent.com/75510135/127806846-3dacba5a-c4cf-4f9a-9135-8ea1b45bfa72.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127806856-ff7e9be4-f6af-48a7-a48f-499227e2b72b.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127806867-005e1c6d-93fa-4de8-96ea-bb21fa17b9d3.png)
+![image](https://user-images.githubusercontent.com/75510135/127806883-655634a2-43b1-4778-9b4b-256c8527401d.png)
+![image](https://user-images.githubusercontent.com/75510135/127806895-debfa891-0572-4b8d-b390-befea76118cf.png)
+![image](https://user-images.githubusercontent.com/75510135/127806988-9401b37b-da0e-4a88-825f-5c33909edcd3.png)
+
+                Application - What image is the application using?
+                kubectl get deploy -o wide
+
+                Update the image of the deployment to use a new image from myprivateregistry.com:5000
+                kubectl edit deployment web
+
+                Create a secret object with the credentials required to access the registry
+                Name: private-reg-cred
+                Username: dock_user
+                Password: dock_password
+                Server: myprivateregistry.com:5000
+                Email: dock_user@myprivateregistry.com
+                $ kubectl create secret docker-registry private-reg-cred --docker-username=dock_user --docker-password=dock_password --docker-server=myprivateregistry.com:5000 --docker-email=dock_user@myprivateregistry.com
+
+
+                To add secret to existing deployment
+                kubectl edit deploy web 
+                add imagePullSecrets 
+
+
+# Security Context
+![image](https://user-images.githubusercontent.com/75510135/127807525-1caa468c-3d4a-455b-bf67-265448de1e26.png)
+![image](https://user-images.githubusercontent.com/75510135/127807545-c917c2b9-d5ca-4be6-bdd8-f953fe06c135.png)
+![image](https://user-images.githubusercontent.com/75510135/127807561-cbb771c9-d4ac-4e73-8a82-412936f18f23.png)
+![image](https://user-images.githubusercontent.com/75510135/127807578-81518475-18d1-427b-bfbe-932de7109d95.png)
+![image](https://user-images.githubusercontent.com/75510135/127807593-58c90944-5717-4e6b-b3e8-4219fc8e6a1a.png)
+![image](https://user-images.githubusercontent.com/75510135/127807613-4c733017-2b6d-4ed9-b4d6-61beaff9b6cd.png)
+![image](https://user-images.githubusercontent.com/75510135/127807626-ae002fba-66c8-4a26-993c-8d9e4c123f7a.png)
+![image](https://user-images.githubusercontent.com/75510135/127807643-79bbf023-8b46-4b38-8155-7d5b0c7d2358.png)
+
+kubectl exec ubuntu-sleeper whoami
+
+Set a security context to run as user 1010
+$ kubectl get pods ubuntu-sleeper -o yaml > ubuntu.yaml
+$ kubectl delete pod ubuntu-sleeper
+$ vi ubuntu.yaml ( add securityContext Section)
+  securityContext:
+    runAsUser: 1010
+$ kubectl create -f ubuntu.yaml
+
+kubectl exec -it ubuntu-sleeper -- date -s '19 APR 2012 11:14:00'
+
+Add SYS_TIME capability to the container's securityContext
+$ kubectl get pods ubuntu-sleeper -o yaml > ubuntu.yaml
+$ kubectl delete pod ubuntu-sleeper
+$ vi ubuntu.yaml
+
+Under container section add the below
+
+securityContext:
+    capabilities:
+      add: ["SYS_TIME"]
+      
+$ kubectl create -f ubuntu.yaml
+
+$ kubectl get pods ubuntu-sleeper -o yaml > ubuntu.yaml
+$ kubectl delete pod ubuntu-sleeper
+$ vi ubuntu.yaml
+
+Under container section add the below
+
+securityContext:
+    capabilities:
+      add: ["SYS_TIME"]
+      
+$ kubectl create -f ubuntu.yaml
+
+# Network Policies
+![image](https://user-images.githubusercontent.com/75510135/127822971-07bd5f18-1799-42c2-b836-b9f1ac168b0c.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127823004-c4fcb4aa-7baa-450e-8639-5c968fd51921.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127823039-070dcd0e-ce45-47b8-8342-0da5e2dec08b.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127823073-b90d277d-08fd-4122-9821-56ebb594d6cc.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127823100-4ca04189-69a6-49a1-af79-75743b04a042.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127823122-a4689ebb-9a03-4f45-83db-76d6b852f1bc.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127823158-fca49563-708b-49d5-b2c2-245dcc44fa63.png)
+
+![image](https://user-images.githubusercontent.com/75510135/127823190-a9588814-8493-489a-b557-90c2d376f12c.png)
+![image](https://user-images.githubusercontent.com/75510135/127823221-470d9d6e-d2be-40a5-84a5-1783167a76bb.png)
+![image](https://user-images.githubusercontent.com/75510135/127823275-126530ac-55d4-4d26-bb14-44051968d1c8.png)
+
+                How many network policies do you see in the environment
+                kubectl get networkpolicy
+
+                type of traffic is this Network Policy configured to handle
+                kubectl describe networkpolicy
+
+                Name:         payroll-policy
+                Namespace:    default
+                Created on:   2021-08-02 07:46:55 +0000 UTC
+                Labels:       <none>
+                Annotations:  <none>
+                Spec:
+                  PodSelector:     name=payroll
+                  Allowing ingress traffic:
+                    To Port: 8080/TCP
+                    From:
+                      PodSelector: name=internal
+                  Not affecting egress traffic
+                  Policy Types: Ingress
+
+                rule configured on this Network Policy
+                Internal pod can access port 8080 on payroll pod
+
+                Create a network policy to allow traffic from the Internal application only to the payroll-service and db-service.
+                kubectl create -f /var/answers/answer-internal-policy.yaml
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
