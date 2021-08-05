@@ -108,7 +108,69 @@ Add NGINX Process in Systemd Services to make the WebServer Resilient.
 **NGiNX help***
 * nginx -h
 
+# Text Direction : Configure NGINX as Reverse Proxy
 
+1. Update the Package Manager
+
+apt-get update
+
+
+2. Download and Install the NGINX Server
+
+apt-get -y install nginx
+
+
+3. Install the Net-tools (Optional)
+
+apt-get install net-tools
+
+
+3. Install php-fpm on any single Box.
+
+apt-get -y install php-fpm
+
+
+4. Configure the Nginx conf for PHP Machine.
+
+    user www-data;
+     
+    server{
+    	listen 80;
+    	server_name <IP Of Machine>;
+     
+    	index index.php index.html;
+     
+    	location ~\.php {
+    		include fastcgi.conf;
+    		fastcgi_pass unix:/run/php/<php fpm sock path>
+    	}
+    }
+
+
+index.php file content
+
+<?php phpinfo(); ?>
+
+
+5. Setup Reverse Proxy. Set-up the Nginx conf file.
+
+    server {
+      listen 80;
+      server_name <IP Of Machine>;
+     
+      location /  {
+           proxy_pass http://<IP domain of First Application Server>;
+    	}
+    }
+     
+    server {
+      listen 8080;
+      server_name <IP Of Machine>;
+     
+      location ~\.php  {
+           proxy_pass http://<IP domain of PHP Application Server>;
+    	}
+    }
 
 
 
