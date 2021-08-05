@@ -230,7 +230,63 @@ nginx -V
 
 11. Reload the reverse proxy NGINX.
 
+# Micro Cache in NGINX
 
+1. Install Apache Bench -
+
+apt-get -y install apache2-utils (Unix)
+
+yum install httpd-tools (Centos)
+
+
+2. Check Installation
+
+ab
+
+
+3. Php File, we used-
+
+    <?php sleep(1); ?>
+    <h1> Today's Date : <?php echo date("l js F"); ?> </h1>
+
+
+4. Hit 200 request with 20 Connection on Nginx using bench-
+
+ab -n 200 -c 20 <DEFINE YOUR URL>
+
+
+5. NGINX Configuration File - (You need to update server name and other related content)
+
+    user www-data;
+    worker_processes auto;
+    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
+    events {
+    worker_connections 1024;
+    }
+    http {
+        include mime.types;
+    	fastcgi_cache_path /tmp/cache_nginx levels=1:2 keys_zone=ZONE_1:100m inactive=60m;
+    	fastcgi_cache_key "$scheme$request_method$host$request_uri";
+    	add_header X-Cache $upstream_cache_status;
+        server {
+    	listen 80;
+    	server_name 104.131.80.130;
+    	root /bloggingtemplate/;
+    	index index.php index.html;
+    	location / {
+       		try_files $uri $uri/ =404;
+      	}
+    	location ~\.php$ {
+          		# Pass php requests to the php-fpm service (fastcgi)
+          		include fastcgi.conf;
+          		fastcgi_pass unix:/run/php/php7.2-fpm.sock;	
+    		fastcgi_cache ZONE_1;
+    		fastcgi_cache_valid 200 60m;
+    	}
+        }
+    }
+       
+       
 
 
 
