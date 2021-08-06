@@ -25,7 +25,8 @@ git push -u origin main
 git remote add origin https://github.com/trackscs/azCli.git
 git branch -M main
 git push -u origin main
-
+# Remove git repo from local
+        find . | grep .git | xargs rm -rf
 # To revert the branch
 https://stackoverflow.com/questions/7099833/how-to-revert-a-merge-commit-thats-already-pushed-to-remote-branch
 
