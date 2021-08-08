@@ -37,6 +37,58 @@
 **Behind the scene**
 <img width="536" alt="image" src="https://user-images.githubusercontent.com/75510135/128625068-e8b333cd-4070-4691-8a9a-652bffcdf5ea.png">
 
+## route basics
+<img width="736" alt="image" src="https://user-images.githubusercontent.com/75510135/128630231-dd04df72-79b6-4107-a713-a3f45a1c0b6a.png">
+<img width="419" alt="image" src="https://user-images.githubusercontent.com/75510135/128630273-627ee38e-7d0c-4eee-8fda-78069a0b08fc.png">
+
+
+
+
 - Generating express app
-- 
+- test by running > node index.js
+## Deploy to Heroku checklist
+<img width="479" alt="image" src="https://user-images.githubusercontent.com/75510135/128632720-0a6f104d-aea8-4955-a183-0d61d42fdd66.png">
+- spcify node env
+<img width="584" alt="image" src="https://user-images.githubusercontent.com/75510135/128633019-d461d9f2-b87b-44a4-9986-9e68e5cae4cb.png">
+- specify start script
+<img width="559" alt="image" src="https://user-images.githubusercontent.com/75510135/128633087-ad0baa40-7adb-48d3-8ca4-20242a8152a9.png">
+- .gitignore
+<img width="518" alt="image" src="https://user-images.githubusercontent.com/75510135/128633153-234758d6-29cf-4b8c-99d1-c824b2e21e77.png">
+
+## Heroku CLI deployment
+<img width="551" alt="image" src="https://user-images.githubusercontent.com/75510135/128633238-4e5a7092-4538-4100-b648-038a70dcefa9.png">
+- Create Heroku account
+<img width="1025" alt="image" src="https://user-images.githubusercontent.com/75510135/128633503-c592ad75-0851-4145-a7d0-b2821e2beb47.png">
+- commit the code to github
+        - install the git first
+        git init
+        git add .
+        git commit -m 'basic setup'
+- install Heroku CLI and create App
+- > brew install heroku
+- > heroku -v
+- Deploy App with Git
+- > heroku login
+- >  $ heroku create
+Creating app... done, ⬢ frozen-scrubland-28418
+https://frozen-scrubland-28418.herokuapp.com/ | https://git.heroku.com/frozen-scrubland-28418.git
+- git remote add heroku https://git.heroku.com/frozen-scrubland-28418.git
+-  Heroku Deploys project
+            git init
+            heroku git:remote -a frozen-scrubland-28418
+            git add .
+            git commit -am 'make it better'
+            git push heroku master
+            heroku open
+            heroku logs
+
+
+
+
+
+
+
+
+
+
 
