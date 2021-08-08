@@ -108,11 +108,185 @@ Add NGINX Process in Systemd Services to make the WebServer Resilient.
 **NGiNX help***
 * nginx -h
 
+# Text Direction : Configure NGINX as Reverse Proxy
+
+1. Update the Package Manager
+
+apt-get update
 
 
+2. Download and Install the NGINX Server
+
+apt-get -y install nginx
 
 
+3. Install the Net-tools (Optional)
 
+apt-get install net-tools
+
+
+3. Install php-fpm on any single Box.
+
+apt-get -y install php-fpm
+
+
+4. Configure the Nginx conf for PHP Machine.
+
+    user www-data;
+     
+    server{
+    	listen 80;
+    	server_name <IP Of Machine>;
+     
+    	index index.php index.html;
+     
+    	location ~\.php {
+    		include fastcgi.conf;
+    		fastcgi_pass unix:/run/php/<php fpm sock path>
+    	}
+    }
+
+
+index.php file content
+
+<?php phpinfo(); ?>
+
+
+5. Setup Reverse Proxy. Set-up the Nginx conf file.
+
+    server {
+      listen 80;
+      server_name <IP Of Machine>;
+     
+      location /  {
+           proxy_pass http://<IP domain of First Application Server>;
+    	}
+    }
+     
+    server {
+      listen 8080;
+      server_name <IP Of Machine>;
+     
+      location ~\.php  {
+           proxy_pass http://<IP domain of PHP Application Server>;
+    	}
+    }
+
+       
+ 
+# Use of X-Real-IP Directive
+
+1. Go to NGINX directory and execute below command to find the module.
+
+./configure --help | grep realip
+
+
+2. Get the earlier configuration via command
+
+nginx -V
+
+
+3. Configure the Nginx again. If your configuration is different you need to choose yours.
+
+    ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules --with-http_realip_module
+
+4. Rebuild Nginx
+
+make
+
+
+5. Install NGINX
+
+make install
+
+
+6. Check NGINX process
+
+    ps -ef | grep nginx
+
+7. Check New Configuration is added or not.
+
+nginx -V
+
+
+8. Edit the reverse proxy NGINX conf file location block. Add below Directives
+
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+
+9. Reload the reverse proxy NGINX.
+
+
+10. Update the Application Server NGINX conf file and add below log format in the server block.
+
+    	log_format specialLog '$http_x_real_ip - $remote_user [$time_local]  '
+                              '"$request" $status $body_bytes_sent '
+                              '"$http_referer" "$http_user_agent"  $remote_addr';
+     
+        access_log /var/log/nginx/access-special.log specialLog;
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;
+
+11. Reload the reverse proxy NGINX.
+
+# Micro Cache in NGINX
+
+1. Install Apache Bench -
+
+apt-get -y install apache2-utils (Unix)
+
+yum install httpd-tools (Centos)
+
+
+2. Check Installation
+
+ab
+
+
+3. Php File, we used-
+
+    <?php sleep(1); ?>
+    <h1> Today's Date : <?php echo date("l js F"); ?> </h1>
+
+
+4. Hit 200 request with 20 Connection on Nginx using bench-
+
+ab -n 200 -c 20 <DEFINE YOUR URL>
+
+
+5. NGINX Configuration File - (You need to update server name and other related content)
+
+                                user www-data;
+                                worker_processes auto;
+                                load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
+                                events {
+                                worker_connections 1024;
+                                }
+                                http {
+                                    include mime.types;
+                                   fastcgi_cache_path /tmp/cache_nginx levels=1:2 keys_zone=ZONE_1:100m inactive=60m;
+                                   fastcgi_cache_key "$scheme$request_method$host$request_uri";
+                                   add_header X-Cache $upstream_cache_status;
+                                    server {
+                                   listen 80;
+                                   server_name 104.131.80.130;
+                                   root /bloggingtemplate/;
+                                   index index.php index.html;
+                                   location / {
+                                                 try_files $uri $uri/ =404;
+                                   }
+                                   location ~\.php$ {
+                                                 # Pass php requests to the php-fpm service (fastcgi)
+                                                 include fastcgi.conf;
+                                                 fastcgi_pass unix:/run/php/php7.2-fpm.sock;	
+                                          fastcgi_cache ZONE_1;
+                                          fastcgi_cache_valid 200 60m;
+                                   }
+                                    }
+                                }
+       
+       
 
 
 
