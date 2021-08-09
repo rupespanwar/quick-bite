@@ -184,6 +184,14 @@ https://git.heroku.com/thawing-fortress-96360.git
 
 ### Sign in User with oauth
 
+<img width="598" alt="image" src="https://user-images.githubusercontent.com/75510135/128687108-8013fc06-6024-4219-8fca-1ab6ce1e28f9.png">
+
+<img width="346" alt="image" src="https://user-images.githubusercontent.com/75510135/128687170-b71965c8-65af-4446-99a0-1d7165bf097f.png">
+
+<img width="316" alt="image" src="https://user-images.githubusercontent.com/75510135/128688290-c3caf425-1c98-47ba-8fd3-6f432c0ef020.png">
+
+<img width="830" alt="image" src="https://user-images.githubusercontent.com/75510135/128690082-5e892b09-df88-4160-b2d1-33128322a723.png">
+
 
 
 
