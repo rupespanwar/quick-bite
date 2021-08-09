@@ -1,4 +1,5 @@
 # App overview
+**https://github.com/rupeshpanwar/React-Nodejs-fullstack.git**
 <img width="276" alt="image" src="https://user-images.githubusercontent.com/75510135/128623787-8d718a5b-d500-44c4-9435-29f14f9e0383.png">
 
 
@@ -125,7 +126,63 @@ https://git.heroku.com/thawing-fortress-96360.git
 <img width="788" alt="image" src="https://user-images.githubusercontent.com/75510135/128651649-9d327b0b-bb20-497c-93bb-fbcbd5e5a0d1.png">
 <img width="1128" alt="image" src="https://user-images.githubusercontent.com/75510135/128651690-d8230179-74a1-4a07-8ae4-5403cd98058e.png">
 
+## Client ID
+<img width="472" alt="image" src="https://user-images.githubusercontent.com/75510135/128656982-7e6dc678-5b65-44e7-a5b8-ad450bca6482.png">
+<img width="388" alt="image" src="https://user-images.githubusercontent.com/75510135/128657476-ce34aabb-c5cd-4699-b794-f330651d3df1.png">
+<img width="417" alt="image" src="https://user-images.githubusercontent.com/75510135/128657516-48955e43-8e82-49ba-b6ce-e7f134109770.png">
 
+## BHS(behind the scene
+<img width="590" alt="image" src="https://user-images.githubusercontent.com/75510135/128657153-c5f9f1eb-9795-4e8a-902e-338414e68544.png">
+
+
+### consume google cliend ID now
+<img width="587" alt="image" src="https://user-images.githubusercontent.com/75510135/128659311-96c59b74-df94-41dc-92f9-8cffdc17b8b9.png">
+
+**https://github.com/rupeshpanwar/React-Nodejs-fullstack.git**
+
+* Test by http://localhost:5000/auth/google
+
+<img width="666" alt="image" src="https://user-images.githubusercontent.com/75510135/128660232-40282a93-dc56-4efc-8865-fce8d228c9a6.png">
+<img width="1041" alt="image" src="https://user-images.githubusercontent.com/75510135/128662726-5b9d843d-c75c-4aaf-b0ef-e7858e5f30fa.png">
+
+                                https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&
+                                redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fauth%2Fgoogle%2Fcallback&
+                                scope=profile%20email&client_id=85941131422-c7vm8p4f4q94edn7qpahdhutj3m5eaq5.apps.googleusercontent.com&
+                                flowName=GeneralOAuthFlow
+                               
+                               
+## complete the loop back for google oauth
+<img width="830" alt="image" src="https://user-images.githubusercontent.com/75510135/128664007-b55e0308-ef3f-4b17-ba1c-373833f3d24a.png">
+
+<img width="730" alt="image" src="https://user-images.githubusercontent.com/75510135/128664000-34feac3c-4277-4c10-b148-e6330df761b5.png">
+
+## extract user profile information to submit to DB
+<img width="830" alt="image" src="https://user-images.githubusercontent.com/75510135/128665323-3331353a-cbaa-40be-bff5-521a78103ded.png">
+
+#####################################################################
+## Nodemon setup
+* npm i --save nodemon
+* npm run dev
+<img width="512" alt="image" src="https://user-images.githubusercontent.com/75510135/128665857-3fd087ec-129d-467f-8801-7ee0910a191b.png">
+
+
+#####################################################################
+## Server structure refactor
+<img width="466" alt="image" src="https://user-images.githubusercontent.com/75510135/128666105-2d63ff77-ad15-42c2-9aca-94e63dccae20.png">
+<img width="867" alt="image" src="https://user-images.githubusercontent.com/75510135/128676053-95bcf9c5-e440-4278-a71a-7d22ed6ef367.png">
+#####################################################################
+## Authentication mechanism
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/75510135/128679064-da5f0f6f-7b45-462a-b50d-8b7ef540b2f1.png">
+
+<img width="612" alt="image" src="https://user-images.githubusercontent.com/75510135/128677467-0f29e744-05df-4d4c-a71d-9e6aeec5311d.png">
+
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/75510135/128677663-9d88b6d3-6c90-4582-b52a-26fce179e002.png">
+
+* cookie based authentication
+
+<img width="616" alt="image" src="https://user-images.githubusercontent.com/75510135/128678246-18a180e6-52e9-4a8b-aa8b-5960cc8b887f.png">
+
+### Sign in User with oauth
 
 
 
