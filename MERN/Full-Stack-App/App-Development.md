@@ -192,6 +192,92 @@ https://git.heroku.com/thawing-fortress-96360.git
 
 <img width="830" alt="image" src="https://user-images.githubusercontent.com/75510135/128690082-5e892b09-df88-4160-b2d1-33128322a723.png">
 
+### BHS
+![image](https://user-images.githubusercontent.com/75510135/128690619-90784a50-3fc4-49e3-b535-0cc1aff5c3fc.png)
+
+#
+#####################################################################
+## Mongo DB
+![image](https://user-images.githubusercontent.com/75510135/128693749-fb44a369-16c3-4aee-b531-a9fdbc5fdb57.png)
+### BHS
+![image](https://user-images.githubusercontent.com/75510135/128696641-cfbc8521-e3f1-4e71-8347-5b94df66b15f.png)
+![image](https://user-images.githubusercontent.com/75510135/128697081-0603f661-40c3-4c36-a423-7e44e9da81ba.png)
+
+## Create MongoDB cluster
+- https://cloud.mongodb.com
+
+1.  Go to https://www.mongodb.com/cloud/atlas and click the "Start Free" button (or Sign In if you already have account)
+2.  Create your MongoDB user account
+3.  After creating your account, you will be prompted to create your first cluster.
+Leave all free tier options selected - AWS, North America: N. Virginia etc.
+4. Scroll down on this page to name your app:
+5. Click the "Create Cluster" button:
+6.  The cluster will take a few minutes or more to generate, eventually you will see a page like this:
+7. Click the "CONNECT" button in your cluster's sandbox.  You will get the following screen asking you to whitelist your address.
+Click the "Add your Current IP Address" button.
+8. You will then need to create a database user and password - I would highly suggest using the "Autogenerate" button to avoid escaping issues.
+After doing so, click the "Create MongoDB User" button.
+9.  After creating the user, you should get this success dialog box. Click the "Choose a connection method" button.
+10. Select "Connect Your Application"
+11. Copy the address under "Connection String Only"
+When you paste this string into your application, you will need to replace <username> and <password> with the actual info created earlier and swap out the <dbname> placeholder with any arbitrary name.
+Click the "Close" button and head back over to your Emaily application.
+12.  In your config/keys.js file create the mongoURI key-value pair if you haven't already done so.
+Remember the comma if adding in-between other key-value pairs:
+
+                                      googleClientID: 'redacted',
+                                      googleClientSecret: 'redacted',
+                                      mongoURI: '',
+                                      cookieKey: 'redacted',
+
+                                Add the connection string by pasting the entire SRV address string you copied in the screen before.
+                                Remember to replace <username> with the user's actual username.
+                                Remember to replace <password> with the user's actual password
+                                Remember to replace <dbname> with any name you'd like.
+                                mongoURI: 'COPY_THE_SRV_ADDRESS_STRING_HERE'
+                                example:
+                                mongoURI: 'mongodb+srv://p00gz:0JYnugifgjsP9UD6@emaily-uwsj6.mongodb.net/test?retryWrites=true'
+                                Your root index.js connect function should still look like this:
+                                mongoose.connect(keys.mongoURI);
+                                Restart your Node server if you have not already done so.
+13. In a few lectures, you will be testing adding users to your database cluster.
+To see these results, navigate back to your cluster's dashboard and click the 'emaily' project link:
+14. Select the 'Collections' tab:
+15. You should see the collection of users and user objects that have successfully authenticated to your app:
+
+![image](https://user-images.githubusercontent.com/75510135/128802679-d52d481e-8537-457a-98f5-958b7beee327.png)
+
+        
+        
+### Connect mongoose to Mongo db
+    - npm i --save mongoose
+- Change your connect method to look like this:
+![image](https://user-images.githubusercontent.com/75510135/128803798-4bee4ab2-2424-4a3b-b97c-25157069ce65.png)
+![image](https://user-images.githubusercontent.com/75510135/128804596-32934ca6-ee56-4bff-ae31-b87100068279.png)
+**BTS**
+        ![image](https://user-images.githubusercontent.com/75510135/128804757-e12d7e45-9c68-461f-a724-3ccfcc943f1b.png)
+![image](https://user-images.githubusercontent.com/75510135/128805067-4dad3f15-d19a-4b5f-af34-e14338d1379b.png)
+## Create User model
+        ![image](https://user-images.githubusercontent.com/75510135/128807288-2115b959-c71f-4bc4-b20f-900ca7faadd7.png)
+![image](https://user-images.githubusercontent.com/75510135/128807411-95bd869c-f464-4ed6-b127-3107851339d1.png)
+## saving the model/users
+![image](https://user-images.githubusercontent.com/75510135/128808870-8deadf1d-296c-4459-b964-749ceff4008c.png)
+
+![image](https://user-images.githubusercontent.com/75510135/128808917-6ddd7679-caf2-4dd2-a507-59a4572e578c.png)
+
+![image](https://user-images.githubusercontent.com/75510135/128808959-4509efa2-de6b-4af0-baf7-8baf8684596d.png)
+
+## Check if User exists during oAuth
+![image](https://user-images.githubusercontent.com/75510135/128837379-a4cfae83-32d4-4a04-addf-e2c1eef7fe67.png)
+
+![image](https://user-images.githubusercontent.com/75510135/128841124-eb7e4db8-8fae-4352-b5c3-89ebe6431c5d.png)
+
+## Passport call back
+![image](https://user-images.githubusercontent.com/75510135/128841605-f662363d-3ddf-4422-b414-d92626d1b45e.png)
+
+ ![image](https://user-images.githubusercontent.com/75510135/128842939-0495ec0a-d0b8-4c68-b9e5-77dc837a4d65.png)
+
+ 
 
 
 
