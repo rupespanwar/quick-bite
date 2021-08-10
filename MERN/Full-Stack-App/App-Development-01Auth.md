@@ -277,8 +277,41 @@ To see these results, navigate back to your cluster's dashboard and click the 'e
 
  ![image](https://user-images.githubusercontent.com/75510135/128842939-0495ec0a-d0b8-4c68-b9e5-77dc837a4d65.png)
 
- 
+## Encoding users -- SETUP COOKIE
+![image](https://user-images.githubusercontent.com/75510135/128853806-00c545c4-ad5f-4298-84ee-99b7f23e8cd8.png)
+![image](https://user-images.githubusercontent.com/75510135/128854141-2f1bd825-4229-4834-afb8-7c282032bc1c.png)
 
+![image](https://user-images.githubusercontent.com/75510135/128856153-62d8f38c-4a49-4347-b1a9-9b2e9043d4af.png)
+![image](https://user-images.githubusercontent.com/75510135/128858602-8f4eac4d-6414-49a2-9564-095ac2eaf97a.png)
+### Enabling cookie
+ - npm i --save cookie-session
+![image](https://user-images.githubusercontent.com/75510135/128861491-80130ed5-4def-4c0d-9c7a-ebde93fb35b2.png)
+
+![image](https://user-images.githubusercontent.com/75510135/128863135-193042ad-0449-491d-89c5-a98f7e1d5c73.png)
+
+#####################################################################
+## User logout
+![image](https://user-images.githubusercontent.com/75510135/128880136-2f672406-589a-4422-8e87-cd35c6cb4889.png)
+
+
+#####################################################################
+## optional
+## Middleware
+![image](https://user-images.githubusercontent.com/75510135/128880547-d7f63749-068a-4a5f-889a-3fa47f5ad792.png)
+![image](https://user-images.githubusercontent.com/75510135/128880861-3e8b9408-f079-467c-816d-ca2bdf925086.png)
+![image](https://user-images.githubusercontent.com/75510135/128882312-b803cabe-6654-4afd-b222-d40510f15be6.png)
+![image](https://user-images.githubusercontent.com/75510135/128882873-e272f246-0f64-4c7d-821d-804719ac1c43.png)
+
+### Auth workflow
+![image](https://user-images.githubusercontent.com/75510135/128883914-29378b21-0a74-435b-b376-352f8438f399.png)
+![image](https://user-images.githubusercontent.com/75510135/128883982-3bc1e37a-2914-4d48-b41e-666462857182.png)
+![image](https://user-images.githubusercontent.com/75510135/128884053-b47f0a43-8fb4-4af4-bb0e-8175205a58a7.png)
+
+![image](https://user-images.githubusercontent.com/75510135/128883764-5dc606c6-e440-49cd-b2db-8da8ddb981a7.png)
+
+        
+        
+        
 
 
 
