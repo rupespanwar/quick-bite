@@ -80,9 +80,8 @@ to be creating a separate production database for use with Heroku. Here are the 
          heroku logs --tail
  ![image](https://user-images.githubusercontent.com/75510135/128993443-e12b744e-de4e-432e-b2a0-8c4cc5ba20dd.png)
 
- # set the proxy to true
- ![Uploading image.png…]()
 
  
- 
 ![image](https://user-images.githubusercontent.com/75510135/128975713-558d9869-80ec-4dbb-97ff-19f59cad27e7.png)
+ # set the proxy to true
+![image](https://user-images.githubusercontent.com/75510135/129001070-b3d4e1c6-5333-4395-9d0c-7c75d0bfd633.png)
