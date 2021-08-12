@@ -96,5 +96,28 @@ Make sure you don't add the proxy configuration to the package.json file as show
 ![image](https://user-images.githubusercontent.com/75510135/129028781-efbc26c4-a196-488c-ab46-398236611cc9.png)
 ![image](https://user-images.githubusercontent.com/75510135/129028876-87c3f8f3-80ff-4665-b30e-d234cc3e238a.png)
 
+![image](https://user-images.githubusercontent.com/75510135/129193711-86a59a65-722e-437a-956d-225dedeb8fbf.png)
+![image](https://user-images.githubusercontent.com/75510135/129194567-43ff8d32-cf26-4021-9df3-93b2ab0e78ab.png)
+![image](https://user-images.githubusercontent.com/75510135/129194821-64cbc9d4-cca3-4600-99ca-767512d62d53.png)
+# Why this architechture => BTS
+![image](https://user-images.githubusercontent.com/75510135/129196170-d067f823-b379-4346-966a-db898556afed.png)
+![image](https://user-images.githubusercontent.com/75510135/129196266-b60304a5-3d51-4735-82ed-f939709067c0.png)
+![image](https://user-images.githubusercontent.com/75510135/129198006-79ced26e-29d7-492c-aea8-0cbefde88a52.png)
+![image](https://user-images.githubusercontent.com/75510135/129200330-db1dc5ca-1981-46e5-8dbf-a58953283392.png)
+![image](https://user-images.githubusercontent.com/75510135/129200504-5b53dfe6-654c-4543-b974-9944a348cbe7.png)
+![image](https://user-images.githubusercontent.com/75510135/129201897-64190f58-7784-4f30-b413-9659af9689fe.png)
+![image](https://user-images.githubusercontent.com/75510135/129202508-2e71e7f8-7e7b-4cba-a124-b692d7852317.png)
+
+![image](https://user-images.githubusercontent.com/75510135/129202220-1054b403-6d63-4508-ac97-c0b0b7836079.png)
+![image](https://user-images.githubusercontent.com/75510135/129202469-54842cb0-4def-44c2-8007-e6deb5067fb1.png)
+
+**Async Await*********
+![image](https://user-images.githubusercontent.com/75510135/129207192-1f125921-51b0-489e-b3cf-e2f1852bc56e.png)
+![image](https://user-images.githubusercontent.com/75510135/129207282-9f10067e-7dc5-4abe-93bd-160b13d4b2dc.png)
+![image](https://user-images.githubusercontent.com/75510135/129208979-ebdfbfe7-f029-45b0-bf4c-ec7cc84a9571.png)
+![image](https://user-images.githubusercontent.com/75510135/129209386-ca06c9f9-897a-4021-926a-50159f5c23ac.png)
+- babeljs.io
+
+
 
 
