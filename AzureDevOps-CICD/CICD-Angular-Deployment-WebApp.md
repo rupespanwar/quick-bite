@@ -143,3 +143,82 @@
                 try_files $uri /index.html;
             }
         }
+# package.json
+                {
+                  "name": "project",
+                  "version": "0.0.0",
+                  "scripts": {
+                    "ng": "ng",
+                    "start": "ng serve --proxy-config proxy.conf.json",
+                    "build": "ng build",
+                    "test": "ng test",
+                    "lint": "ng lint",
+                    "e2e": "ng e2e"
+                  },
+                  "private": true,
+                  "dependencies": {
+                    "@angular/animations": "^11.1.2",
+                    "@angular/common": "~11.0.5",
+                    "@angular/compiler": "~11.0.5",
+                    "@angular/core": "~11.0.5",
+                    "@angular/forms": "~11.0.5",
+                    "@angular/localize": "^11.2.4",
+                    "@angular/platform-browser": "~11.0.5",
+                    "@angular/platform-browser-dynamic": "~11.0.5",
+                    "@angular/router": "~11.0.5",
+                    "@ng-bootstrap/ng-bootstrap": "^9.0.2",
+                    "@ng-select/ng-select": "^6.1.0",
+                    "@ngx-translate/core": "^13.0.0",
+                    "@rxweb/translate": "^1.0.14",
+                    "angular7-csv": "^0.2.12",
+                    "bootstrap": "^4.5.3",
+                    "bootstrap-select": "^1.13.18",
+                    "file-saver": "^2.0.5",
+                    "jquery": "^3.5.1",
+                    "json-parse-better-errors": "^1.0.2",
+                    "json2csv": "^5.0.6",
+                    "moment": "^2.29.1",
+                    "ng2-search-filter": "^0.5.1",
+                    "ngx-bootstrap": "^6.2.0",
+                    "ngx-cookie-service": "^12.0.0",
+                    "ngx-pagination": "^5.0.0",
+                    "ngx-select-ex": "^6.0.2",
+                    "ngx-spinner": "^11.0.2",
+                    "ngx-translate-multi-http-loader": "^3.0.0",
+                    "popper.js": "^1.16.1",
+                    "rxjs": "~6.6.0",
+                    "tslib": "^2.0.0",
+                    "zone.js": "~0.10.2"
+                  },
+                  "devDependencies": {
+                    "@angular-devkit/build-angular": "~0.1100.5",
+                    "@angular/cli": "~11.0.5",
+                    "@angular/compiler-cli": "~11.0.5",
+                    "@types/jasmine": "~3.6.0",
+                    "@types/node": "^12.20.13",
+                    "codelyzer": "^6.0.0",
+                    "jasmine-core": "~3.6.0",
+                    "jasmine-spec-reporter": "~5.0.0",
+                    "karma": "~5.1.0",
+                    "karma-chrome-launcher": "~3.1.0",
+                    "karma-coverage": "~2.0.3",
+                    "karma-jasmine": "~4.0.0",
+                    "karma-jasmine-html-reporter": "^1.5.0",
+                    "protractor": "~7.0.0",
+                    "ts-node": "~8.3.0",
+                    "tslint": "~6.1.0",
+                    "typescript": "~4.0.2"
+                  }
+                }
+# env
+                export const environment = {
+                    production: false,
+                   // apiUrl: 'http://localhost:3926'
+                  //  apiUrl:'https://backend.azurewebsites.net'
+                  };
+
+                export const environment = {
+                    production: true,
+                     apiUrl: 'https://backend.azurewebsites.net'
+                   // apiUrl: 'http://localhost:3926'
+                  };
