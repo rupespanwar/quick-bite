@@ -203,3 +203,14 @@ In “detached HEAD” state, if you make changes and then create a commit, the 
 $ git checkout -b version2 v2.0.0
 Switched to a new branch 'version2'
 If you do this and make a commit, your version2 branch will be slightly different than your v2.0.0 tag since it will move forward with your new changes, so do be careful.
+
+  
+  
+# using MacOS, just simply follow these steps:
+
+    Goto: this link (settings -> developers setting -> personal access tokens).
+    Generate a new token and copy-paste it somewhere safely.
+    Now search for an App in your Mac, named Keychain Access.
+    Search for github.com, double-click it.
+    Click on show password, then enter your mac's password and hit enter.
+    Password should be visible by now. Now, just paste the token you generated in step 2 and click Save changes.
