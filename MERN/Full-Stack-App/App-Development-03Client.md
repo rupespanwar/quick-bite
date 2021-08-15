@@ -140,6 +140,27 @@ Make sure you don't add the proxy configuration to the package.json file as show
 ![image](https://user-images.githubusercontent.com/75510135/129448558-c6dd011c-1066-40f0-a400-5aacaf1fb42b.png)
 ![image](https://user-images.githubusercontent.com/75510135/129448797-fbf6a733-00a8-45e0-8aea-30e98f6e82c3.png)
 
+# Auth reducer
+![image](https://user-images.githubusercontent.com/75510135/129469996-89871fea-1141-4291-b66c-2922ce72f666.png)
+![image](https://user-images.githubusercontent.com/75510135/129470002-7f7b8691-d97b-4257-b8aa-b7407989617b.png)
+![image](https://user-images.githubusercontent.com/75510135/129469992-af2ab0dc-7ff7-468e-b4d6-ed71377eb5bc.png)
+
+![image](https://user-images.githubusercontent.com/75510135/129470032-ad21a296-229a-4779-a308-95adf2d949e4.png)
+![image](https://user-images.githubusercontent.com/75510135/129470038-182897bb-2e00-400f-a3a4-1d7150552030.png)
+# React-Router > App.js
+
+## Matching Exact Rule
+
+## Materialize CSS, setup Header
+- https://materializecss.com/
+- https://material-ui.com/
+- npm i --save materialize-css
+
+![image](https://user-images.githubusercontent.com/75510135/129476013-943e4e29-d0e0-4518-bed6-3b930765d02f.png)
+![image](https://user-images.githubusercontent.com/75510135/129476038-49100771-291b-429d-a56a-ae56adbe77a5.png)
+![Uploading image.png…]()
+![Uploading image.png…]()
+
 
 
 
