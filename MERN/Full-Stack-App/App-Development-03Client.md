@@ -151,18 +151,57 @@ Make sure you don't add the proxy configuration to the package.json file as show
 
 ## Matching Exact Rule
 
-## Materialize CSS, setup Header
+## setup Materialize CSS, Header design
 - https://materializecss.com/
 - https://material-ui.com/
 - npm i --save materialize-css
 
 ![image](https://user-images.githubusercontent.com/75510135/129476013-943e4e29-d0e0-4518-bed6-3b930765d02f.png)
 ![image](https://user-images.githubusercontent.com/75510135/129476038-49100771-291b-429d-a56a-ae56adbe77a5.png)
-![Uploading image.png…]()
-![Uploading image.png…]()
+
+![image](https://user-images.githubusercontent.com/75510135/129476074-42f8390e-ea8d-4b39-b990-ce81606e3ad8.png)
+![image](https://user-images.githubusercontent.com/75510135/129476081-5ddf7685-a738-4523-ad9f-3e216d619bab.png)
+![image](https://user-images.githubusercontent.com/75510135/129476087-463e90b6-bf07-4c42-9723-134b6a066827.png)
+
+# Action Creator for Current User API, addition proxy rules, install Axios , Redux Thunk
+![image](https://user-images.githubusercontent.com/75510135/129476295-8be1172d-f67d-465d-83f8-f7e5e82207f6.png)
+![image](https://user-images.githubusercontent.com/75510135/129476369-153c3b0d-ab9d-4fed-bba0-358b73975c5e.png)
+- client $ npm i --save axios redux-thunk
+
+![image](https://user-images.githubusercontent.com/75510135/129477598-6a087aa0-8824-4ecf-b07f-b10cc0dbdf65.png)
+![image](https://user-images.githubusercontent.com/75510135/129477604-77a9b1a8-4b94-49e6-a324-c2c244aba5a7.png)
+![image](https://user-images.githubusercontent.com/75510135/129477692-8c547eaa-a555-4559-b64d-112c53da5570.png)
+
+# Basics of Redux Thunk
+![image](https://user-images.githubusercontent.com/75510135/129477731-df49ef1d-4cb5-43ec-b35e-fc5f81a4eeed.png)
+![image](https://user-images.githubusercontent.com/75510135/129477752-539b834d-b725-4bf6-86f1-bd09eecca4b8.png)
+![image](https://user-images.githubusercontent.com/75510135/129478162-3783ef87-7d34-4730-896a-ecadb95bf7ef.png)
 
 
+## refactor App
+![image](https://user-images.githubusercontent.com/75510135/129478386-a41899d2-424c-477d-9582-b70dbefa0ada.png)
+![image](https://user-images.githubusercontent.com/75510135/129478539-a2dd9d90-d210-46bc-85d4-2534831d0f97.png)
 
+# Connect dispatch to Action 
+![image](https://user-images.githubusercontent.com/75510135/129479114-1e35b73c-3223-4fcb-8308-17257e76fa31.png)
+![image](https://user-images.githubusercontent.com/75510135/129479140-29d72a32-c3b3-4540-bc32-f8482dfd9c3e.png)
+![image](https://user-images.githubusercontent.com/75510135/129479297-4fcefd2d-76b0-443a-b8ad-1864379451d6.png)
 
+# Auth reducer returns value
+![image](https://user-images.githubusercontent.com/75510135/129479758-b99d4cd3-d19d-477d-9900-bc5b6cc63f0f.png)
+![image](https://user-images.githubusercontent.com/75510135/129480016-a79ecc34-2e53-48dd-8c10-c5ee7406c68c.png)
+
+![image](https://user-images.githubusercontent.com/75510135/129480007-db8f92eb-7b77-4848-a18a-f5d752eeff66.png)
+
+# Header , bit more work
+![image](https://user-images.githubusercontent.com/75510135/129483384-8dcd41d7-8a0d-4eb5-ad80-f550a666575b.png)
+
+![image](https://user-images.githubusercontent.com/75510135/129483598-7b45fa91-d0e0-41a9-b946-703614868ea9.png)
+
+# Redirect on Logout
+![image](https://user-images.githubusercontent.com/75510135/129483672-64b1c4cf-2281-4d4b-b06a-6103838ade41.png)
+![image](https://user-images.githubusercontent.com/75510135/129483705-28506bdd-f6ac-465f-89c0-635040aa75d2.png)
+![image](https://user-images.githubusercontent.com/75510135/129484078-4c9a080a-bc79-4d06-9cba-a524649c0751.png)
+![image](https://user-images.githubusercontent.com/75510135/129484167-cd2f5eab-c97e-4c2f-9c44-3e13043a0695.png)
 
 
