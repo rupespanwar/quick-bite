@@ -204,4 +204,5 @@ Make sure you don't add the proxy configuration to the package.json file as show
 ![image](https://user-images.githubusercontent.com/75510135/129484078-4c9a080a-bc79-4d06-9cba-a524649c0751.png)
 ![image](https://user-images.githubusercontent.com/75510135/129484167-cd2f5eab-c97e-4c2f-9c44-3e13043a0695.png)
 
+# Landing component
 
