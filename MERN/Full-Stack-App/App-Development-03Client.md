@@ -205,4 +205,13 @@ Make sure you don't add the proxy configuration to the package.json file as show
 ![image](https://user-images.githubusercontent.com/75510135/129484167-cd2f5eab-c97e-4c2f-9c44-3e13043a0695.png)
 
 # Landing component
+![image](https://user-images.githubusercontent.com/75510135/129496889-1cd1eaf0-a452-4366-abc3-121c398b13ee.png)
+![image](https://user-images.githubusercontent.com/75510135/129496898-a1bf7475-e2c3-4f4e-bca9-2f4994ed82bf.png)
+## Emaily logo and nevigation
+![image](https://user-images.githubusercontent.com/75510135/129496962-59852a63-6daa-4dff-aa40-46c2bc3c0e7e.png)
+![image](https://user-images.githubusercontent.com/75510135/129497270-765bbc48-c78b-40a7-9f4c-e62629c5a43d.png)
+
+# Client side billing
+![image](https://user-images.githubusercontent.com/75510135/129497362-85625d7b-51de-41b8-9667-3abde68d3116.png)
+![image](https://user-images.githubusercontent.com/75510135/129497377-6b2ed832-87cc-4467-88fc-c8dc014055e2.png)
 
