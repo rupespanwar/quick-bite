@@ -32,9 +32,22 @@
 ![image](https://user-images.githubusercontent.com/75510135/129538780-88eb2798-1ecd-40e9-96f0-d6ee03658ee9.png)
 ![image](https://user-images.githubusercontent.com/75510135/129538822-3e2312cc-866b-4a3d-ae30-33f303202ff2.png)
 
-# Reusing Action Type, send Token to API
+# Reusing Action Type, send Token to API @ Client
 ![image](https://user-images.githubusercontent.com/75510135/129539151-75cb87bd-02bf-47d2-a0d1-df0d4f9643aa.png)
 
 ![image](https://user-images.githubusercontent.com/75510135/129539680-9caa9d4f-62e0-4a2d-8c5e-e5c08b7a44fb.png)
+![image](https://user-images.githubusercontent.com/75510135/129563958-3d3f7fb2-a871-4715-b4b6-70ba606651b9.png)
+**@server
+![image](https://user-images.githubusercontent.com/75510135/129564492-80731530-2bf5-4cad-8e2e-5dc050c1a943.png)
+![image](https://user-images.githubusercontent.com/75510135/129564757-101876a8-5677-4e67-8a7c-f62825dcb247.png)
+![image](https://user-images.githubusercontent.com/75510135/129565153-f8722190-4a62-4779-943b-80195aadfe6d.png)
+- npm i --save stripe
+- npm i --save body-parser
+- keys and bodyParser
+
+![image](https://user-images.githubusercontent.com/75510135/129567138-6c6ea651-fb5d-489c-aefe-5ddb35d6e933.png)
+![image](https://user-images.githubusercontent.com/75510135/129567314-8234225c-a2fc-479e-9f61-48a9df149faf.png)
+
+
 
 
