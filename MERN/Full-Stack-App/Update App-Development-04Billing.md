@@ -47,7 +47,25 @@
 
 ![image](https://user-images.githubusercontent.com/75510135/129567138-6c6ea651-fb5d-489c-aefe-5ddb35d6e933.png)
 ![image](https://user-images.githubusercontent.com/75510135/129567314-8234225c-a2fc-479e-9f61-48a9df149faf.png)
+- create charge
+![image](https://user-images.githubusercontent.com/75510135/129588705-2a80ac93-e1cf-4f93-b1be-5b2f3f3ae3a8.png)
+# Add credit to a user @ SERVER
+- change in user schema
+![image](https://user-images.githubusercontent.com/75510135/129590130-373645ea-b2f8-4153-a30d-f2cdb51b8a45.png)
+![image](https://user-images.githubusercontent.com/75510135/129645102-64c6e269-718d-4cf5-8e8e-27e603a93a19.png)
+- authicate the route , like if user is logged in or not
+![image](https://user-images.githubusercontent.com/75510135/129646237-81aeeafd-a9a9-4089-af29-bb06a492b9c4.png)
+# Route Specific Middleware, authentication @ Server
+![image](https://user-images.githubusercontent.com/75510135/129651169-92a60671-261c-458c-96ae-88930b54bac7.png)
+
+![image](https://user-images.githubusercontent.com/75510135/129650858-29585695-fffc-4521-8fba-0e5a0aed58f5.png)
 
 
+![image](https://user-images.githubusercontent.com/75510135/129652127-137fb6f3-7e44-410e-806f-cfba26fe1279.png)
+![image](https://user-images.githubusercontent.com/75510135/129652147-50c3cb31-6186-4fbf-b982-cdd80dffc703.png)
+![image](https://user-images.githubusercontent.com/75510135/129653418-021aa1f3-8a42-40f9-9f7a-3556a493f5c9.png)
+- updating the credits
+
+![image](https://user-images.githubusercontent.com/75510135/129653556-1ab940fa-7fad-4290-b1f0-bdeae89cdfc5.png)
 
 
