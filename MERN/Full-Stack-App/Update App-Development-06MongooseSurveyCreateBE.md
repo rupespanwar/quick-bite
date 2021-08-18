@@ -69,4 +69,18 @@
 ![image](https://user-images.githubusercontent.com/75510135/129826654-83e76919-2133-443f-aa99-9a3b208c4c0d.png)
 ![image](https://user-images.githubusercontent.com/75510135/129826671-1bd54064-e258-4b96-83b9-265bff862c78.png)
 **testing purpose- axios helper**
+![image](https://user-images.githubusercontent.com/75510135/129832360-76bf09a2-c84d-446d-9115-9cad5e055bbd.png)
+![image](https://user-images.githubusercontent.com/75510135/129832526-0e36a017-14f5-49b9-a8f4-2c4a13bb251c.png)
+![image](https://user-images.githubusercontent.com/75510135/129832639-0a94c6a6-f631-4f6c-8d20-68ea9e142295.png)
+
+- updated survey , user credit
+![image](https://user-images.githubusercontent.com/75510135/129833745-0748161a-bf8d-4c6e-8005-d74f174c0379.png)
+
+![image](https://user-images.githubusercontent.com/75510135/129833724-eb32998c-8415-40c0-9b1d-6df2b5331f45.png)
+
+- user feedback routing
+![image](https://user-images.githubusercontent.com/75510135/129834860-041e1f53-015e-405e-b9dd-8fae46cbe6b6.png)
+![image](https://user-images.githubusercontent.com/75510135/129834887-922e3277-10ab-4c2b-90ac-dfaf92d5b067.png)
+![image](https://user-images.githubusercontent.com/75510135/129835207-26efe746-c335-4aad-8433-f0229d58eb43.png)
+![image](https://user-images.githubusercontent.com/75510135/129835247-26a3ff4e-dcc2-4f88-a85c-6ea33b316914.png)
 
