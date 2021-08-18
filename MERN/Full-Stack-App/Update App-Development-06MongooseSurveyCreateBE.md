@@ -41,5 +41,32 @@
 ![image](https://user-images.githubusercontent.com/75510135/129719546-ca633da4-224d-4a62-8eaa-bf4bb68b0382.png)
 ![image](https://user-images.githubusercontent.com/75510135/129719774-455b988b-c3d5-476a-a7ed-df2566953d42.png)
 ![image](https://user-images.githubusercontent.com/75510135/129719913-49618728-a6be-40bc-80e6-94e564bc15d0.png)
+![image](https://user-images.githubusercontent.com/75510135/129723702-5872730d-643e-4cf4-af78-aef4820098a9.png)
 
+# Creating mailers
+![image](https://user-images.githubusercontent.com/75510135/129751618-783fbe4c-dfe9-49a9-b2e8-38c714992b3a.png)
+
+![image](https://user-images.githubusercontent.com/75510135/129750327-074e61c7-537a-46c1-a9f7-f060d3463950.png)
+![image](https://user-images.githubusercontent.com/75510135/129751582-b1b87b1f-657a-4a70-8d17-5fa6374ded91.png)
+![image](https://user-images.githubusercontent.com/75510135/129753679-53964336-fd74-43de-84c8-1ee25837686d.png)
+![image](https://user-images.githubusercontent.com/75510135/129754922-87d1906a-0f3e-4e21-a9e0-05dac66caa7d.png)
+**sendgrid.com**
+![image](https://user-images.githubusercontent.com/75510135/129755338-b6422ac4-4570-49e1-9075-5e2f5613a090.png)
+![image](https://user-images.githubusercontent.com/75510135/129755472-351107ae-f84e-4cd6-bac7-426a442b6428.png)
+![image](https://user-images.githubusercontent.com/75510135/129756059-dd99b8d4-6200-4b38-affe-2b3b5dbdfe2c.png)
+- npm i --save sendgrid
+![image](https://user-images.githubusercontent.com/75510135/129817936-e1763c6b-267e-4146-95e9-cb2c612b58a7.png)
+# Mailer setup
+![image](https://user-images.githubusercontent.com/75510135/129818017-6bb36d3a-ddab-405c-b7b7-24aec267cc07.png)
+![image](https://user-images.githubusercontent.com/75510135/129818068-72e88ae5-6c21-418a-8a58-b74367e6effb.png)
+![image](https://user-images.githubusercontent.com/75510135/129818871-9f01c359-b06b-49ee-af42-b18aa97b25e2.png)
+![image](https://user-images.githubusercontent.com/75510135/129819319-c30fd1f2-26e8-450a-948e-7e16da63f125.png)
+![image](https://user-images.githubusercontent.com/75510135/129820312-400885c3-2af7-4eb1-a8aa-b2ffeb13df64.png)
+![image](https://user-images.githubusercontent.com/75510135/129820329-09751e0e-dbf7-4fbc-b9b3-544e7ddbc969.png)
+![image](https://user-images.githubusercontent.com/75510135/129822597-e43d902d-57c7-4e1d-87df-b39d547f34c6.png)
+- boiler plate for sending email
+![image](https://user-images.githubusercontent.com/75510135/129822834-d8b20fa2-e147-4dcf-86f1-4e558327ffdd.png)
+![image](https://user-images.githubusercontent.com/75510135/129826654-83e76919-2133-443f-aa99-9a3b208c4c0d.png)
+![image](https://user-images.githubusercontent.com/75510135/129826671-1bd54064-e258-4b96-83b9-265bff862c78.png)
+**testing purpose- axios helper**
 
