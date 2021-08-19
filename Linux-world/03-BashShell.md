@@ -349,4 +349,22 @@ $ man test
 # Case statement
 <img width="191" alt="image" src="https://user-images.githubusercontent.com/75510135/130010235-5de36829-0e31-4339-8364-8651b1848909.png">
 <img width="489" alt="image" src="https://user-images.githubusercontent.com/75510135/130010950-fd0c7799-95c3-4a49-a465-1a1a62fb064e.png">
+- check signal
+- kill -l
+<img width="573" alt="image" src="https://user-images.githubusercontent.com/75510135/130065082-e21ac8a4-2a7e-4e5f-ac37-af1fe9c53f74.png">
 
+<img width="546" alt="image" src="https://user-images.githubusercontent.com/75510135/130065039-5c9cf1a2-94a0-4d13-8d10-1d4eb327a7ca.png">
+
+# Functions in Bash
+<img width="441" alt="image" src="https://user-images.githubusercontent.com/75510135/130065539-98270244-f3d3-47c6-9192-df091f90a3ba.png">
+<img width="393" alt="image" src="https://user-images.githubusercontent.com/75510135/130065779-a8373b87-7eba-4907-b95b-40b630483898.png">
+<img width="378" alt="image" src="https://user-images.githubusercontent.com/75510135/130065976-395bce1b-d1c8-4a64-8fdc-19936fbe5c3e.png">
+<img width="440" alt="image" src="https://user-images.githubusercontent.com/75510135/130066118-9e7a2510-2af5-4ded-9a02-474376ff219c.png">
+
+# Vars in Function
+<img width="456" alt="image" src="https://user-images.githubusercontent.com/75510135/130066541-b492eea1-1717-4c8f-8575-3dd6910f2c63.png">
+<img width="462" alt="image" src="https://user-images.githubusercontent.com/75510135/130066656-30173c79-feef-47bd-a828-2d49a9726156.png">
+
+# Menu in Bash
+<img width="507" alt="image" src="https://user-images.githubusercontent.com/75510135/130066958-4ea47244-773b-4237-86dc-20b599a81b34.png">
+<img width="483" alt="image" src="https://user-images.githubusercontent.com/75510135/130067224-2c9f32d5-1f5f-46f5-b82f-4fb834f1c20f.png">
