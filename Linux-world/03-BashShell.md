@@ -313,5 +313,40 @@ $ man test
 <img width="383" alt="image" src="https://user-images.githubusercontent.com/75510135/130004970-4e05f765-d9fd-47e8-9567-ceacdfaffbc1.png">
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/75510135/130005017-218fb99a-375e-400f-a810-fa4f6d5ad7d4.png">
 
+# test network connection
+```
+           #!/bin/bash
+           output="$(ping -c 3 $1)" 
+           #echo "$output"
 
+           if [[ $output == *"100% packet loss"* ]]
+           then
+                   echo "The network connection to $1 is not working."
+           else
+                   echo "The network connection to $1 is working"
+           fi
+
+
+           # Run the script as: ./script_name.sh 8.8.8.8
+```
+
+# For...loop
+<img width="817" alt="image" src="https://user-images.githubusercontent.com/75510135/130008403-edcf141f-8277-4770-a4d4-2cbdfc272ad2.png">
+<img width="354" alt="image" src="https://user-images.githubusercontent.com/75510135/130008593-263366b7-f5cb-4a49-b7a8-2dd87809e1a4.png">
+<img width="502" alt="image" src="https://user-images.githubusercontent.com/75510135/130008653-d8df413f-206c-4487-8541-313d8a60ec4b.png">
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/75510135/130008698-05bda8f0-a888-424b-8ec6-1c5f2682942c.png">
+<img width="329" alt="image" src="https://user-images.githubusercontent.com/75510135/130008733-348690e4-f31a-46bf-b609-886517e156c5.png">
+<img width="541" alt="image" src="https://user-images.githubusercontent.com/75510135/130008836-f507f687-9671-415e-a1af-445ada211450.png">
+<img width="499" alt="image" src="https://user-images.githubusercontent.com/75510135/130008971-298d75af-fdb4-4828-8de4-7f9973275d32.png">
+<img width="347" alt="image" src="https://user-images.githubusercontent.com/75510135/130009124-577bf6c4-344c-446e-8e55-63d8c915e68e.png">
+
+# while loop
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/75510135/130009188-27aaf15b-916a-418f-a136-ec6e9d9c4b55.png">
+<img width="290" alt="image" src="https://user-images.githubusercontent.com/75510135/130009471-5d429193-7761-4b43-ad0b-e3ea434c3355.png">
+<img width="519" alt="image" src="https://user-images.githubusercontent.com/75510135/130009638-c7c7629e-9d0e-446f-8518-e18b51eb8e2e.png">
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/75510135/130009849-d1298796-5eb1-45ca-a6f4-ea5aedeaad7d.png">
+<img width="551" alt="image" src="https://user-images.githubusercontent.com/75510135/130010044-883d368c-018d-4b9b-99e6-98890ccbe7b7.png">
+# Case statement
+<img width="191" alt="image" src="https://user-images.githubusercontent.com/75510135/130010235-5de36829-0e31-4339-8364-8651b1848909.png">
+<img width="489" alt="image" src="https://user-images.githubusercontent.com/75510135/130010950-fd0c7799-95c3-4a49-a465-1a1a62fb064e.png">
 
