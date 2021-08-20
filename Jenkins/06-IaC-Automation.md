@@ -17,6 +17,9 @@
 - https://github.com/rupeshpanwar/jenkins-course
 <img width="935" alt="image" src="https://user-images.githubusercontent.com/75510135/130242045-d5d52598-dc75-406d-88d9-a85fb0adfbef.png">
 <img width="817" alt="image" src="https://user-images.githubusercontent.com/75510135/130242604-fc677cae-d94e-4997-89e2-bbe5cd0b77ef.png">
+![image](https://user-images.githubusercontent.com/89126068/130256943-7faaa375-be85-4fe6-a6d5-c56a9fe32ab6.png)
+
+![image](https://user-images.githubusercontent.com/89126068/130256877-bf16202b-4a78-4259-89fe-e30b33f9c9e5.png)
 
 
 
