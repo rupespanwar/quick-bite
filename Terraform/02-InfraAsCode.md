@@ -1,4 +1,6 @@
 - reference https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+- Agenda, to provison different pieces of infra
+<img width="209" alt="image" src="https://user-images.githubusercontent.com/75510135/130179689-d847e79d-f92f-4056-9893-884daa9fd6f7.png">
 
 # Create VPC with cidr, create main.tf
           terraform {
