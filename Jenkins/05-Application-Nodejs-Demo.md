@@ -44,9 +44,30 @@
 <img width="1002" alt="image" src="https://user-images.githubusercontent.com/75510135/130223386-47e521af-c1b5-4c74-9561-b85048012fc0.png">
 
 
+# Building Nodejs via Docker
+<img width="490" alt="image" src="https://user-images.githubusercontent.com/75510135/130223657-983355c3-2531-4217-9169-96e602ab00d0.png">
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/75510135/130223697-29c7e1d3-ccff-4134-9d64-4b991f95f800.png">
+- search for CloudBees Docker plugin(under Manage plugin)
+<img width="959" alt="image" src="https://user-images.githubusercontent.com/75510135/130224013-65487963-27b5-4e33-8dab-83aa216c5382.png">
+- find GID for docker on docker running server
+```
+getent group docker
+docker:x:998:
+```
+- on jenkin server , run 
+```
+git clone https://github.com/rupeshpanwar/jenkins-docker.git
+cd enkins-docker
+```
+- build the docker image
+              docker build -t jenkins-docker .
+              docker stop jenkins
+              docker rm jenkins
+              ls /var/jenkins_home/
+              ls -ahl /var/run/docker.sock
+  <img width="938" alt="image" src="https://user-images.githubusercontent.com/75510135/130233161-92cbe9de-2044-46fa-a786-b00763990f74.png">
 
-
-
+<img width="850" alt="image" src="https://user-images.githubusercontent.com/75510135/130234583-d20c61dc-c377-47ae-80a1-2e9cd307585c.png">
 
 
 
