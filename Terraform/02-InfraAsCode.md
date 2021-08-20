@@ -269,3 +269,7 @@ variable "ports" {
 <img width="1002" alt="image" src="https://user-images.githubusercontent.com/75510135/130172516-3abc6efe-b077-438a-b03b-1a30f9ae6c19.png">
 <img width="1016" alt="image" src="https://user-images.githubusercontent.com/75510135/130172544-b559ec97-158a-4481-b208-0ac1a1c450e6.png">
          
+# In case , EC2 instance alone to be destroyed
+<img width="537" alt="image" src="https://user-images.githubusercontent.com/75510135/130179508-c672673a-6d28-4f9d-bf16-afbf306f7095.png">
+
+- run , terraform apply --auto-approve
