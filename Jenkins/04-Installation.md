@@ -163,3 +163,4 @@ Download the package from https://jenkins.io/download/ and follow the instructio
 <img width="1438" alt="image" src="https://user-images.githubusercontent.com/75510135/130102011-f69c1c6f-dcaf-40d9-b6ad-bc151062894a.png">
 <img width="891" alt="image" src="https://user-images.githubusercontent.com/75510135/130104088-7f50c7b3-7164-4888-a89e-f4e02e729dae.png">
 
+![image](https://user-images.githubusercontent.com/89126068/130256313-c6344610-3e7a-437d-9a69-d24fcb2b3175.png)
